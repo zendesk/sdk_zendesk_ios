@@ -14,7 +14,7 @@ All feature requests and issues are welcomed. Please see our [contributing guide
 
 ## Copyright and license
 
-Copyright 2020 Zendesk
+Copyright 2021 Zendesk
 
 By downloading or using the ZendeskSDK, You agree to the Zendesk Master
 Subscription Agreement https://www.zendesk.com/company/customers-partners/#master-subscription-agreement and Application Developer and API License
