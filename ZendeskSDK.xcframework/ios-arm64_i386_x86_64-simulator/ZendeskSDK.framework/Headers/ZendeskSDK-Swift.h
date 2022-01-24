@@ -309,6 +309,8 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
 typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
 /// Invoked when there is a change to the current total number of unread messages.
   ZDKZendeskEventUnreadMessageCountChanged = 0,
+/// Invoked when a rest call fails for authentication reasons.
+  ZDKZendeskEventAuthenticationFailed = 1,
 };
 
 
@@ -360,6 +362,34 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 - (void)addEventObserver:(id _Nonnull)observer :(void (^ _Nullable)(enum ZDKZendeskEvent, id _Nullable))completionHandler;
 @end
 
+
+@class ZDKZendeskUser;
+
+@interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
+/// Authenticate a user.
+/// \param jwt The <code>jwt</code> belonging to the user.
+///
+/// \param completionHandler A block that takes an optional <code>ZendeskUser</code> which will be non-nil in the case of a success,
+/// and an optional <code>Error</code> which will be non-nil in the case of a failure.
+///
+- (void)loginUserWith:(NSString * _Nonnull)jwt completionHandler:(void (^ _Nullable)(ZDKZendeskUser * _Nullable, NSError * _Nullable))completionHandler;
+/// Unauthenticate a user.
+/// \param completionHandler A block that takes an optional <code>Error</code> which will be non-nil in the case of a failure.
+///
+- (void)logoutUserWithCompletionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
+@end
+
+
+
+SWIFT_CLASS_NAMED("ZendeskUser")
+@interface ZDKZendeskUser : NSObject
+/// The id of the <code>User</code>
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+/// The external id of the <code>User</code>
+@property (nonatomic, readonly, copy) NSString * _Nonnull externalId;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -677,6 +707,8 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
 typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
 /// Invoked when there is a change to the current total number of unread messages.
   ZDKZendeskEventUnreadMessageCountChanged = 0,
+/// Invoked when a rest call fails for authentication reasons.
+  ZDKZendeskEventAuthenticationFailed = 1,
 };
 
 
@@ -728,6 +760,34 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 - (void)addEventObserver:(id _Nonnull)observer :(void (^ _Nullable)(enum ZDKZendeskEvent, id _Nullable))completionHandler;
 @end
 
+
+@class ZDKZendeskUser;
+
+@interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
+/// Authenticate a user.
+/// \param jwt The <code>jwt</code> belonging to the user.
+///
+/// \param completionHandler A block that takes an optional <code>ZendeskUser</code> which will be non-nil in the case of a success,
+/// and an optional <code>Error</code> which will be non-nil in the case of a failure.
+///
+- (void)loginUserWith:(NSString * _Nonnull)jwt completionHandler:(void (^ _Nullable)(ZDKZendeskUser * _Nullable, NSError * _Nullable))completionHandler;
+/// Unauthenticate a user.
+/// \param completionHandler A block that takes an optional <code>Error</code> which will be non-nil in the case of a failure.
+///
+- (void)logoutUserWithCompletionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
+@end
+
+
+
+SWIFT_CLASS_NAMED("ZendeskUser")
+@interface ZDKZendeskUser : NSObject
+/// The id of the <code>User</code>
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+/// The external id of the <code>User</code>
+@property (nonatomic, readonly, copy) NSString * _Nonnull externalId;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -1045,6 +1105,8 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
 typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
 /// Invoked when there is a change to the current total number of unread messages.
   ZDKZendeskEventUnreadMessageCountChanged = 0,
+/// Invoked when a rest call fails for authentication reasons.
+  ZDKZendeskEventAuthenticationFailed = 1,
 };
 
 
@@ -1096,6 +1158,34 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 - (void)addEventObserver:(id _Nonnull)observer :(void (^ _Nullable)(enum ZDKZendeskEvent, id _Nullable))completionHandler;
 @end
 
+
+@class ZDKZendeskUser;
+
+@interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
+/// Authenticate a user.
+/// \param jwt The <code>jwt</code> belonging to the user.
+///
+/// \param completionHandler A block that takes an optional <code>ZendeskUser</code> which will be non-nil in the case of a success,
+/// and an optional <code>Error</code> which will be non-nil in the case of a failure.
+///
+- (void)loginUserWith:(NSString * _Nonnull)jwt completionHandler:(void (^ _Nullable)(ZDKZendeskUser * _Nullable, NSError * _Nullable))completionHandler;
+/// Unauthenticate a user.
+/// \param completionHandler A block that takes an optional <code>Error</code> which will be non-nil in the case of a failure.
+///
+- (void)logoutUserWithCompletionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
+@end
+
+
+
+SWIFT_CLASS_NAMED("ZendeskUser")
+@interface ZDKZendeskUser : NSObject
+/// The id of the <code>User</code>
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+/// The external id of the <code>User</code>
+@property (nonatomic, readonly, copy) NSString * _Nonnull externalId;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
