@@ -16,7 +16,7 @@ let package = Package(
     dependencies: [
         .package(name: "ZendeskSDKConversationKit",
                  url: "https://github.com/zendesk/sdk_conversation_kit_ios",
-                 from: "0.8.0")
+                 from: "0.9.0")
     ],
     targets: [
         .binaryTarget(

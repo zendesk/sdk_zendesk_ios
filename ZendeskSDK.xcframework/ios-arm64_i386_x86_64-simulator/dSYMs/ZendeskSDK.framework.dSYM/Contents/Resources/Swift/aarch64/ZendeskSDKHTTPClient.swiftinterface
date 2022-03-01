@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ZendeskSDKHTTPClient
 import Foundation
 import Swift
@@ -21,6 +21,7 @@ public enum HTTPHeader : Swift.Hashable {
   }
 }
 public enum HTTPError : Foundation.LocalizedError {
+  case expectedEmptyResponse(_: Foundation.Data)
   case noResponse
   case failedToDecode(data: Foundation.Data?, response: Foundation.HTTPURLResponse, error: Swift.Error)
   case unsuccessfulStatusCodeForRequest(statusCode: Swift.Int, data: Foundation.Data?, response: Foundation.HTTPURLResponse)
@@ -42,6 +43,8 @@ public protocol HTTPClient {
   func performRequest<D>(method: ZendeskSDKHTTPClient.HTTPMethodWithoutBody, responseType: D.Type, path: Swift.String, query: [Swift.String : Swift.String]?, headers: [ZendeskSDKHTTPClient.HTTPHeader]?, completionHandler: @escaping (Swift.Result<ZendeskSDKHTTPClient.HTTPClientResponse<D>, ZendeskSDKHTTPClient.HTTPError>) -> Swift.Void) -> Foundation.URLSessionDataTask where D : Swift.Decodable
   @discardableResult
   func performRequest<D>(withBodyData bodyData: Foundation.Data, method: ZendeskSDKHTTPClient.HTTPMethodWithBody, responseType: D.Type, path: Swift.String, query: [Swift.String : Swift.String]?, headers: [ZendeskSDKHTTPClient.HTTPHeader]?, completionHandler: @escaping (Swift.Result<ZendeskSDKHTTPClient.HTTPClientResponse<D>, ZendeskSDKHTTPClient.HTTPError>) -> Swift.Void) -> Foundation.URLSessionDataTask where D : Swift.Decodable
+  @discardableResult
+  func performRequest<E>(withBody body: E, method: ZendeskSDKHTTPClient.HTTPMethodWithBody, path: Swift.String, query: [Swift.String : Swift.String]?, headers: [ZendeskSDKHTTPClient.HTTPHeader]?, completionHandler: @escaping (Swift.Result<ZendeskSDKHTTPClient.HTTPClientResponse<ZendeskSDKHTTPClient.Empty>, ZendeskSDKHTTPClient.HTTPError>) -> Swift.Void) -> Foundation.URLSessionDataTask where E : Swift.Encodable
 }
 public struct HTTPClientBuilder {
   public init(urlSessionConfiguration: Foundation.URLSessionConfiguration = URLSessionConfiguration.default, defaultHeaders: [ZendeskSDKHTTPClient.HTTPHeader], baseURL: Swift.String)
@@ -74,6 +77,9 @@ public enum HTTPMethodWithoutBody : Swift.String {
   public var rawValue: Swift.String {
     get
   }
+}
+public struct Empty : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct HTTPClientResponse<D> where D : Swift.Decodable {
   public let response: Foundation.HTTPURLResponse
