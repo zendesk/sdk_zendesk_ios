@@ -294,6 +294,21 @@ SWIFT_CLASS_NAMED("MessagingSettings")
 @end
 
 
+/// This object is used to provide session-based data to capture contextual information about an end user. This data is viewable inside
+/// Agent Workspace.
+SWIFT_CLASS_NAMED("PageView")
+@interface ZDKPageView : NSObject
+/// <code>PageView</code> object that is used to provide session-based data associated to an end user.
+/// \param pageTitle The title of the page that was viewed.
+///
+/// \param url The location of the page that was viewed.
+///
+- (nonnull instancetype)initWithPageTitle:(NSString * _Nonnull)pageTitle url:(NSString * _Nonnull)url OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 /// An enum representing the source of actioned <code>URL</code>.
 typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
 /// User selected <code>URL</code> from <code>text</code> on the Conversation screen.
@@ -361,6 +376,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 /// \param completionHandler A block that receives a <code>ZDKZendeskEvent</code>.
 ///
 - (void)addEventObserver:(id _Nonnull)observer :(void (^ _Nullable)(enum ZDKZendeskEvent, id _Nullable))completionHandler;
+/// Send a page view event, that captures a specific user interaction, to the PageView endpoint.
+/// \param pageView The <code>PageView</code> object that contains information related to a user’s interactions
+/// e.g. the title of the page that was visited.
+///
+/// \param completionHandler A block that takes an optional <code>Error</code> which will be non-nil in the case of a failure.
+///
+- (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
 
 
@@ -693,6 +715,21 @@ SWIFT_CLASS_NAMED("MessagingSettings")
 @end
 
 
+/// This object is used to provide session-based data to capture contextual information about an end user. This data is viewable inside
+/// Agent Workspace.
+SWIFT_CLASS_NAMED("PageView")
+@interface ZDKPageView : NSObject
+/// <code>PageView</code> object that is used to provide session-based data associated to an end user.
+/// \param pageTitle The title of the page that was viewed.
+///
+/// \param url The location of the page that was viewed.
+///
+- (nonnull instancetype)initWithPageTitle:(NSString * _Nonnull)pageTitle url:(NSString * _Nonnull)url OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 /// An enum representing the source of actioned <code>URL</code>.
 typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
 /// User selected <code>URL</code> from <code>text</code> on the Conversation screen.
@@ -760,6 +797,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 /// \param completionHandler A block that receives a <code>ZDKZendeskEvent</code>.
 ///
 - (void)addEventObserver:(id _Nonnull)observer :(void (^ _Nullable)(enum ZDKZendeskEvent, id _Nullable))completionHandler;
+/// Send a page view event, that captures a specific user interaction, to the PageView endpoint.
+/// \param pageView The <code>PageView</code> object that contains information related to a user’s interactions
+/// e.g. the title of the page that was visited.
+///
+/// \param completionHandler A block that takes an optional <code>Error</code> which will be non-nil in the case of a failure.
+///
+- (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
 
 

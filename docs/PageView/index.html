@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZendeskSDK - DispatchEvent</title>
+    <title>ZendeskSDK - PageView</title>
     <link rel="stylesheet" type="text/css" href="/sdk_zendesk_ios/all.css" media="all" />
 </head>
 <body>
@@ -25,7 +25,7 @@
     <nav>
         <div class="wrapper">
             <h2>On This Page</h2>
-            <ol><li><a href="#relationships">Relationships</a><ul><li><a href="#relationships">Conforms To</a></li></ul></li><li><a href="#properties">Properties</a><ul><li class="variable"><a href="#dispatchevent.event">event</a></li></ul></li></ol>
+            <ol><li><a href="#relationships">Relationships</a><ul><li><a href="#relationships">Conforms To</a></li></ul></li><li><a href="#initializers">Initializers</a><ul><li class="initializer"><a href="#pageview.init(pagetitle:url:)">init(page​Title:​url:​)</a></li></ul></li></ol>
         </div>
     </nav>
 
@@ -33,15 +33,16 @@
         <article>
             <h1>
     <small>Class</small>
-    <code class="name">Dispatch​Event</code>
+    <code class="name">Page​View</code>
 </h1>
 
 <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">@</span><span class="attribute">objc</span>(<span class="variable">ZDKDispatchEvent</span>)
-<span class="keyword">public</span> <span class="attribute">final</span> <span class="keyword">class</span> <span class="type">DispatchEvent</span>: <span class="type">NSObject</span>  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">@</span><span class="attribute">objc</span>(<span class="variable">ZDKPageView</span>)
+<span class="keyword">public</span> <span class="attribute">final</span> <span class="keyword">class</span> <span class="type">PageView</span>: <span class="type">NSObject</span>  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
-    <p>A wrapper class for a block that takes <code>ZendeskEvent</code> type and returns <code>Void</code>.</p>
+    <p>This object is used to provide session-based data to capture contextual information about an end user. This data is viewable inside
+Agent Workspace.</p>
 
 </div>
 <section id="relationships">
@@ -57,12 +58,12 @@
  viewBox="0.00 0.00 872.00 116.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112)">
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-112 868,-112 868,4 -4,4"/>
-<!-- DispatchEvent -->
+<!-- PageView -->
 <g id="node1" class="node class current">
-<title>DispatchEvent</title>
-<g id="a_node1"><a xlink:href="/sdk_zendesk_ios/DispatchEvent" xlink:title="DispatchEvent">
+<title>PageView</title>
+<g id="a_node1"><a xlink:href="/sdk_zendesk_ios/PageView" xlink:title="PageView">
 <path fill="none" stroke="black" stroke-width="3" d="M528,-108C528,-108 336,-108 336,-108 330,-108 324,-102 324,-96 324,-96 324,-84 324,-84 324,-78 330,-72 336,-72 336,-72 528,-72 528,-72 534,-72 540,-78 540,-84 540,-84 540,-96 540,-96 540,-102 534,-108 528,-108"/>
-<text text-anchor="middle" x="432" y="-86.3" font-family="Menlo" font-size="14.00">DispatchEvent</text>
+<text text-anchor="middle" x="432" y="-86.3" font-family="Menlo" font-size="14.00">PageView</text>
 </a>
 </g>
 </g>
@@ -72,9 +73,9 @@
 <path fill="none" stroke="black" d="M528,-36C528,-36 336,-36 336,-36 330,-36 324,-30 324,-24 324,-24 324,-12 324,-12 324,-6 330,0 336,0 336,0 528,0 528,0 534,0 540,-6 540,-12 540,-12 540,-24 540,-24 540,-30 534,-36 528,-36"/>
 <text text-anchor="middle" x="432" y="-14.3" font-family="Menlo" font-size="14.00">NSObject</text>
 </g>
-<!-- DispatchEvent&#45;&gt;NSObject -->
+<!-- PageView&#45;&gt;NSObject -->
 <g id="edge1" class="edge conformsTo">
-<title>DispatchEvent&#45;&gt;NSObject</title>
+<title>PageView&#45;&gt;NSObject</title>
 <path fill="none" stroke="black" d="M432,-71.7C432,-63.98 432,-54.71 432,-46.11"/>
 <polygon fill="black" stroke="black" points="435.5,-46.1 432,-36.1 428.5,-46.1 435.5,-46.1"/>
 </g>
@@ -82,23 +83,52 @@
 </svg>
 
 
-    <figcaption hidden>Inheritance graph for DispatchEvent.</figcaption>
+    <figcaption hidden>Inheritance graph for PageView.</figcaption>
 </figure>
         <h3>Conforms To</h3>
 <dl>
     <dt class="unknown"><code>NSObject</code></dt>
 </dl>
 </section>
-    <section id="properties">
-        <h2>Properties</h2>
+    <section id="initializers">
+        <h2>Initializers</h2>
 
-        <div role="article" class="variable" id="dispatchevent.event">
+        <div role="article" class="initializer" id="pageview.init(pagetitle:url:)">
     <h3>
-        <code><a href="#dispatchevent.event">event</a></code>
+        <code><a href="#pageview.init(pagetitle:url:)">init(page​Title:​url:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">let</span> <span class="variable">event</span>: (<a href="/sdk_zendesk_ios/ZendeskEvent"><span class="type">ZendeskEvent</span></a>) -&gt; <span class="type">Void</span></body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">@</span><span class="attribute">objc</span> <span class="keyword">public</span> <span class="keyword">init</span>(<span class="variable">pageTitle</span>: <span class="type">String</span>, <span class="variable">url</span>: <span class="type">String</span>)  </body></html></code></pre>
 </div>
+<div class="summary" role="doc-abstract">
+    <p><code>PageView</code> object that is used to provide session-based data associated to an end user.</p>
+
+</div>
+<h4>Parameters</h4>
+
+<table class="parameters">
+  <thead hidden>
+  <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <th>page​Title</th>
+    <td><code class="type">String</code></td>
+    <td><p>The title of the page that was viewed.</p>
+</td>
+</tr>
+<tr>
+    <th>url</th>
+    <td><code class="type">String</code></td>
+    <td><p>The location of the page that was viewed.</p>
+</td>
+</tr>
+  </tbody>
+</table>
 </div>
     </section>
 
@@ -109,7 +139,7 @@
 
     <footer>
         <p>
-    Generated on <time datetime="2022-03-31T08:42:30+0000">March 31, 2022</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-rc.1</span>.
+    Generated on <time datetime="2022-03-31T08:42:29+0000">March 31, 2022</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-rc.1</span>.
 </p>
     </footer>
 </body>
