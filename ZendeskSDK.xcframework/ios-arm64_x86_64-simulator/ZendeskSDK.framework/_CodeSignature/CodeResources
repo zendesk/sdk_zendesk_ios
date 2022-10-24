@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eZzPhoFuqEY5frUK16K06SV2Bg0=
+		ZWyOxxatNGPPEUz0AmbIbwLuPpY=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		whlfHtLmINU+/CWxTqsXeXvjXYM=
+		UoFHQdOd2mA8zNCZYfbGzJaZlNY=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RKAnbmjSgNn5zII7/iJkm8hu9s0=
+		4sGVXjdnWS5NDViRnts2RmBCsvA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MOCvUAna7WButW0tJW7mP+POELeC20SfoCVnGp22jIE=
+			l9VmnQabUADuCo+5PX6U2ngDq5Ss4vO2tLr+6+kB2qo=
 			</data>
 		</dict>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nv09lIQFjfM2zR5WlGrdqpRYzlCsWLUSxA53k1mIpyw=
+			uT1YS/LyvIRxCs4Y8YzM2Ca6XiqU8WWX9vUPtrdrhFg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

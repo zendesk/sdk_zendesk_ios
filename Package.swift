@@ -3,7 +3,7 @@ import PackageDescription
 let package = Package(
     name: "ZendeskSDK",
     platforms: [
-        .iOS(.v10)
+        .iOS(.v11)
     ],
     products: [
         .library(
@@ -16,7 +16,7 @@ let package = Package(
     dependencies: [
         .package(name: "ZendeskSDKConversationKit",
                  url: "https://github.com/zendesk/sdk_conversation_kit_ios",
-                 from: "1.4.0")
+                 from: "1.5.0")
     ],
     targets: [
         .binaryTarget(

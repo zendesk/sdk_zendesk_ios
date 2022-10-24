@@ -27,6 +27,8 @@ public enum HTTPError : Foundation.LocalizedError {
   case failedToDecode(data: Foundation.Data?, response: Foundation.HTTPURLResponse, error: Swift.Error)
   case unsuccessfulStatusCodeForRequest(statusCode: Swift.Int, data: Foundation.Data?, response: Foundation.HTTPURLResponse)
   case requestFailed(error: Swift.Error)
+  case multiConvoNotEnabled
+  case userCannotCreateMoreConversations
   public var errorDescription: Swift.String? {
     get
   }
