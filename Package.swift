@@ -16,7 +16,10 @@ let package = Package(
     dependencies: [
         .package(name: "ZendeskSDKConversationKit",
                  url: "https://github.com/zendesk/sdk_conversation_kit_ios",
-                 from: "1.6.0")
+                 from: "1.7.0"),
+        .package(name: "ZendeskSDKCoreUtilities",
+                 url: "https://github.com/zendesk/sdk_core_utilities_ios,
+                 from: "1.1.0")
     ],
     targets: [
         .binaryTarget(
@@ -26,7 +29,8 @@ let package = Package(
         .target(name: "ZendeskSDKTargets",
                 dependencies: [
                     .target(name: "ZendeskSDK"),
-                    .product(name: "ZendeskSDKConversationKit", package: "ZendeskSDKConversationKit")
+                    .product(name: "ZendeskSDKConversationKit", package: "ZendeskSDKConversationKit"),
+                    .product(name: "ZendeskSDKCoreUtilities", package: "ZendeskSDKCoreUtilities")
                 ],
                 path: "Sources")
     ]
