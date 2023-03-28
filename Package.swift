@@ -18,7 +18,7 @@ let package = Package(
                  url: "https://github.com/zendesk/sdk_conversation_kit_ios",
                  from: "1.7.0"),
         .package(name: "ZendeskSDKCoreUtilities",
-                 url: "https://github.com/zendesk/sdk_core_utilities_ios,
+                 url: "https://github.com/zendesk/sdk_core_utilities_ios",
                  from: "1.1.0")
     ],
     targets: [
