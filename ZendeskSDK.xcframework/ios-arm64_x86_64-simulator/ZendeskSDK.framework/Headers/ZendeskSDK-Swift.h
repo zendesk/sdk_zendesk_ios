@@ -354,7 +354,6 @@ SWIFT_CLASS_NAMED("PageView")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
 /// An enum representing the source of actioned <code>URL</code>.
 typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
 /// User selected <code>URL</code> from <code>text</code> on the Conversation screen.
@@ -827,7 +826,6 @@ SWIFT_CLASS_NAMED("PageView")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 /// An enum representing the source of actioned <code>URL</code>.
 typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {

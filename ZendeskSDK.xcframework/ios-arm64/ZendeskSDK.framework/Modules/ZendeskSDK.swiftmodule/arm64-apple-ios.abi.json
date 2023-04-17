@@ -1931,6 +1931,13 @@
       },
       {
         "kind": "Import",
+        "name": "ZendeskSDKCoreUtilities",
+        "printedName": "ZendeskSDKCoreUtilities",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2596,16 +2603,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ZendeskSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2625,6 +2622,13 @@
         "kind": "Import",
         "name": "ZendeskSDKHTTPClient",
         "printedName": "ZendeskSDKHTTPClient",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "ZendeskSDKCoreUtilities",
+        "printedName": "ZendeskSDKCoreUtilities",
         "declKind": "Import",
         "moduleName": "ZendeskSDK"
       },
@@ -3713,6 +3717,13 @@
         "kind": "Import",
         "name": "ZendeskSDKHTTPClient",
         "printedName": "ZendeskSDKHTTPClient",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "ZendeskSDKCoreUtilities",
+        "printedName": "ZendeskSDKCoreUtilities",
         "declKind": "Import",
         "moduleName": "ZendeskSDK"
       },
@@ -5181,7 +5192,7 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/RESTClient\/ProactiveMessagingServiceRESTClient.swift",
       "kind": "StringLiteral",
-      "offset": 780,
+      "offset": 811,
       "length": 31,
       "value": "\"\/api\/v2\/cts\/proactive_message\""
     },
@@ -5573,28 +5584,28 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/RESTClient\/FrontEndEventRESTClient.swift",
       "kind": "StringLiteral",
-      "offset": 835,
+      "offset": 866,
       "length": 12,
       "value": "\"mobile-sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/RESTClient\/FrontEndEventRESTClient.swift",
       "kind": "StringLiteral",
-      "offset": 875,
+      "offset": 906,
       "length": 38,
       "value": "\"383F2407-53F9-475B-87BD-6D2F1CE12105\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/RESTClient\/FrontEndEventRESTClient.swift",
       "kind": "StringLiteral",
-      "offset": 951,
+      "offset": 982,
       "length": 20,
       "value": "\"\/frontendevents\/pv\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/RESTClient\/FrontEndEventRESTClient.swift",
       "kind": "StringLiteral",
-      "offset": 1018,
+      "offset": 1049,
       "length": 21,
       "value": "\"\/frontendevents\/pca\""
     },
