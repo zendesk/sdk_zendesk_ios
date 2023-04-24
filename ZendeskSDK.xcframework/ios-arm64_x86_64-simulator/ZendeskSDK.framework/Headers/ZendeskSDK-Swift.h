@@ -265,7 +265,7 @@ SWIFT_CLASS_NAMED("DispatchEvent")
 
 SWIFT_CLASS_NAMED("Messaging")
 @interface ZDKMessaging : NSObject
-/// Retrieve a view controller that displays a conversation.
+/// Retrieve a view controller that either displays a conversation or a list of conversations, depending on business logic.
 /// note:
 /// If a user exists, their ‘default’ conversation is displayed.
 /// If no user exists, user and conversation are created.
@@ -738,7 +738,7 @@ SWIFT_CLASS_NAMED("DispatchEvent")
 
 SWIFT_CLASS_NAMED("Messaging")
 @interface ZDKMessaging : NSObject
-/// Retrieve a view controller that displays a conversation.
+/// Retrieve a view controller that either displays a conversation or a list of conversations, depending on business logic.
 /// note:
 /// If a user exists, their ‘default’ conversation is displayed.
 /// If no user exists, user and conversation are created.
