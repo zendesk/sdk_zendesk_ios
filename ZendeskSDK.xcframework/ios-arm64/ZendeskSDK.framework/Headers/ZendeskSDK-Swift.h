@@ -266,6 +266,9 @@ SWIFT_CLASS_NAMED("DispatchEvent")
 SWIFT_CLASS_NAMED("Messaging")
 @interface ZDKMessaging : NSObject
 /// Retrieve a view controller that either displays a conversation or a list of conversations, depending on business logic.
+/// important:
+/// Use your preferred presentation style (push, modal) to present the view.
+/// You must embed the view controller in a UINavigationController if presenting modally.
 /// note:
 /// If a user exists, their ‘default’ conversation is displayed.
 /// If no user exists, user and conversation are created.

@@ -773,6 +773,13 @@
         "moduleName": "ZendeskSDK"
       },
       {
+        "kind": "Import",
+        "name": "ZendeskSDKCoreUtilities",
+        "printedName": "ZendeskSDKCoreUtilities",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "MessagingFactory",
         "printedName": "MessagingFactory",
@@ -864,6 +871,54 @@
                 "declKind": "Accessor",
                 "usr": "s:10ZendeskSDK26MessagingFactoryParametersC17messagingSettingsAA0cG0Cvg",
                 "mangledName": "$s10ZendeskSDK26MessagingFactoryParametersC17messagingSettingsAA0cG0Cvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "featureFlagManager",
+            "printedName": "featureFlagManager",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlagManager",
+                "printedName": "ZendeskSDKCoreUtilities.FeatureFlagManager",
+                "usr": "c:@M@ZendeskSDKCoreUtilities@objc(cs)FeatureFlagManager"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK26MessagingFactoryParametersC18featureFlagManager0A16SDKCoreUtilities07FeaturegH0Cvp",
+            "mangledName": "$s10ZendeskSDK26MessagingFactoryParametersC18featureFlagManager0A16SDKCoreUtilities07FeaturegH0Cvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FeatureFlagManager",
+                    "printedName": "ZendeskSDKCoreUtilities.FeatureFlagManager",
+                    "usr": "c:@M@ZendeskSDKCoreUtilities@objc(cs)FeatureFlagManager"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK26MessagingFactoryParametersC18featureFlagManager0A16SDKCoreUtilities07FeaturegH0Cvg",
+                "mangledName": "$s10ZendeskSDK26MessagingFactoryParametersC18featureFlagManager0A16SDKCoreUtilities07FeaturegH0Cvg",
                 "moduleName": "ZendeskSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -3513,6 +3568,13 @@
       },
       {
         "kind": "Import",
+        "name": "ZendeskSDKCoreUtilities",
+        "printedName": "ZendeskSDKCoreUtilities",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -5003,7 +5065,7 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/API\/CapabilityInterfaces\/Messaging\/MessagingFactory.swift",
       "kind": "StringLiteral",
-      "offset": 922,
+      "offset": 953,
       "length": 26,
       "value": "\"ZendeskSDK.MessagingFactoryParameters\""
     },
@@ -5199,7 +5261,7 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "StringLiteral",
-      "offset": 826,
+      "offset": 785,
       "length": 7,
       "value": "\"ZendeskSDK.Zendesk\""
     },
@@ -5332,49 +5394,56 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "StringLiteral",
-      "offset": 944,
+      "offset": 975,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "StringLiteral",
-      "offset": 1039,
+      "offset": 1070,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1163,
+      "offset": 1194,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1315,
+      "offset": 1346,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "StringLiteral",
-      "offset": 1433,
+      "offset": 1464,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "StringLiteral",
-      "offset": 1545,
+      "offset": 1576,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1791,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "StringLiteral",
-      "offset": 1770,
+      "offset": 2026,
       "length": 2,
       "value": "\"\""
     },
@@ -5437,7 +5506,7 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/ProactiveMessaging\/ProactiveMessagingAnalytics.swift",
       "kind": "StringLiteral",
-      "offset": 2915,
+      "offset": 2643,
       "length": 31,
       "value": "\"PROACTIVE_MESSAGING_ANALYTICS\""
     },
@@ -5752,70 +5821,84 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2207,
+      "offset": 2276,
       "length": 13,
       "value": "\"light_theme\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2246,
+      "offset": 2315,
       "length": 12,
       "value": "\"dark_theme\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2290,
+      "offset": 2359,
       "length": 19,
       "value": "\"show_zendesk_logo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2349,
+      "offset": 2413,
+      "length": 21,
+      "value": "\"attachments_enabled\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2474,
       "length": 18,
       "value": "\"native_messaging\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2412,
+      "offset": 2537,
       "length": 14,
       "value": "\"sunco_config\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2207,
+      "offset": 2276,
       "length": 13,
       "value": "\"light_theme\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2246,
+      "offset": 2315,
       "length": 12,
       "value": "\"dark_theme\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2290,
+      "offset": 2359,
       "length": 19,
       "value": "\"show_zendesk_logo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2349,
+      "offset": 2413,
+      "length": 21,
+      "value": "\"attachments_enabled\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2474,
       "length": 18,
       "value": "\"native_messaging\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2412,
+      "offset": 2537,
       "length": 14,
       "value": "\"sunco_config\""
     },
