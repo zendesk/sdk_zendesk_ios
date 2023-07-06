@@ -230,6 +230,7 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -261,6 +262,7 @@ SWIFT_CLASS_NAMED("DispatchEvent")
 @end
 
 @class UIViewController;
+@class NSString;
 @protocol ZDKMessagingDelegate;
 
 SWIFT_CLASS_NAMED("Messaging")
@@ -278,6 +280,30 @@ SWIFT_CLASS_NAMED("Messaging")
 - (UIViewController * _Nonnull)messagingViewController SWIFT_WARN_UNUSED_RESULT;
 /// Returns the current total number of unread messages.
 - (NSInteger)getUnreadMessageCount SWIFT_WARN_UNUSED_RESULT;
+/// Provide a dictionary of custom fields.
+/// note:
+/// Strings, numbers and booleans are the only supported value types that can be passed.
+/// <ul>
+///   <li>
+///     Sets values for the given fields that will be associated with any conversations that the end user actively participates in.
+///   </li>
+/// </ul>
+/// \param fields The dictionary of custom fields to be provided.
+///
+- (void)setConversationFields:(NSDictionary<NSString *, NSObject *> * _Nonnull)fields;
+/// Provide an array of tags.
+/// <ul>
+///   <li>
+///     Sets the given tags that will be associated with any conversations that the end user actively participates in.
+///   </li>
+/// </ul>
+/// \param tags The dictionary of custom tags to be provided.
+///
+- (void)setConversationTags:(NSArray<NSString *> * _Nonnull)tags;
+/// Clears all custom fields from storage.
+- (void)clearConversationFields;
+/// Clears all custom tags from storage.
+- (void)clearConversationTags;
 /// Delegate that allows you to observe user interactions that happen in the SDK.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, weak) id <ZDKMessagingDelegate> _Nullable delegate;)
 + (id <ZDKMessagingDelegate> _Nullable)delegate SWIFT_WARN_UNUSED_RESULT;
@@ -322,7 +348,6 @@ SWIFT_CLASS_NAMED("MessagingFactoryParameters")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 
 SWIFT_CLASS_NAMED("MessagingSettings")
 @interface ZDKMessagingSettings : NSObject
@@ -706,6 +731,7 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -737,6 +763,7 @@ SWIFT_CLASS_NAMED("DispatchEvent")
 @end
 
 @class UIViewController;
+@class NSString;
 @protocol ZDKMessagingDelegate;
 
 SWIFT_CLASS_NAMED("Messaging")
@@ -754,6 +781,30 @@ SWIFT_CLASS_NAMED("Messaging")
 - (UIViewController * _Nonnull)messagingViewController SWIFT_WARN_UNUSED_RESULT;
 /// Returns the current total number of unread messages.
 - (NSInteger)getUnreadMessageCount SWIFT_WARN_UNUSED_RESULT;
+/// Provide a dictionary of custom fields.
+/// note:
+/// Strings, numbers and booleans are the only supported value types that can be passed.
+/// <ul>
+///   <li>
+///     Sets values for the given fields that will be associated with any conversations that the end user actively participates in.
+///   </li>
+/// </ul>
+/// \param fields The dictionary of custom fields to be provided.
+///
+- (void)setConversationFields:(NSDictionary<NSString *, NSObject *> * _Nonnull)fields;
+/// Provide an array of tags.
+/// <ul>
+///   <li>
+///     Sets the given tags that will be associated with any conversations that the end user actively participates in.
+///   </li>
+/// </ul>
+/// \param tags The dictionary of custom tags to be provided.
+///
+- (void)setConversationTags:(NSArray<NSString *> * _Nonnull)tags;
+/// Clears all custom fields from storage.
+- (void)clearConversationFields;
+/// Clears all custom tags from storage.
+- (void)clearConversationTags;
 /// Delegate that allows you to observe user interactions that happen in the SDK.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, weak) id <ZDKMessagingDelegate> _Nullable delegate;)
 + (id <ZDKMessagingDelegate> _Nullable)delegate SWIFT_WARN_UNUSED_RESULT;
@@ -798,7 +849,6 @@ SWIFT_CLASS_NAMED("MessagingFactoryParameters")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 
 SWIFT_CLASS_NAMED("MessagingSettings")
 @interface ZDKMessagingSettings : NSObject

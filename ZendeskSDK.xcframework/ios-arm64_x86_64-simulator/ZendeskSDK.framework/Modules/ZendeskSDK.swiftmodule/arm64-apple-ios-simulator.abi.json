@@ -882,54 +882,6 @@
           },
           {
             "kind": "Var",
-            "name": "featureFlagManager",
-            "printedName": "featureFlagManager",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FeatureFlagManager",
-                "printedName": "ZendeskSDKCoreUtilities.FeatureFlagManager",
-                "usr": "c:@M@ZendeskSDKCoreUtilities@objc(cs)FeatureFlagManager"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10ZendeskSDK26MessagingFactoryParametersC18featureFlagManager0A16SDKCoreUtilities07FeaturegH0Cvp",
-            "mangledName": "$s10ZendeskSDK26MessagingFactoryParametersC18featureFlagManager0A16SDKCoreUtilities07FeaturegH0Cvp",
-            "moduleName": "ZendeskSDK",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FeatureFlagManager",
-                    "printedName": "ZendeskSDKCoreUtilities.FeatureFlagManager",
-                    "usr": "c:@M@ZendeskSDKCoreUtilities@objc(cs)FeatureFlagManager"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10ZendeskSDK26MessagingFactoryParametersC18featureFlagManager0A16SDKCoreUtilities07FeaturegH0Cvg",
-                "mangledName": "$s10ZendeskSDK26MessagingFactoryParametersC18featureFlagManager0A16SDKCoreUtilities07FeaturegH0Cvg",
-                "moduleName": "ZendeskSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "conversationKit",
             "printedName": "conversationKit",
             "children": [
@@ -967,6 +919,54 @@
                 "declKind": "Accessor",
                 "usr": "s:10ZendeskSDK26MessagingFactoryParametersC15conversationKit0a15SDKConversationG0012ConversationG0_pvg",
                 "mangledName": "$s10ZendeskSDK26MessagingFactoryParametersC15conversationKit0a15SDKConversationG0012ConversationG0_pvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "theme",
+            "printedName": "theme",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ColorTheme",
+                "printedName": "ZendeskSDK.ColorTheme",
+                "usr": "s:10ZendeskSDK10ColorThemeV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK26MessagingFactoryParametersC5themeAA10ColorThemeVvp",
+            "mangledName": "$s10ZendeskSDK26MessagingFactoryParametersC5themeAA10ColorThemeVvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ColorTheme",
+                    "printedName": "ZendeskSDK.ColorTheme",
+                    "usr": "s:10ZendeskSDK10ColorThemeV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK26MessagingFactoryParametersC5themeAA10ColorThemeVvg",
+                "mangledName": "$s10ZendeskSDK26MessagingFactoryParametersC5themeAA10ColorThemeVvg",
                 "moduleName": "ZendeskSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -1148,14 +1148,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10ZendeskSDK10ColorThemeV07primaryC0So7UIColorCvp",
-            "mangledName": "$s10ZendeskSDK10ColorThemeV07primaryC0So7UIColorCvp",
+            "usr": "s:10ZendeskSDK10ColorThemeV07primaryC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV07primaryC0So7UIColorCSgvp",
             "moduleName": "ZendeskSDK",
             "declAttributes": [
               "HasStorage",
@@ -1171,14 +1179,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10ZendeskSDK10ColorThemeV07primaryC0So7UIColorCvg",
-                "mangledName": "$s10ZendeskSDK10ColorThemeV07primaryC0So7UIColorCvg",
+                "usr": "s:10ZendeskSDK10ColorThemeV07primaryC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV07primaryC0So7UIColorCSgvg",
                 "moduleName": "ZendeskSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1192,14 +1208,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10ZendeskSDK10ColorThemeV07messageC0So7UIColorCvp",
-            "mangledName": "$s10ZendeskSDK10ColorThemeV07messageC0So7UIColorCvp",
+            "usr": "s:10ZendeskSDK10ColorThemeV07messageC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV07messageC0So7UIColorCSgvp",
             "moduleName": "ZendeskSDK",
             "declAttributes": [
               "HasStorage",
@@ -1215,14 +1239,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10ZendeskSDK10ColorThemeV07messageC0So7UIColorCvg",
-                "mangledName": "$s10ZendeskSDK10ColorThemeV07messageC0So7UIColorCvg",
+                "usr": "s:10ZendeskSDK10ColorThemeV07messageC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV07messageC0So7UIColorCSgvg",
                 "moduleName": "ZendeskSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1236,14 +1268,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10ZendeskSDK10ColorThemeV06actionC0So7UIColorCvp",
-            "mangledName": "$s10ZendeskSDK10ColorThemeV06actionC0So7UIColorCvp",
+            "usr": "s:10ZendeskSDK10ColorThemeV06actionC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV06actionC0So7UIColorCSgvp",
             "moduleName": "ZendeskSDK",
             "declAttributes": [
               "HasStorage",
@@ -1259,14 +1299,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10ZendeskSDK10ColorThemeV06actionC0So7UIColorCvg",
-                "mangledName": "$s10ZendeskSDK10ColorThemeV06actionC0So7UIColorCvg",
+                "usr": "s:10ZendeskSDK10ColorThemeV06actionC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV06actionC0So7UIColorCSgvg",
                 "moduleName": "ZendeskSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1280,14 +1328,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10ZendeskSDK10ColorThemeV06notifyC0So7UIColorCvp",
-            "mangledName": "$s10ZendeskSDK10ColorThemeV06notifyC0So7UIColorCvp",
+            "usr": "s:10ZendeskSDK10ColorThemeV06notifyC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV06notifyC0So7UIColorCSgvp",
             "moduleName": "ZendeskSDK",
             "declAttributes": [
               "HasStorage",
@@ -1303,14 +1359,922 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ColorThemeV06notifyC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV06notifyC0So7UIColorCSgvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "inboundMessageColor",
+            "printedName": "inboundMessageColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
                     "name": "UIColor",
                     "printedName": "UIKit.UIColor",
                     "usr": "c:objc(cs)UIColor"
                   }
                 ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ColorThemeV014inboundMessageC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV014inboundMessageC0So7UIColorCSgvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
                 "declKind": "Accessor",
-                "usr": "s:10ZendeskSDK10ColorThemeV06notifyC0So7UIColorCvg",
-                "mangledName": "$s10ZendeskSDK10ColorThemeV06notifyC0So7UIColorCvg",
+                "usr": "s:10ZendeskSDK10ColorThemeV014inboundMessageC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV014inboundMessageC0So7UIColorCSgvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "systemMessageColor",
+            "printedName": "systemMessageColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ColorThemeV013systemMessageC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV013systemMessageC0So7UIColorCSgvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ColorThemeV013systemMessageC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV013systemMessageC0So7UIColorCSgvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backgroundColor",
+            "printedName": "backgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ColorThemeV010backgroundC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV010backgroundC0So7UIColorCSgvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ColorThemeV010backgroundC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV010backgroundC0So7UIColorCSgvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "elevatedColor",
+            "printedName": "elevatedColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ColorThemeV08elevatedC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV08elevatedC0So7UIColorCSgvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ColorThemeV08elevatedC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV08elevatedC0So7UIColorCSgvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onPrimaryColor",
+            "printedName": "onPrimaryColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ColorThemeV09onPrimaryC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV09onPrimaryC0So7UIColorCSgvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ColorThemeV09onPrimaryC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV09onPrimaryC0So7UIColorCSgvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onActionColor",
+            "printedName": "onActionColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ColorThemeV08onActionC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV08onActionC0So7UIColorCSgvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ColorThemeV08onActionC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV08onActionC0So7UIColorCSgvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onMessageColor",
+            "printedName": "onMessageColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ColorThemeV09onMessageC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV09onMessageC0So7UIColorCSgvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ColorThemeV09onMessageC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV09onMessageC0So7UIColorCSgvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onBackgroundColor",
+            "printedName": "onBackgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ColorThemeV012onBackgroundC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV012onBackgroundC0So7UIColorCSgvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ColorThemeV012onBackgroundC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV012onBackgroundC0So7UIColorCSgvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "successColor",
+            "printedName": "successColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ColorThemeV07successC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV07successC0So7UIColorCSgvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ColorThemeV07successC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV07successC0So7UIColorCSgvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dangerColor",
+            "printedName": "dangerColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ColorThemeV06dangerC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV06dangerC0So7UIColorCSgvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ColorThemeV06dangerC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV06dangerC0So7UIColorCSgvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onDangerColor",
+            "printedName": "onDangerColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ColorThemeV08onDangerC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV08onDangerC0So7UIColorCSgvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ColorThemeV08onDangerC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV08onDangerC0So7UIColorCSgvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "disabledColor",
+            "printedName": "disabledColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ColorThemeV08disabledC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV08disabledC0So7UIColorCSgvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ColorThemeV08disabledC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV08disabledC0So7UIColorCSgvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iconColor",
+            "printedName": "iconColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ColorThemeV04iconC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV04iconC0So7UIColorCSgvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ColorThemeV04iconC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV04iconC0So7UIColorCSgvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "actionBackgroundColor",
+            "printedName": "actionBackgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ColorThemeV016actionBackgroundC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV016actionBackgroundC0So7UIColorCSgvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ColorThemeV016actionBackgroundC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV016actionBackgroundC0So7UIColorCSgvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onActionBackgroundColor",
+            "printedName": "onActionBackgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ColorThemeV018onActionBackgroundC0So7UIColorCSgvp",
+            "mangledName": "$s10ZendeskSDK10ColorThemeV018onActionBackgroundC0So7UIColorCSgvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ColorThemeV018onActionBackgroundC0So7UIColorCSgvg",
+                "mangledName": "$s10ZendeskSDK10ColorThemeV018onActionBackgroundC0So7UIColorCSgvg",
                 "moduleName": "ZendeskSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2343,54 +3307,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "theme",
-            "printedName": "theme",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ColorTheme",
-                "printedName": "ZendeskSDK.ColorTheme",
-                "usr": "s:10ZendeskSDK10ColorThemeV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10ZendeskSDK17MessagingSettingsC5themeAA10ColorThemeVvp",
-            "mangledName": "$s10ZendeskSDK17MessagingSettingsC5themeAA10ColorThemeVvp",
-            "moduleName": "ZendeskSDK",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ColorTheme",
-                    "printedName": "ZendeskSDK.ColorTheme",
-                    "usr": "s:10ZendeskSDK10ColorThemeV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10ZendeskSDK17MessagingSettingsC5themeAA10ColorThemeVvg",
-                "mangledName": "$s10ZendeskSDK17MessagingSettingsC5themeAA10ColorThemeVvg",
-                "moduleName": "ZendeskSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "isEqual",
             "printedName": "isEqual(_:)",
@@ -2752,6 +3668,13 @@
         "kind": "Import",
         "name": "ZendeskSDKLogger",
         "printedName": "ZendeskSDKLogger",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "ZendeskSDKCoreUtilities",
+        "printedName": "ZendeskSDKCoreUtilities",
         "declKind": "Import",
         "moduleName": "ZendeskSDK"
       },
@@ -3570,6 +4493,13 @@
         "kind": "Import",
         "name": "ZendeskSDKCoreUtilities",
         "printedName": "ZendeskSDKCoreUtilities",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "ZendeskSDK"
       },
@@ -4474,6 +5404,132 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "setConversationFields",
+            "printedName": "setConversationFields(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.AnyHashable]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessaging(im)setConversationFields:",
+            "mangledName": "$s10ZendeskSDK9MessagingC21setConversationFieldsyySDySSs11AnyHashableVGF",
+            "moduleName": "ZendeskSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setConversationTags",
+            "printedName": "setConversationTags(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessaging(im)setConversationTags:",
+            "mangledName": "$s10ZendeskSDK9MessagingC19setConversationTagsyySaySSGF",
+            "moduleName": "ZendeskSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearConversationFields",
+            "printedName": "clearConversationFields()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessaging(im)clearConversationFields",
+            "mangledName": "$s10ZendeskSDK9MessagingC23clearConversationFieldsyyF",
+            "moduleName": "ZendeskSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearConversationTags",
+            "printedName": "clearConversationTags()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessaging(im)clearConversationTags",
+            "mangledName": "$s10ZendeskSDK9MessagingC21clearConversationTagsyyF",
+            "moduleName": "ZendeskSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Var",
             "name": "delegate",
             "printedName": "delegate",
@@ -5261,7 +6317,7 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "StringLiteral",
-      "offset": 785,
+      "offset": 815,
       "length": 7,
       "value": "\"ZendeskSDK.Zendesk\""
     },
@@ -5394,114 +6450,324 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "StringLiteral",
-      "offset": 975,
+      "offset": 988,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "StringLiteral",
-      "offset": 1070,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1194,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1346,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
-      "kind": "StringLiteral",
-      "offset": 1464,
+      "offset": 1083,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "StringLiteral",
-      "offset": 1576,
+      "offset": 1198,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1310,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1791,
+      "offset": 1525,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1649,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1797,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "StringLiteral",
-      "offset": 2026,
+      "offset": 3221,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
       "kind": "StringLiteral",
-      "offset": 973,
+      "offset": 2047,
       "length": 15,
       "value": "\"primary_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
       "kind": "StringLiteral",
-      "offset": 1017,
+      "offset": 2091,
       "length": 15,
       "value": "\"message_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
       "kind": "StringLiteral",
-      "offset": 1060,
+      "offset": 2134,
       "length": 14,
       "value": "\"action_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
       "kind": "StringLiteral",
-      "offset": 1102,
+      "offset": 2184,
+      "length": 23,
+      "value": "\"inbound_message_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2242,
+      "length": 22,
+      "value": "\"system_message_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2296,
+      "length": 18,
+      "value": "\"background_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2344,
+      "length": 16,
+      "value": "\"elevated_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2391,
+      "length": 18,
+      "value": "\"on_primary_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2439,
+      "length": 17,
+      "value": "\"on_action_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2487,
+      "length": 18,
+      "value": "\"on_message_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2539,
+      "length": 21,
+      "value": "\"on_background_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2588,
       "length": 14,
       "value": "\"notify_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
       "kind": "StringLiteral",
-      "offset": 973,
+      "offset": 2631,
+      "length": 15,
+      "value": "\"success_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2674,
+      "length": 14,
+      "value": "\"danger_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2718,
+      "length": 17,
+      "value": "\"on_danger_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2765,
+      "length": 16,
+      "value": "\"disabled_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2807,
+      "length": 12,
+      "value": "\"icon_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2857,
+      "length": 25,
+      "value": "\"action_background_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2922,
+      "length": 28,
+      "value": "\"on_action_background_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2047,
       "length": 15,
       "value": "\"primary_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
       "kind": "StringLiteral",
-      "offset": 1017,
+      "offset": 2091,
       "length": 15,
       "value": "\"message_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
       "kind": "StringLiteral",
-      "offset": 1060,
+      "offset": 2134,
       "length": 14,
       "value": "\"action_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
       "kind": "StringLiteral",
-      "offset": 1102,
+      "offset": 2184,
+      "length": 23,
+      "value": "\"inbound_message_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2242,
+      "length": 22,
+      "value": "\"system_message_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2296,
+      "length": 18,
+      "value": "\"background_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2344,
+      "length": 16,
+      "value": "\"elevated_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2391,
+      "length": 18,
+      "value": "\"on_primary_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2439,
+      "length": 17,
+      "value": "\"on_action_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2487,
+      "length": 18,
+      "value": "\"on_message_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2539,
+      "length": 21,
+      "value": "\"on_background_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2588,
       "length": 14,
       "value": "\"notify_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2631,
+      "length": 15,
+      "value": "\"success_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2674,
+      "length": 14,
+      "value": "\"danger_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2718,
+      "length": 17,
+      "value": "\"on_danger_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2765,
+      "length": 16,
+      "value": "\"disabled_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2807,
+      "length": 12,
+      "value": "\"icon_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2857,
+      "length": 25,
+      "value": "\"action_background_color\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ThemeDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2922,
+      "length": 28,
+      "value": "\"on_action_background_color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/ProactiveMessaging\/ProactiveMessagingAnalytics.swift",
@@ -5681,21 +6947,21 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/ProactiveMessaging\/ProactiveMessagingManager.swift",
       "kind": "Array",
-      "offset": 1527,
+      "offset": 1483,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/ProactiveMessaging\/ProactiveMessagingManager.swift",
       "kind": "StringLiteral",
-      "offset": 14320,
+      "offset": 14369,
       "length": 29,
       "value": "\"PROACTIVE_MESSAGING_MANAGER\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ColorFactory.swift",
       "kind": "FloatLiteral",
-      "offset": 1251,
+      "offset": 1263,
       "length": 3,
       "value": "1.0"
     },
@@ -5821,84 +7087,84 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2276,
+      "offset": 3536,
       "length": 13,
       "value": "\"light_theme\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2315,
+      "offset": 3575,
       "length": 12,
       "value": "\"dark_theme\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2359,
+      "offset": 3619,
       "length": 19,
       "value": "\"show_zendesk_logo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2413,
+      "offset": 3673,
       "length": 21,
       "value": "\"attachments_enabled\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2474,
+      "offset": 3734,
       "length": 18,
       "value": "\"native_messaging\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2537,
+      "offset": 3797,
       "length": 14,
       "value": "\"sunco_config\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2276,
+      "offset": 3536,
       "length": 13,
       "value": "\"light_theme\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2315,
+      "offset": 3575,
       "length": 12,
       "value": "\"dark_theme\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2359,
+      "offset": 3619,
       "length": 19,
       "value": "\"show_zendesk_logo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2413,
+      "offset": 3673,
       "length": 21,
       "value": "\"attachments_enabled\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2474,
+      "offset": 3734,
       "length": 18,
       "value": "\"native_messaging\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/SettingsDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2537,
+      "offset": 3797,
       "length": 14,
       "value": "\"sunco_config\""
     },
