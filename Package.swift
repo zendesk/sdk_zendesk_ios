@@ -3,7 +3,7 @@ import PackageDescription
 let package = Package(
     name: "ZendeskSDK",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v12)
     ],
     products: [
         .library(
@@ -14,24 +14,30 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(name: "ZendeskSDKConversationKit",
-                 url: "https://github.com/zendesk/sdk_conversation_kit_ios",
-                 from: "1.12.0"),
-        .package(name: "ZendeskSDKCoreUtilities",
-                 url: "https://github.com/zendesk/sdk_core_utilities_ios",
-                 from: "1.5.0")
+        .package(
+            name: "ZendeskSDKConversationKit",
+            url: "https://github.com/zendesk/sdk_conversation_kit_ios",
+            from: "1.13.0"
+        ),
+        .package(
+            name: "ZendeskSDKCoreUtilities",
+            url: "https://github.com/zendesk/sdk_core_utilities_ios",
+            from: "1.6.0"
+        )
     ],
     targets: [
         .binaryTarget(
             name: "ZendeskSDK",
             path: "ZendeskSDK.xcframework"
         ),
-        .target(name: "ZendeskSDKTargets",
-                dependencies: [
-                    .target(name: "ZendeskSDK"),
-                    .product(name: "ZendeskSDKConversationKit", package: "ZendeskSDKConversationKit"),
-                    .product(name: "ZendeskSDKCoreUtilities", package: "ZendeskSDKCoreUtilities")
-                ],
-                path: "Sources")
+        .target(
+            name: "ZendeskSDKTargets",
+            dependencies: [
+                .target(name: "ZendeskSDK"),
+                .product(name: "ZendeskSDKConversationKit", package: "ZendeskSDKConversationKit"),
+                .product(name: "ZendeskSDKCoreUtilities", package: "ZendeskSDKCoreUtilities")
+            ],
+            path: "Sources"
+        )
     ]
 )

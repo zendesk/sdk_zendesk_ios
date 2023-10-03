@@ -6374,14 +6374,14 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Extensions\/Date+Formatter.swift",
       "kind": "StringLiteral",
-      "offset": 1513,
+      "offset": 1415,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Extensions\/Date+Formatter.swift",
       "kind": "StringLiteral",
-      "offset": 1513,
+      "offset": 1415,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
@@ -6822,7 +6822,7 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/ProactiveMessaging\/ProactiveMessagingAnalytics.swift",
       "kind": "StringLiteral",
-      "offset": 2643,
+      "offset": 2593,
       "length": 31,
       "value": "\"PROACTIVE_MESSAGING_ANALYTICS\""
     },
@@ -6997,14 +6997,14 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/ProactiveMessaging\/ProactiveMessagingManager.swift",
       "kind": "Array",
-      "offset": 1483,
+      "offset": 1492,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/ProactiveMessaging\/ProactiveMessagingManager.swift",
       "kind": "StringLiteral",
-      "offset": 14369,
+      "offset": 14245,
       "length": 29,
       "value": "\"PROACTIVE_MESSAGING_MANAGER\""
     },
@@ -7102,7 +7102,7 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Environment\/Environment.swift",
       "kind": "StringLiteral",
-      "offset": 2835,
+      "offset": 2727,
       "length": 37,
       "value": "\"com.zendesk.zendesk.processingQueue\""
     },
