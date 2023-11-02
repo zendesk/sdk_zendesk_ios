@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TkwgwXfo/AimU49dAfXJPfLWuaE=
+		N+CdhSwaSv1Q0XlXnvsIKR9b8Ms=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Mmfcc4I6t+LeLaEd0vCeU4G4BBY=
+		2iti826ID0fHWzrufvnwOE/miYw=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+AfF499rLRxbE6n8yzrGa13e+fQ=
+		Uw0m0pGNk7DxSTImq0b4ybuJ+AY=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Mmfcc4I6t+LeLaEd0vCeU4G4BBY=
+		2iti826ID0fHWzrufvnwOE/miYw=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		swml5ye+i1cuqodf+RbcS5Ki4Es=
+		bsW2+UPZBjGGT/rQoueEy3+kAcg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JiKNvAW0lUBtlEJ3YLcS4jlGC8zCytKxSJVIpNgyeqc=
+			HaC4has+2NYKBvZEMyIi7/UPlO37P9r4WeOdHSlz3Hg=
 			</data>
 		</dict>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oKxjv4KKVepT9P1nh0D+8CYWQuffsKr+NKwr44nnTQk=
+			qW1a6QWfPnEy1204RFGVpS9Tok3pdzammRuMHyQAlc0=
 			</data>
 		</dict>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JiKNvAW0lUBtlEJ3YLcS4jlGC8zCytKxSJVIpNgyeqc=
+			HaC4has+2NYKBvZEMyIi7/UPlO37P9r4WeOdHSlz3Hg=
 			</data>
 		</dict>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JT23eu9ezzJPbbo8EZr4vS9szJ4Sn8rxwSflllzHKAY=
+			9DQHViQkQg/qMItTAeNnlURnkPbi/OBYXoEiP0F3KPE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

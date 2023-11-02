@@ -5828,16 +5828,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ZendeskSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "PageView",
         "printedName": "PageView",
@@ -6041,6 +6031,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "ZendeskSDKCoreUtilities",
+        "printedName": "ZendeskSDKCoreUtilities",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDK"
       },
       {
         "kind": "Import",
@@ -6486,70 +6483,56 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "StringLiteral",
-      "offset": 1018,
+      "offset": 1013,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "StringLiteral",
-      "offset": 1113,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1237,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1389,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
-      "kind": "StringLiteral",
-      "offset": 1540,
+      "offset": 1104,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "StringLiteral",
-      "offset": 1635,
+      "offset": 1255,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1346,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1872,
+      "offset": 1604,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1996,
+      "offset": 1728,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 2144,
+      "offset": 1876,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "StringLiteral",
-      "offset": 3718,
+      "offset": 3450,
       "length": 2,
       "value": "\"\""
     },
@@ -7221,7 +7204,7 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/EventDispatcher.swift",
       "kind": "Dictionary",
-      "offset": 808,
+      "offset": 839,
       "length": 3,
       "value": "[]"
     }
