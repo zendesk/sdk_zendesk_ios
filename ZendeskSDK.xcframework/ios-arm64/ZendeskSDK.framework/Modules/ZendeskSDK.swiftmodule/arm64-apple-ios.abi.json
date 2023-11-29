@@ -72,6 +72,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "InitializationPhase",
         "printedName": "InitializationPhase",
@@ -4036,23 +4046,29 @@
           {
             "kind": "Function",
             "name": "invalidate",
-            "printedName": "invalidate()",
+            "printedName": "invalidate(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@ZendeskSDK@objc(cs)Zendesk(cm)invalidate",
-            "mangledName": "$s10ZendeskSDK0A0C10invalidateyyFZ",
+            "usr": "s:10ZendeskSDK0A0C10invalidateyySbFZ",
+            "mangledName": "$s10ZendeskSDK0A0C10invalidateyySbFZ",
             "moduleName": "ZendeskSDK",
             "static": true,
             "declAttributes": [
               "Final",
               "AccessControl",
-              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -4155,6 +4171,162 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(withChannelKey:messagingFactory:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Zendesk",
+                "printedName": "ZendeskSDK.Zendesk",
+                "usr": "c:@M@ZendeskSDK@objc(cs)Zendesk"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZendeskSDK.MessagingFactory?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MessagingFactory",
+                    "printedName": "ZendeskSDK.MessagingFactory",
+                    "usr": "c:@M@ZendeskSDK@objc(pl)MessagingFactory"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZendeskSDK0A0C10initialize14withChannelKey16messagingFactoryACSS_AA09MessagingH0_pSgtYaKFZ",
+            "mangledName": "$s10ZendeskSDK0A0C10initialize14withChannelKey16messagingFactoryACSS_AA09MessagingH0_pSgtYaKFZ",
+            "moduleName": "ZendeskSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendPageViewEvent",
+            "printedName": "sendPageViewEvent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PageView",
+                "printedName": "ZendeskSDK.PageView",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKPageView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZendeskSDK0A0C17sendPageViewEventyyAA0dE0CYaKF",
+            "mangledName": "$s10ZendeskSDK0A0C17sendPageViewEventyyAA0dE0CYaKF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addEventObserver",
+            "printedName": "addEventObserver(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ZendeskEvent",
+                "printedName": "ZendeskSDK.ZendeskEvent",
+                "usr": "s:10ZendeskSDK0A5EventO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "AnyObject"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZendeskSDK0A0C16addEventObserveryAA0aD0OyXlYaF",
+            "mangledName": "$s10ZendeskSDK0A0C16addEventObserveryAA0aD0OyXlYaF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loginUser",
+            "printedName": "loginUser(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ZendeskUser",
+                "printedName": "ZendeskSDK.ZendeskUser",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKZendeskUser"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZendeskSDK0A0C9loginUser4withAA0aD0CSS_tYaKF",
+            "mangledName": "$s10ZendeskSDK0A0C9loginUser4withAA0aD0CSS_tYaKF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logoutUser",
+            "printedName": "logoutUser()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZendeskSDK0A0C10logoutUseryyYaKF",
+            "mangledName": "$s10ZendeskSDK0A0C10logoutUseryyYaKF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -6346,6 +6518,13 @@
       "offset": 811,
       "length": 31,
       "value": "\"\/api\/v2\/cts\/proactive_message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10969,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",

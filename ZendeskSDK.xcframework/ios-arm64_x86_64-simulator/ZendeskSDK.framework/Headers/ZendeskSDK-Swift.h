@@ -423,7 +423,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 + (Zendesk * _Nullable)instance SWIFT_WARN_UNUSED_RESULT;
 /// Invalidates the current instance of <code>Zendesk</code>.
 /// After calling this method you will have to call <code>Zendesk.initialize()</code> again if you would like to use <code>Zendesk</code>.
-+ (void)invalidate;
++ (void)invalidate SWIFT_DEPRECATED_MSG("Use invalidate(_ :) instead. This function will be removed in a future Zendesk version.");
+/// Invalidates the current instance of <code>Zendesk</code> and clears storage when <code>clearStorage</code> is true.
+/// After calling this method you will have to call <code>Zendesk.initialize()</code> again if you would like to use <code>Zendesk</code>.
+/// \param clearStorage Boolean to invalidate storage deleting all its content.
+///
++ (void)invalidateWithClearStorage:(BOOL)clearStorage;
 /// Remove event observer to stop observing events emitted by from <code>Zendesk</code>.
 - (void)removeEventObserver:(id _Nonnull)observer;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -462,6 +467,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 - (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
 
+
 @class ZDKZendeskUser;
 
 @interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
@@ -477,6 +483,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 ///
 - (void)logoutUserWithCompletionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
+
 
 
 
@@ -924,7 +931,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 + (Zendesk * _Nullable)instance SWIFT_WARN_UNUSED_RESULT;
 /// Invalidates the current instance of <code>Zendesk</code>.
 /// After calling this method you will have to call <code>Zendesk.initialize()</code> again if you would like to use <code>Zendesk</code>.
-+ (void)invalidate;
++ (void)invalidate SWIFT_DEPRECATED_MSG("Use invalidate(_ :) instead. This function will be removed in a future Zendesk version.");
+/// Invalidates the current instance of <code>Zendesk</code> and clears storage when <code>clearStorage</code> is true.
+/// After calling this method you will have to call <code>Zendesk.initialize()</code> again if you would like to use <code>Zendesk</code>.
+/// \param clearStorage Boolean to invalidate storage deleting all its content.
+///
++ (void)invalidateWithClearStorage:(BOOL)clearStorage;
 /// Remove event observer to stop observing events emitted by from <code>Zendesk</code>.
 - (void)removeEventObserver:(id _Nonnull)observer;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -963,6 +975,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 - (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
 
+
 @class ZDKZendeskUser;
 
 @interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
@@ -978,6 +991,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 ///
 - (void)logoutUserWithCompletionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
+
 
 
 
