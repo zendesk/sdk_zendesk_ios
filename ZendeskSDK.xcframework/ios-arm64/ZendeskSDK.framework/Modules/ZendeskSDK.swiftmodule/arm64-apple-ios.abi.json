@@ -7166,7 +7166,7 @@
     {
       "filePath": "\/Users\/runner\/work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/ProactiveMessaging\/ProactiveMessagingManager.swift",
       "kind": "StringLiteral",
-      "offset": 14245,
+      "offset": 14355,
       "length": 29,
       "value": "\"PROACTIVE_MESSAGING_MANAGER\""
     },
