@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ZendeskSDKHTTPClient
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -9,6 +9,7 @@ import UIKit
 import ZendeskSDKLogger
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public enum HTTPHeader : Swift.Hashable {
   case userAgent(Swift.String)
   case contentLength(Swift.String)
@@ -26,9 +27,9 @@ public enum HTTPHeader : Swift.Hashable {
 public enum HTTPError : Foundation.LocalizedError {
   case expectedEmptyResponse(_: Foundation.Data)
   case noResponse
-  case failedToDecode(data: Foundation.Data?, response: Foundation.HTTPURLResponse, error: Swift.Error)
+  case failedToDecode(data: Foundation.Data?, response: Foundation.HTTPURLResponse, error: any Swift.Error)
   case unsuccessfulStatusCodeForRequest(statusCode: Swift.Int, data: Foundation.Data?, response: Foundation.HTTPURLResponse)
-  case requestFailed(error: Swift.Error)
+  case requestFailed(error: any Swift.Error)
   case multiConvoNotEnabled
   case userCannotCreateMoreConversations
   public var errorDescription: Swift.String? {
@@ -58,7 +59,7 @@ public protocol HTTPClient {
 }
 public struct HTTPClientBuilder {
   public init(urlSessionConfiguration: Foundation.URLSessionConfiguration = URLSessionConfiguration.default, defaultHeaders: [ZendeskSDKHTTPClient.HTTPHeader], baseURL: Swift.String)
-  public func build() throws -> ZendeskSDKHTTPClient.HTTPClient
+  public func build() throws -> any ZendeskSDKHTTPClient.HTTPClient
 }
 public enum HTTPClientError : Swift.Error {
   case invalidBaseURL
@@ -89,7 +90,7 @@ public enum HTTPMethodWithoutBody : Swift.String {
   }
 }
 public struct Empty : Swift.Decodable {
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct HTTPClientResponse<D> where D : Swift.Decodable {
   public let response: Foundation.HTTPURLResponse
