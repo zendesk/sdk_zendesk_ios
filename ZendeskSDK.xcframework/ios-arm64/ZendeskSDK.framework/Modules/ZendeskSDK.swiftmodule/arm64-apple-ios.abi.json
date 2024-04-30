@@ -4342,34 +4342,6 @@
           },
           {
             "kind": "Function",
-            "name": "addEventObserver",
-            "printedName": "addEventObserver(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ZendeskEvent",
-                "printedName": "ZendeskSDK.ZendeskEvent",
-                "usr": "s:10ZendeskSDK0A5EventO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "AnyObject"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10ZendeskSDK0A0C16addEventObserveryAA0aD0OyXlYaF",
-            "mangledName": "$s10ZendeskSDK0A0C16addEventObserveryAA0aD0OyXlYaF",
-            "moduleName": "ZendeskSDK",
-            "declAttributes": [
-              "Final",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "loginUser",
             "printedName": "loginUser(with:)",
             "children": [

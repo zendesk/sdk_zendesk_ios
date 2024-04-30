@@ -515,6 +515,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 - (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
 
+
 @class ZDKZendeskUser;
 
 @interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
@@ -530,7 +531,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 ///
 - (void)logoutUserWithCompletionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
-
 
 
 
@@ -1071,6 +1071,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 - (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
 
+
 @class ZDKZendeskUser;
 
 @interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
@@ -1086,7 +1087,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 ///
 - (void)logoutUserWithCompletionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
-
 
 
 
