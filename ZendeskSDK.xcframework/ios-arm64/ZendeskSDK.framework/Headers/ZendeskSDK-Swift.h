@@ -388,7 +388,7 @@ SWIFT_PROTOCOL("_TtP10ZendeskSDK16MessagingFactory_")
 @end
 
 
-/// The set of parameters to be provided to MessagingFactory <code>createMessaging</code> to create an instance of <code>Messaging</code>.
+/// The set of parameters to be provided to Messaging(SwiftUI)Factory <code>createMessaging</code> to create an instance of <code>Messaging(SwiftUI)</code>.
 SWIFT_CLASS_NAMED("MessagingFactoryParameters")
 @interface ZDKMessagingFactoryParameters : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
