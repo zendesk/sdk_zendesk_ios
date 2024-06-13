@@ -6,7 +6,7 @@ The ZendeskSDK library is used to enable customer service in iOS projects.
 
 ## Documentation
 
-You can find our documentation ![here](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/ios/getting_started/).
+You can find our documentation on https://developer.zendesk.com/embeddables.
 
 ## API reference documentation
 
