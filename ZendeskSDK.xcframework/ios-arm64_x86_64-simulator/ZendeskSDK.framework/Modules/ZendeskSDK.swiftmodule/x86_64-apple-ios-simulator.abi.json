@@ -2772,56 +2772,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "featureFlagManager",
-            "printedName": "featureFlagManager",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FeatureFlagManager",
-                "printedName": "ZendeskSDKCoreUtilities.FeatureFlagManager",
-                "usr": "c:@M@ZendeskSDKCoreUtilities@objc(cs)ZDKFeatureFlagManager"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10ZendeskSDK26MessagingFactoryParametersC18featureFlagManager0A16SDKCoreUtilities07FeaturegH0Cvp",
-            "mangledName": "$s10ZendeskSDK26MessagingFactoryParametersC18featureFlagManager0A16SDKCoreUtilities07FeaturegH0Cvp",
-            "moduleName": "ZendeskSDK",
-            "deprecated": true,
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "Available"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FeatureFlagManager",
-                    "printedName": "ZendeskSDKCoreUtilities.FeatureFlagManager",
-                    "usr": "c:@M@ZendeskSDKCoreUtilities@objc(cs)ZDKFeatureFlagManager"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10ZendeskSDK26MessagingFactoryParametersC18featureFlagManager0A16SDKCoreUtilities07FeaturegH0Cvg",
-                "mangledName": "$s10ZendeskSDK26MessagingFactoryParametersC18featureFlagManager0A16SDKCoreUtilities07FeaturegH0Cvg",
-                "moduleName": "ZendeskSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -3306,56 +3256,6 @@
                 "declKind": "Accessor",
                 "usr": "s:10ZendeskSDK17MessagingSettingsC7logoURLSSSgvg",
                 "mangledName": "$s10ZendeskSDK17MessagingSettingsC7logoURLSSSgvg",
-                "moduleName": "ZendeskSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "theme",
-            "printedName": "theme",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ColorTheme",
-                "printedName": "ZendeskSDK.ColorTheme",
-                "usr": "s:10ZendeskSDK10ColorThemeV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10ZendeskSDK17MessagingSettingsC5themeAA10ColorThemeVvp",
-            "mangledName": "$s10ZendeskSDK17MessagingSettingsC5themeAA10ColorThemeVvp",
-            "moduleName": "ZendeskSDK",
-            "deprecated": true,
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "Available"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ColorTheme",
-                    "printedName": "ZendeskSDK.ColorTheme",
-                    "usr": "s:10ZendeskSDK10ColorThemeV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10ZendeskSDK17MessagingSettingsC5themeAA10ColorThemeVvg",
-                "mangledName": "$s10ZendeskSDK17MessagingSettingsC5themeAA10ColorThemeVvg",
                 "moduleName": "ZendeskSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -7134,23 +7034,30 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/StorageClients\/VisitorPathStorage.swift",
       "kind": "StringLiteral",
-      "offset": 620,
-      "length": 21,
-      "value": "\"com.zendesk.Zendesk\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/StorageClients\/VisitorPathStorage.swift",
-      "kind": "StringLiteral",
-      "offset": 664,
+      "offset": 615,
       "length": 19,
       "value": "\"VISITOR_PATH_SUID\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/StorageClients\/VisitorPathStorage.swift",
       "kind": "StringLiteral",
-      "offset": 711,
+      "offset": 662,
       "length": 24,
       "value": "\"VISITOR_PATH_TIMESTAMP\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/StorageClients\/VisitorPathStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 1933,
+      "length": 38,
+      "value": "\"com.zendesk.Zendesk_\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/StorageClients\/VisitorPathStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 1970,
+      "length": 1,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/API\/CapabilityInterfaces\/Messaging\/UIKit\/MessagingDelegate.swift",
@@ -7253,70 +7160,63 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Models\/MessagingSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 2105,
+      "offset": 1738,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Models\/MessagingSettings.swift",
       "kind": "StringLiteral",
-      "offset": 2949,
-      "length": 457,
+      "offset": 2511,
+      "length": 404,
       "value": "\"MessagingSettings(\n        integrationId: \""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Models\/MessagingSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3027,
+      "offset": 2589,
       "length": 1,
       "value": "\",\n        enabled: \""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Models\/MessagingSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3064,
+      "offset": 2626,
       "length": 1,
       "value": "\",\n        brand: \""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Models\/MessagingSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3117,
+      "offset": 2679,
       "length": 1,
       "value": "\",\n        title: \""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Models\/MessagingSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3150,
+      "offset": 2712,
       "length": 1,
       "value": "\",\n        accountDescription: \""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Models\/MessagingSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3229,
+      "offset": 2791,
       "length": 1,
       "value": "\",\n        logoURL: \""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Models\/MessagingSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3286,
-      "length": 1,
-      "value": "\",\n        theme: \""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Models\/MessagingSettings.swift",
-      "kind": "StringLiteral",
-      "offset": 3339,
+      "offset": 2848,
       "length": 1,
       "value": "\",\n        settingsUrl: \""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Models\/MessagingSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3384,
+      "offset": 2893,
       "length": 1,
       "value": "\"\n)\""
     },
@@ -7330,14 +7230,14 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Models\/MessagingSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3591,
+      "offset": 3100,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Models\/MessagingSettings.swift",
       "kind": "StringLiteral",
-      "offset": 3624,
+      "offset": 3133,
       "length": 2,
       "value": "\"\""
     },
@@ -7589,49 +7489,49 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "StringLiteral",
-      "offset": 5158,
+      "offset": 5214,
       "length": 92,
       "value": "\"Same `channelKey` provided in `initialize` method. Returning already initialized instance.\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "StringLiteral",
-      "offset": 5839,
+      "offset": 5895,
       "length": 75,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "StringLiteral",
-      "offset": 5913,
+      "offset": 5969,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "StringLiteral",
-      "offset": 6887,
+      "offset": 6943,
       "length": 210,
       "value": "\"A `messagingFactory` was supplied in the `initialize` method but the retrieved\nsettings are showing that this capability is disabled.\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "StringLiteral",
-      "offset": 9075,
+      "offset": 9067,
       "length": 220,
       "value": "\"Cannot initialize a Zendesk instance, failed to retrieve settings from network with error:\nDescription: \""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "StringLiteral",
-      "offset": 9272,
-      "length": 15738,
+      "offset": 9264,
+      "length": 15774,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "BooleanLiteral",
-      "offset": 14694,
+      "offset": 14686,
       "length": 5,
       "value": "false"
     },
@@ -7645,28 +7545,28 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "StringLiteral",
-      "offset": 18885,
+      "offset": 18913,
       "length": 67,
       "value": "\"Failed to get campaigns with error: \""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "StringLiteral",
-      "offset": 18951,
+      "offset": 18979,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "StringLiteral",
-      "offset": 23868,
+      "offset": 23896,
       "length": 9,
       "value": "\"ZENDESK\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "BooleanLiteral",
-      "offset": 24273,
+      "offset": 24301,
       "length": 5,
       "value": "false"
     },
@@ -8996,23 +8896,30 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/StorageClients\/ProactiveMessagingStorage.swift",
       "kind": "StringLiteral",
-      "offset": 685,
-      "length": 32,
-      "value": "\"com.zendesk.ProactiveMessaging\""
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/StorageClients\/ProactiveMessagingStorage.swift",
-      "kind": "StringLiteral",
-      "offset": 747,
+      "offset": 687,
       "length": 24,
       "value": "\"SEND_ONCE_CAMPAIGN_IDS\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/StorageClients\/ProactiveMessagingStorage.swift",
       "kind": "Array",
-      "offset": 1943,
+      "offset": 1896,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/StorageClients\/ProactiveMessagingStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 1988,
+      "length": 49,
+      "value": "\"com.zendesk.ProactiveMessaging_\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/StorageClients\/ProactiveMessagingStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 2036,
+      "length": 1,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/DispatchEvent.swift",
