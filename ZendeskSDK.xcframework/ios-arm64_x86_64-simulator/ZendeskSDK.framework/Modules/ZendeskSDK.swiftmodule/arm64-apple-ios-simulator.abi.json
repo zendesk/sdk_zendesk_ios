@@ -447,6 +447,186 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "conversationAdded",
+            "printedName": "conversationAdded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZendeskEvent.Type) -> (Swift.String) -> ZendeskSDK.ZendeskEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ZendeskSDK.ZendeskEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskEvent",
+                        "printedName": "ZendeskSDK.ZendeskEvent",
+                        "usr": "s:10ZendeskSDK0A5EventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(conversationId: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZendeskEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskEvent",
+                        "printedName": "ZendeskSDK.ZendeskEvent",
+                        "usr": "s:10ZendeskSDK0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZendeskSDK0A5EventO17conversationAddedyACSS_tcACmF",
+            "mangledName": "$s10ZendeskSDK0A5EventO17conversationAddedyACSS_tcACmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "connectionStatusChanged",
+            "printedName": "connectionStatusChanged",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZendeskEvent.Type) -> (ZendeskSDK.ZendeskConnectionStatus) -> ZendeskSDK.ZendeskEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ZendeskSDK.ZendeskConnectionStatus) -> ZendeskSDK.ZendeskEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskEvent",
+                        "printedName": "ZendeskSDK.ZendeskEvent",
+                        "usr": "s:10ZendeskSDK0A5EventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(connectionStatus: ZendeskSDK.ZendeskConnectionStatus)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ZendeskConnectionStatus",
+                            "printedName": "ZendeskSDK.ZendeskConnectionStatus",
+                            "usr": "c:@M@ZendeskSDK@E@ZDKZendeskConnectionStatus"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZendeskEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskEvent",
+                        "printedName": "ZendeskSDK.ZendeskEvent",
+                        "usr": "s:10ZendeskSDK0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZendeskSDK0A5EventO23connectionStatusChangedyAcA0a10ConnectionE0O_tcACmF",
+            "mangledName": "$s10ZendeskSDK0A5EventO23connectionStatusChangedyAcA0a10ConnectionE0O_tcACmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sendMessageFailed",
+            "printedName": "sendMessageFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZendeskEvent.Type) -> (Swift.Error) -> ZendeskSDK.ZendeskEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> ZendeskSDK.ZendeskEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskEvent",
+                        "printedName": "ZendeskSDK.ZendeskEvent",
+                        "usr": "s:10ZendeskSDK0A5EventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: Swift.Error)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZendeskEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskEvent",
+                        "printedName": "ZendeskSDK.ZendeskEvent",
+                        "usr": "s:10ZendeskSDK0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZendeskSDK0A5EventO17sendMessageFailedyACs5Error_p_tcACmF",
+            "mangledName": "$s10ZendeskSDK0A5EventO17sendMessageFailedyACs5Error_p_tcACmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
             "kind": "Function",
             "name": "==",
             "printedName": "==(_:_:)",
@@ -588,6 +768,132 @@
               "ObjC"
             ],
             "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "conversationAdded",
+            "printedName": "conversationAdded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZDKZendeskEvent.Type) -> ZendeskSDK.ZDKZendeskEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZDKZendeskEvent",
+                    "printedName": "ZendeskSDK.ZDKZendeskEvent",
+                    "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZDKZendeskEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZDKZendeskEvent",
+                        "printedName": "ZendeskSDK.ZDKZendeskEvent",
+                        "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent@ZDKZendeskEventConversationAdded",
+            "mangledName": "$s10ZendeskSDK15ZDKZendeskEventO17conversationAddedyA2CmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "connectionStatusChanged",
+            "printedName": "connectionStatusChanged",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZDKZendeskEvent.Type) -> ZendeskSDK.ZDKZendeskEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZDKZendeskEvent",
+                    "printedName": "ZendeskSDK.ZDKZendeskEvent",
+                    "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZDKZendeskEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZDKZendeskEvent",
+                        "printedName": "ZendeskSDK.ZDKZendeskEvent",
+                        "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent@ZDKZendeskEventConnectionStatusChanged",
+            "mangledName": "$s10ZendeskSDK15ZDKZendeskEventO23connectionStatusChangedyA2CmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "sendMessageFailed",
+            "printedName": "sendMessageFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZDKZendeskEvent.Type) -> ZendeskSDK.ZDKZendeskEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZDKZendeskEvent",
+                    "printedName": "ZendeskSDK.ZDKZendeskEvent",
+                    "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZDKZendeskEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZDKZendeskEvent",
+                        "printedName": "ZendeskSDK.ZDKZendeskEvent",
+                        "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent@ZDKZendeskEventSendMessageFailed",
+            "mangledName": "$s10ZendeskSDK15ZDKZendeskEventO17sendMessageFailedyA2CmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Constructor",
@@ -5922,6 +6228,342 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "ZendeskConnectionStatus",
+        "printedName": "ZendeskConnectionStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "disconnected",
+            "printedName": "disconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZendeskConnectionStatus.Type) -> ZendeskSDK.ZendeskConnectionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZendeskConnectionStatus",
+                    "printedName": "ZendeskSDK.ZendeskConnectionStatus",
+                    "usr": "c:@M@ZendeskSDK@E@ZDKZendeskConnectionStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZendeskConnectionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskConnectionStatus",
+                        "printedName": "ZendeskSDK.ZendeskConnectionStatus",
+                        "usr": "c:@M@ZendeskSDK@E@ZDKZendeskConnectionStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ZendeskSDK@E@ZDKZendeskConnectionStatus@ZDKZendeskConnectionStatusDisconnected",
+            "mangledName": "$s10ZendeskSDK0A16ConnectionStatusO12disconnectedyA2CmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "connected",
+            "printedName": "connected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZendeskConnectionStatus.Type) -> ZendeskSDK.ZendeskConnectionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZendeskConnectionStatus",
+                    "printedName": "ZendeskSDK.ZendeskConnectionStatus",
+                    "usr": "c:@M@ZendeskSDK@E@ZDKZendeskConnectionStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZendeskConnectionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskConnectionStatus",
+                        "printedName": "ZendeskSDK.ZendeskConnectionStatus",
+                        "usr": "c:@M@ZendeskSDK@E@ZDKZendeskConnectionStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ZendeskSDK@E@ZDKZendeskConnectionStatus@ZDKZendeskConnectionStatusConnected",
+            "mangledName": "$s10ZendeskSDK0A16ConnectionStatusO9connectedyA2CmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "connectingRealtime",
+            "printedName": "connectingRealtime",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZendeskConnectionStatus.Type) -> ZendeskSDK.ZendeskConnectionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZendeskConnectionStatus",
+                    "printedName": "ZendeskSDK.ZendeskConnectionStatus",
+                    "usr": "c:@M@ZendeskSDK@E@ZDKZendeskConnectionStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZendeskConnectionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskConnectionStatus",
+                        "printedName": "ZendeskSDK.ZendeskConnectionStatus",
+                        "usr": "c:@M@ZendeskSDK@E@ZDKZendeskConnectionStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ZendeskSDK@E@ZDKZendeskConnectionStatus@ZDKZendeskConnectionStatusConnectingRealtime",
+            "mangledName": "$s10ZendeskSDK0A16ConnectionStatusO18connectingRealtimeyA2CmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "connectedRealtime",
+            "printedName": "connectedRealtime",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZendeskConnectionStatus.Type) -> ZendeskSDK.ZendeskConnectionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZendeskConnectionStatus",
+                    "printedName": "ZendeskSDK.ZendeskConnectionStatus",
+                    "usr": "c:@M@ZendeskSDK@E@ZDKZendeskConnectionStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZendeskConnectionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskConnectionStatus",
+                        "printedName": "ZendeskSDK.ZendeskConnectionStatus",
+                        "usr": "c:@M@ZendeskSDK@E@ZDKZendeskConnectionStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ZendeskSDK@E@ZDKZendeskConnectionStatus@ZDKZendeskConnectionStatusConnectedRealtime",
+            "mangledName": "$s10ZendeskSDK0A16ConnectionStatusO17connectedRealtimeyA2CmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "stringValue",
+            "printedName": "stringValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK0A16ConnectionStatusO11stringValueSSvp",
+            "mangledName": "$s10ZendeskSDK0A16ConnectionStatusO11stringValueSSvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK0A16ConnectionStatusO11stringValueSSvg",
+                "mangledName": "$s10ZendeskSDK0A16ConnectionStatusO11stringValueSSvg",
+                "moduleName": "ZendeskSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZendeskSDK.ZendeskConnectionStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZendeskConnectionStatus",
+                    "printedName": "ZendeskSDK.ZendeskConnectionStatus",
+                    "usr": "c:@M@ZendeskSDK@E@ZDKZendeskConnectionStatus"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10ZendeskSDK0A16ConnectionStatusO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10ZendeskSDK0A16ConnectionStatusO8rawValueACSgSi_tcfc",
+            "moduleName": "ZendeskSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK0A16ConnectionStatusO8rawValueSivp",
+            "mangledName": "$s10ZendeskSDK0A16ConnectionStatusO8rawValueSivp",
+            "moduleName": "ZendeskSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK0A16ConnectionStatusO8rawValueSivg",
+                "mangledName": "$s10ZendeskSDK0A16ConnectionStatusO8rawValueSivg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@ZendeskSDK@E@ZDKZendeskConnectionStatus",
+        "mangledName": "$s10ZendeskSDK0A16ConnectionStatusO",
+        "moduleName": "ZendeskSDK",
+        "objc_name": "ZDKZendeskConnectionStatus",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -6950,21 +7592,63 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 1662,
+      "offset": 2734,
       "length": 20,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 1662,
+      "offset": 2816,
+      "length": 17,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2925,
+      "length": 23,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3007,
+      "length": 17,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2734,
       "length": 20,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2816,
+      "length": 17,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2925,
+      "length": 23,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3007,
+      "length": 17,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "BooleanLiteral",
-      "offset": 2195,
+      "offset": 4040,
       "length": 5,
       "value": "false"
     },
@@ -7525,7 +8209,7 @@
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "StringLiteral",
       "offset": 9264,
-      "length": 15774,
+      "length": 16453,
       "value": "\"\""
     },
     {
@@ -7545,28 +8229,28 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "StringLiteral",
-      "offset": 18913,
+      "offset": 19592,
       "length": 67,
       "value": "\"Failed to get campaigns with error: \""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "StringLiteral",
-      "offset": 18979,
+      "offset": 19658,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "StringLiteral",
-      "offset": 23896,
+      "offset": 24575,
       "length": 9,
       "value": "\"ZENDESK\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "BooleanLiteral",
-      "offset": 24301,
+      "offset": 24980,
       "length": 5,
       "value": "false"
     },
@@ -8955,6 +9639,90 @@
       "offset": 1133,
       "length": 11,
       "value": "\"load_page\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/ZendeskConnectionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 794,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/ZendeskConnectionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 872,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/ZendeskConnectionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 986,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/ZendeskConnectionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1121,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/ZendeskConnectionStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 1211,
+      "length": 14,
+      "value": "\"disconnected\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/ZendeskConnectionStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 1251,
+      "length": 11,
+      "value": "\"connected\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/ZendeskConnectionStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 1297,
+      "length": 20,
+      "value": "\"connectingRealtime\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/ZendeskConnectionStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 1351,
+      "length": 19,
+      "value": "\"connectedRealtime\""
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/ZendeskConnectionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 794,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/ZendeskConnectionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 872,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/ZendeskConnectionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 986,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/ZendeskConnectionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1121,
+      "length": 1,
+      "value": "3"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/ProactiveMessaging\/ProactiveMessagingManager+CTS.swift",

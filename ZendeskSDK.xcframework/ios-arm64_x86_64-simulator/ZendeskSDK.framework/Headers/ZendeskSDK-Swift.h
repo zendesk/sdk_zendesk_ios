@@ -452,6 +452,12 @@ typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
   ZDKZendeskEventUnreadMessageCountChanged = 0,
 /// Invoked when a rest call fails for authentication reasons.
   ZDKZendeskEventAuthenticationFailed = 1,
+/// Invoked when a conversation has been added.
+  ZDKZendeskEventConversationAdded = 2,
+/// The SDK <code>ConnectionStatus</code> has changed due to an action or another event.
+  ZDKZendeskEventConnectionStatusChanged = 3,
+/// Invoked when a message fails to be sent.
+  ZDKZendeskEventSendMessageFailed = 4,
 };
 
 
@@ -515,7 +521,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 - (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
 
-
 @class ZDKZendeskUser;
 
 @interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
@@ -534,6 +539,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 
 
 
+
+
+/// A representation of the current connection status of the SDK.
+typedef SWIFT_ENUM_NAMED(NSInteger, ZDKZendeskConnectionStatus, "ZendeskConnectionStatus", open) {
+/// The SDK instance has no internet connection.
+  ZDKZendeskConnectionStatusDisconnected = 0,
+/// The SDK instance is connected to the internet.
+  ZDKZendeskConnectionStatusConnected = 1,
+/// The SDK instance is establishing the realtime connection with the server.
+  ZDKZendeskConnectionStatusConnectingRealtime = 2,
+/// The SDK instance is connected to the internet and has a connection established with the server.
+  ZDKZendeskConnectionStatusConnectedRealtime = 3,
+};
 
 
 SWIFT_CLASS_NAMED("ZendeskUser")
@@ -1008,6 +1026,12 @@ typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
   ZDKZendeskEventUnreadMessageCountChanged = 0,
 /// Invoked when a rest call fails for authentication reasons.
   ZDKZendeskEventAuthenticationFailed = 1,
+/// Invoked when a conversation has been added.
+  ZDKZendeskEventConversationAdded = 2,
+/// The SDK <code>ConnectionStatus</code> has changed due to an action or another event.
+  ZDKZendeskEventConnectionStatusChanged = 3,
+/// Invoked when a message fails to be sent.
+  ZDKZendeskEventSendMessageFailed = 4,
 };
 
 
@@ -1071,7 +1095,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 - (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
 
-
 @class ZDKZendeskUser;
 
 @interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
@@ -1090,6 +1113,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 
 
 
+
+
+/// A representation of the current connection status of the SDK.
+typedef SWIFT_ENUM_NAMED(NSInteger, ZDKZendeskConnectionStatus, "ZendeskConnectionStatus", open) {
+/// The SDK instance has no internet connection.
+  ZDKZendeskConnectionStatusDisconnected = 0,
+/// The SDK instance is connected to the internet.
+  ZDKZendeskConnectionStatusConnected = 1,
+/// The SDK instance is establishing the realtime connection with the server.
+  ZDKZendeskConnectionStatusConnectingRealtime = 2,
+/// The SDK instance is connected to the internet and has a connection established with the server.
+  ZDKZendeskConnectionStatusConnectedRealtime = 3,
+};
 
 
 SWIFT_CLASS_NAMED("ZendeskUser")
