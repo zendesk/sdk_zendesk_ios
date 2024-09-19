@@ -1,2 +1,2 @@
-github "zendesk/sdk_conversation_kit_ios" ~> 6.1.0
+github "zendesk/sdk_conversation_kit_ios" ~> 6.1.1
 github "zendesk/sdk_core_utilities_ios" ~> 2.4.0
