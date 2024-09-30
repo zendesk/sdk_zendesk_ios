@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZaKHOJodRhrmgIr0lljVRYWupHI=
+		Twm+xaVSZRqqGrVAPtZ/yknYHRc=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		6YZC+N9rWo29w+IFKsD1i+ahysg=
+		Yp3A+tO8TpXnjURJk2idzKJnXH8=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aHHndFdVVfIGt59Tlb6nSrKl5tM=
+		kGm6ZZ8U+FVNJOTxWe61JwB2o+8=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		6YZC+N9rWo29w+IFKsD1i+ahysg=
+		Yp3A+tO8TpXnjURJk2idzKJnXH8=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nXpkMhqzToPwtluFAK1cf6lk2Ts=
+		fgtET0K7evXPLvtEqzvcFZy/3fM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CqCkprrLSCqZ/QZZ9yAK4zGEt9nRxcA568Y/3hHjmr8=
+			blPVy4PGmOCj/rBHU6xawdglKixLs9Eb8qseQriTz2Q=
 			</data>
 		</dict>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -113,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NG8stGxCuumhJmJ4i10I2BxkATc5S/5jIgvJcJxHn8A=
+			jGhII0Amikpp6VxOjQiKsXrVgSfvuD4dmsTa/q80q44=
 			</data>
 		</dict>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CqCkprrLSCqZ/QZZ9yAK4zGEt9nRxcA568Y/3hHjmr8=
+			blPVy4PGmOCj/rBHU6xawdglKixLs9Eb8qseQriTz2Q=
 			</data>
 		</dict>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			epcRXc+eaclePZwjOhyk/2HGmtnqzGUFu7Cl7GbIEEw=
+			MfXvyS7/pzKMwJpppmspZRqT3VIbrMfVXDnRPF6Mr/w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

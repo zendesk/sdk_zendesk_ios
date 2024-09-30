@@ -8362,23 +8362,23 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Condition.swift",
       "kind": "StringLiteral",
-      "offset": 1058,
+      "offset": 1065,
       "length": 6,
       "value": "\"args\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Condition.swift",
       "kind": "StringLiteral",
-      "offset": 1058,
+      "offset": 1065,
       "length": 6,
       "value": "\"args\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Condition.swift",
       "kind": "StringLiteral",
-      "offset": 2554,
-      "length": 68,
-      "value": "\"Unable to decode the JSON as any of the possible Expression types.\""
+      "offset": 2582,
+      "length": 75,
+      "value": "\"Unable to decode the JSON as any of the possible ZendeskExpression types.\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/AppDTO.swift",
@@ -8899,156 +8899,156 @@
       "value": "\"zh-Hant\""
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "StringLiteral",
-      "offset": 1531,
+      "offset": 1594,
       "length": 11,
       "value": "\"notequals\""
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "BooleanLiteral",
-      "offset": 2812,
+      "offset": 2903,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "BooleanLiteral",
-      "offset": 3274,
+      "offset": 3365,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "BooleanLiteral",
-      "offset": 4047,
+      "offset": 4152,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "IntegerLiteral",
-      "offset": 4666,
+      "offset": 4771,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "IntegerLiteral",
-      "offset": 4710,
+      "offset": 4815,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "BooleanLiteral",
-      "offset": 5077,
+      "offset": 5182,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "BooleanLiteral",
-      "offset": 5677,
+      "offset": 5796,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "BooleanLiteral",
-      "offset": 5930,
+      "offset": 6049,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "BooleanLiteral",
-      "offset": 6544,
+      "offset": 6677,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "BooleanLiteral",
-      "offset": 6678,
+      "offset": 6811,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "BooleanLiteral",
-      "offset": 6809,
+      "offset": 6942,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "StringLiteral",
-      "offset": 1531,
+      "offset": 1594,
       "length": 11,
       "value": "\"notequals\""
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "StringLiteral",
-      "offset": 7019,
+      "offset": 7159,
       "length": 15,
       "value": "\"\/visitor\/path\""
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "StringLiteral",
-      "offset": 7106,
+      "offset": 7246,
       "length": 21,
       "value": "\"\/visitor\/page_title\""
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "StringLiteral",
-      "offset": 7205,
+      "offset": 7345,
       "length": 15,
       "value": "\"\/visitor\/type\""
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "StringLiteral",
-      "offset": 7287,
+      "offset": 7427,
       "length": 18,
       "value": "\"\/device\/language\""
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "StringLiteral",
-      "offset": 7019,
+      "offset": 7159,
       "length": 15,
       "value": "\"\/visitor\/path\""
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "StringLiteral",
-      "offset": 7106,
+      "offset": 7246,
       "length": 21,
       "value": "\"\/visitor\/page_title\""
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "StringLiteral",
-      "offset": 7205,
+      "offset": 7345,
       "length": 15,
       "value": "\"\/visitor\/type\""
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "StringLiteral",
-      "offset": 7287,
+      "offset": 7427,
       "length": 18,
       "value": "\"\/device\/language\""
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/Expression.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/ProactiveMessaging\/ZendeskExpression.swift",
       "kind": "StringLiteral",
-      "offset": 8062,
+      "offset": 8209,
       "length": 72,
       "value": "\"Unable to decode the JSON as any of the possible ExpressionArgs types.\""
     },
