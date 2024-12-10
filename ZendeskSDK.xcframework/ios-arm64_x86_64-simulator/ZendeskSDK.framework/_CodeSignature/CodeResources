@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ZendeskSDK-Swift.h</key>
 		<data>
-		yA23x8P7TpoGt1j4awflK8qZDbE=
+		tD27RFkJBys3Gf4BN9CiYW7u1nY=
 		</data>
 		<key>Headers/ZendeskSDK.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		46vhxBiC+qJyMFvXmsHxPNIVUSI=
+		nT2c4+vLBJ2f88t8NDUijGTV12Q=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Yp3A+tO8TpXnjURJk2idzKJnXH8=
+		2q/BnkYE3djBlkmg1gyQs/HULvQ=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Avn7eQCidbfLjWr8eVmQ9lo7+Ww=
+		jnIN+5MQyPTX4knLxJqOvaEG8sc=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Avn7eQCidbfLjWr8eVmQ9lo7+Ww=
+		jnIN+5MQyPTX4knLxJqOvaEG8sc=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kGm6ZZ8U+FVNJOTxWe61JwB2o+8=
+		J6wWRTu/siHAOza9JjgbR+scbNQ=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Yp3A+tO8TpXnjURJk2idzKJnXH8=
+		2q/BnkYE3djBlkmg1gyQs/HULvQ=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		PNLXnaor6igCBSaFwx+cZi2dgVI=
+		+R4P5VsyxYcnqrPUGHuITENxbvo=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		PNLXnaor6igCBSaFwx+cZi2dgVI=
+		+R4P5VsyxYcnqrPUGHuITENxbvo=
 		</data>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fgtET0K7evXPLvtEqzvcFZy/3fM=
+		C1WjXyvtVJpUKiH5veDKIJlDSCI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DaXdli+JMjJvkmQA1JhgfhE1tzgbd1YGQVLYMC4a0n0=
+			g8lvqStpHssQd79Tnn45VUuJlXhTKI7lazdusTOXovU=
 			</data>
 		</dict>
 		<key>Headers/ZendeskSDK.h</key>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			blPVy4PGmOCj/rBHU6xawdglKixLs9Eb8qseQriTz2Q=
+			kqemxY5gn92rcOZQvOMBNVYKeIf/kxcz/dhfE/vxC7g=
 			</data>
 		</dict>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			py72imLvRUhJow7CDGw0h5hHKeLkLrtvZyRLu5/c9vA=
+			nOT0ns10dIfwar6UCt2r5/xoKpXynyWOhwgeLbPkbVo=
 			</data>
 		</dict>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -106,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			py72imLvRUhJow7CDGw0h5hHKeLkLrtvZyRLu5/c9vA=
+			nOT0ns10dIfwar6UCt2r5/xoKpXynyWOhwgeLbPkbVo=
 			</data>
 		</dict>
 		<key>Modules/ZendeskSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jGhII0Amikpp6VxOjQiKsXrVgSfvuD4dmsTa/q80q44=
+			CXFprsa5GkmX+QquOLyB3+dKt1VSkjzYx+aoLKmljJU=
 			</data>
 		</dict>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			blPVy4PGmOCj/rBHU6xawdglKixLs9Eb8qseQriTz2Q=
+			kqemxY5gn92rcOZQvOMBNVYKeIf/kxcz/dhfE/vxC7g=
 			</data>
 		</dict>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r2uZmUNK+VzD8kI8xh1RBG5YZBKGfRRdOUnOiJH272g=
+			clFfcPnoGV3klG7+C14KvmlEOm37P1FT5QTGI/yhG7g=
 			</data>
 		</dict>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r2uZmUNK+VzD8kI8xh1RBG5YZBKGfRRdOUnOiJH272g=
+			clFfcPnoGV3klG7+C14KvmlEOm37P1FT5QTGI/yhG7g=
 			</data>
 		</dict>
 		<key>Modules/ZendeskSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MfXvyS7/pzKMwJpppmspZRqT3VIbrMfVXDnRPF6Mr/w=
+			K0iSLA2RjygZgYJLdlzNuamfoNYRX3c9X8LiQNLhKQI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

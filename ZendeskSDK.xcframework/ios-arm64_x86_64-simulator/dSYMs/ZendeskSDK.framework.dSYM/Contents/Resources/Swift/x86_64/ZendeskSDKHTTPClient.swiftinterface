@@ -32,6 +32,7 @@ public enum HTTPError : Foundation.LocalizedError {
   case requestFailed(error: any Swift.Error)
   case multiConvoNotEnabled
   case userCannotCreateMoreConversations
+  case badRequest
   public var errorDescription: Swift.String? {
     get
   }

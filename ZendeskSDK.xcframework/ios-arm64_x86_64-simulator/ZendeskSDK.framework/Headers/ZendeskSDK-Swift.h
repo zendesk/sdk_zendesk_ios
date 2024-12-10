@@ -446,6 +446,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
   ZDKURLSourceWebViewMessageAction = 5,
 };
 
+
 /// The set of events that can be emitted from Zendesk SDK.
 typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
 /// Invoked when there is a change to the current total number of unread messages.
@@ -1019,6 +1020,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
 /// User selected <code>URL</code> from a <code>webView</code> message button from a message on the conversation screen.
   ZDKURLSourceWebViewMessageAction = 5,
 };
+
 
 /// The set of events that can be emitted from Zendesk SDK.
 typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
