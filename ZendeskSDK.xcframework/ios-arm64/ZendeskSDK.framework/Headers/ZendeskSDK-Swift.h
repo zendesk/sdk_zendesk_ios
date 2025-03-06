@@ -447,6 +447,40 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
 };
 
 
+@class NSUUID;
+@class NSDate;
+
+SWIFT_CLASS("_TtC10ZendeskSDK21ZDKConversationOpened")
+@interface ZDKConversationOpened : NSObject
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+@property (nonatomic, readonly, copy) NSString * _Nullable conversationId;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC10ZendeskSDK22ZDKConversationStarted")
+@interface ZDKConversationStarted : NSObject
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+@property (nonatomic, readonly, copy) NSString * _Nonnull conversationId;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class ZDKZendeskMessage;
+
+SWIFT_CLASS("_TtC10ZendeskSDK16ZDKMessagesShown")
+@interface ZDKMessagesShown : NSObject
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+@property (nonatomic, readonly, copy) NSString * _Nonnull conversationId;
+@property (nonatomic, readonly, copy) NSArray<ZDKZendeskMessage *> * _Nonnull messages;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 /// The set of events that can be emitted from Zendesk SDK.
 typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
 /// Invoked when there is a change to the current total number of unread messages.
@@ -459,6 +493,12 @@ typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
   ZDKZendeskEventConnectionStatusChanged = 3,
 /// Invoked when a message fails to be sent.
   ZDKZendeskEventSendMessageFailed = 4,
+/// Invoked when the conversation screen is opened.
+  ZDKZendeskEventConversationOpened = 5,
+/// Invoked when the conversation is started on the device.
+  ZDKZendeskEventConversationStarted = 6,
+/// Invoked when the messages shown to the user are updated.
+  ZDKZendeskEventMessagesShown = 7,
 };
 
 
@@ -522,6 +562,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 - (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
 
+
 @class ZDKZendeskUser;
 
 @interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
@@ -541,7 +582,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 
 
 
-
 /// A representation of the current connection status of the SDK.
 typedef SWIFT_ENUM_NAMED(NSInteger, ZDKZendeskConnectionStatus, "ZendeskConnectionStatus", open) {
 /// The SDK instance has no internet connection.
@@ -552,6 +592,29 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKZendeskConnectionStatus, "ZendeskConnecti
   ZDKZendeskConnectionStatusConnectingRealtime = 2,
 /// The SDK instance is connected to the internet and has a connection established with the server.
   ZDKZendeskConnectionStatusConnectedRealtime = 3,
+};
+
+enum ZDKZendeskRole : NSInteger;
+
+SWIFT_CLASS_NAMED("ZendeskMessage")
+@interface ZDKZendeskMessage : NSObject
+/// The <code>id</code> of the message.
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+/// The role of the message - whether it is sent from the business or the user.
+@property (nonatomic, readonly) enum ZDKZendeskRole role;
+/// The date the message was created at.
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id role:(enum ZDKZendeskRole)role timestamp:(NSDate * _Nonnull)timestamp OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM_NAMED(NSInteger, ZDKZendeskRole, "ZendeskRole", open) {
+/// The message is authored by a user.
+  ZDKZendeskRoleUser = 0,
+/// The message is authored by the business.
+  ZDKZendeskRoleBusiness = 1,
 };
 
 
