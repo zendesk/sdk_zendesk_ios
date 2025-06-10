@@ -303,6 +303,17 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+
+SWIFT_CLASS_NAMED("ConversationUnreadCountChange")
+@interface ZDKConversationUnreadCountChanged : NSObject
+@property (nonatomic, readonly) NSInteger totalUnreadMessagesCount;
+@property (nonatomic, readonly, copy) NSString * _Nullable conversationId;
+@property (nonatomic, readonly) NSInteger unreadCountInConversation;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 
 /// A wrapper class for a block that takes <code>ZendeskEvent</code> type and returns <code>Void</code>.
@@ -313,7 +324,6 @@ SWIFT_CLASS_NAMED("DispatchEvent")
 @end
 
 @class UIViewController;
-@class NSString;
 @protocol ZDKMessagingDelegate;
 
 SWIFT_CLASS_NAMED("Messaging")
@@ -329,8 +339,10 @@ SWIFT_CLASS_NAMED("Messaging")
 /// returns:
 /// A <code>UIViewController</code>  instance
 - (UIViewController * _Nonnull)messagingViewController SWIFT_WARN_UNUSED_RESULT;
-/// Returns the current total number of unread messages.
+/// Returns the current total number of unread messages across all conversations.
 - (NSInteger)getUnreadMessageCount SWIFT_WARN_UNUSED_RESULT;
+/// Returns the current number of unread messages for a specific conversation.
+- (NSInteger)getUnreadMessageCountWithConversationId:(NSString * _Nonnull)conversationId SWIFT_WARN_UNUSED_RESULT;
 /// Provide a dictionary of custom fields.
 /// note:
 /// Strings, numbers and booleans are the only supported value types that can be passed.
@@ -489,20 +501,22 @@ SWIFT_CLASS("_TtC10ZendeskSDK16ZDKMessagesShown")
 typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
 /// Invoked when there is a change to the current total number of unread messages.
   ZDKZendeskEventUnreadMessageCountChanged = 0,
+/// Invoked when the number of unread messages has changed
+  ZDKZendeskEventсonversationUnreadMessageCountChanged = 1,
 /// Invoked when a rest call fails for authentication reasons.
-  ZDKZendeskEventAuthenticationFailed = 1,
+  ZDKZendeskEventAuthenticationFailed = 2,
 /// Invoked when a conversation has been added.
-  ZDKZendeskEventConversationAdded = 2,
+  ZDKZendeskEventConversationAdded = 3,
 /// The SDK <code>ConnectionStatus</code> has changed due to an action or another event.
-  ZDKZendeskEventConnectionStatusChanged = 3,
+  ZDKZendeskEventConnectionStatusChanged = 4,
 /// Invoked when a message fails to be sent.
-  ZDKZendeskEventSendMessageFailed = 4,
+  ZDKZendeskEventSendMessageFailed = 5,
 /// Invoked when the conversation screen is opened.
-  ZDKZendeskEventConversationOpened = 5,
+  ZDKZendeskEventConversationOpened = 6,
 /// Invoked when the conversation is started on the device.
-  ZDKZendeskEventConversationStarted = 6,
+  ZDKZendeskEventConversationStarted = 7,
 /// Invoked when the messages shown to the user are updated.
-  ZDKZendeskEventMessagesShown = 7,
+  ZDKZendeskEventMessagesShown = 8,
 };
 
 
