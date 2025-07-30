@@ -4159,10 +4159,8 @@
             "mangledName": "$s10ZendeskSDK16MessagingSwiftUIC13messagingView0dE003AnyG0VyF",
             "moduleName": "ZendeskSDK",
             "isOpen": true,
-            "intro_iOS": "14",
             "declAttributes": [
               "AccessControl",
-              "Available",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -6814,6 +6812,36 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "getCurrentUser",
+            "printedName": "getCurrentUser()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZendeskSDK.ZendeskUser?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZendeskUser",
+                    "printedName": "ZendeskSDK.ZendeskUser",
+                    "usr": "c:@M@ZendeskSDK@objc(cs)ZDKZendeskUser"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZendeskSDK0A0C14getCurrentUserAA0aE0CSgyF",
+            "mangledName": "$s10ZendeskSDK0A0C14getCurrentUserAA0aE0CSgyF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -7889,6 +7917,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "ZendeskSDKConversationKit",
+        "printedName": "ZendeskSDKConversationKit",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "ZendeskUser",
         "printedName": "ZendeskUser",
@@ -7906,14 +7941,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKZendeskUser(py)id",
+            "usr": "s:10ZendeskSDK0A4UserC2idSSvp",
             "mangledName": "$s10ZendeskSDK0A4UserC2idSSvp",
             "moduleName": "ZendeskSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
-              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -7932,13 +7966,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKZendeskUser(im)id",
+                "usr": "s:10ZendeskSDK0A4UserC2idSSvg",
                 "mangledName": "$s10ZendeskSDK0A4UserC2idSSvg",
                 "moduleName": "ZendeskSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -7957,14 +7990,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKZendeskUser(py)externalId",
+            "usr": "s:10ZendeskSDK0A4UserC10externalIdSSvp",
             "mangledName": "$s10ZendeskSDK0A4UserC10externalIdSSvp",
             "moduleName": "ZendeskSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
-              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -7983,13 +8015,61 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKZendeskUser(im)externalId",
+                "usr": "s:10ZendeskSDK0A4UserC10externalIdSSvg",
                 "mangledName": "$s10ZendeskSDK0A4UserC10externalIdSSvg",
                 "moduleName": "ZendeskSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authenticationType",
+            "printedName": "authenticationType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthenticationType",
+                "printedName": "ZendeskSDKConversationKit.AuthenticationType",
+                "usr": "s:25ZendeskSDKConversationKit18AuthenticationTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK0A4UserC18authenticationType0A18SDKConversationKit014AuthenticationE0Ovp",
+            "mangledName": "$s10ZendeskSDK0A4UserC18authenticationType0A18SDKConversationKit014AuthenticationE0Ovp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthenticationType",
+                    "printedName": "ZendeskSDKConversationKit.AuthenticationType",
+                    "usr": "s:25ZendeskSDKConversationKit18AuthenticationTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK0A4UserC18authenticationType0A18SDKConversationKit014AuthenticationE0Ovg",
+                "mangledName": "$s10ZendeskSDK0A4UserC18authenticationType0A18SDKConversationKit014AuthenticationE0Ovg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -10005,10 +10085,6 @@
             "genericSig": "<τ_0_0 where τ_0_0 : ZendeskSDK.MessagingSwiftUIFactory>",
             "sugared_genericSig": "<Self where Self : ZendeskSDK.MessagingSwiftUIFactory>",
             "protocolReq": true,
-            "intro_iOS": "14",
-            "declAttributes": [
-              "Available"
-            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
@@ -10275,7 +10351,7 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "BooleanLiteral",
-      "offset": 14642,
+      "offset": 14616,
       "length": 5,
       "value": "false"
     },

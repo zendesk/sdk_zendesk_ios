@@ -462,7 +462,6 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
   ZDKURLSourceWebViewMessageAction = 5,
 };
 
-
 @class NSUUID;
 @class NSDate;
 
@@ -638,10 +637,6 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKZendeskRole, "ZendeskRole", open) {
 
 SWIFT_CLASS_NAMED("ZendeskUser")
 @interface ZDKZendeskUser : NSObject
-/// The id of the <code>User</code>
-@property (nonatomic, readonly, copy) NSString * _Nonnull id;
-/// The external id of the <code>User</code>
-@property (nonatomic, readonly, copy) NSString * _Nonnull externalId;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1118,7 +1113,6 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
   ZDKURLSourceWebViewMessageAction = 5,
 };
 
-
 @class NSUUID;
 @class NSDate;
 
@@ -1294,10 +1288,6 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKZendeskRole, "ZendeskRole", open) {
 
 SWIFT_CLASS_NAMED("ZendeskUser")
 @interface ZDKZendeskUser : NSObject
-/// The id of the <code>User</code>
-@property (nonatomic, readonly, copy) NSString * _Nonnull id;
-/// The external id of the <code>User</code>
-@property (nonatomic, readonly, copy) NSString * _Nonnull externalId;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
