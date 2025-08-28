@@ -6574,6 +6574,124 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "authenticationDelegate",
+            "printedName": "authenticationDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any ZendeskSDKConversationKit.AuthenticationDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK0A0C22authenticationDelegate0A18SDKConversationKit014AuthenticationD0_pSgvpZ",
+            "mangledName": "$s10ZendeskSDK0A0C22authenticationDelegate0A18SDKConversationKit014AuthenticationD0_pSgvpZ",
+            "moduleName": "ZendeskSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ZendeskSDKConversationKit.AuthenticationDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthenticationDelegate",
+                        "printedName": "any ZendeskSDKConversationKit.AuthenticationDelegate",
+                        "usr": "s:25ZendeskSDKConversationKit22AuthenticationDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK0A0C22authenticationDelegate0A18SDKConversationKit014AuthenticationD0_pSgvgZ",
+                "mangledName": "$s10ZendeskSDK0A0C22authenticationDelegate0A18SDKConversationKit014AuthenticationD0_pSgvgZ",
+                "moduleName": "ZendeskSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ZendeskSDKConversationKit.AuthenticationDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthenticationDelegate",
+                        "printedName": "any ZendeskSDKConversationKit.AuthenticationDelegate",
+                        "usr": "s:25ZendeskSDKConversationKit22AuthenticationDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK0A0C22authenticationDelegate0A18SDKConversationKit014AuthenticationD0_pSgvsZ",
+                "mangledName": "$s10ZendeskSDK0A0C22authenticationDelegate0A18SDKConversationKit014AuthenticationD0_pSgvsZ",
+                "moduleName": "ZendeskSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK0A0C22authenticationDelegate0A18SDKConversationKit014AuthenticationD0_pSgvMZ",
+                "mangledName": "$s10ZendeskSDK0A0C22authenticationDelegate0A18SDKConversationKit014AuthenticationD0_pSgvMZ",
+                "moduleName": "ZendeskSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "initialize",
             "printedName": "initialize(withChannelKey:messagingFactory:completionHandler:)",
@@ -10351,7 +10469,7 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "BooleanLiteral",
-      "offset": 14616,
+      "offset": 14968,
       "length": 5,
       "value": "false"
     },
