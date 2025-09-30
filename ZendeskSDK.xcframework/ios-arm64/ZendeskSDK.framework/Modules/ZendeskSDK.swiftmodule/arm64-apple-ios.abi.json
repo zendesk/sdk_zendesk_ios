@@ -9449,6 +9449,35 @@
           {
             "kind": "Function",
             "name": "messagingViewController",
+            "printedName": "messagingViewController(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MessagingScreen",
+                "printedName": "ZendeskSDK.MessagingScreen",
+                "usr": "s:10ZendeskSDK15MessagingScreenO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZendeskSDK9MessagingC23messagingViewControllerySo06UIViewF0CAA0C6ScreenOF",
+            "mangledName": "$s10ZendeskSDK9MessagingC23messagingViewControllerySo06UIViewF0CAA0C6ScreenOF",
+            "moduleName": "ZendeskSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "messagingViewController",
             "printedName": "messagingViewController()",
             "children": [
               {
@@ -9877,6 +9906,482 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZendeskSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MessagingScreen",
+        "printedName": "MessagingScreen",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "showConversationList",
+            "printedName": "showConversationList",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.MessagingScreen.Type) -> ZendeskSDK.MessagingScreen",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MessagingScreen",
+                    "printedName": "ZendeskSDK.MessagingScreen",
+                    "usr": "s:10ZendeskSDK15MessagingScreenO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.MessagingScreen.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MessagingScreen",
+                        "printedName": "ZendeskSDK.MessagingScreen",
+                        "usr": "s:10ZendeskSDK15MessagingScreenO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZendeskSDK15MessagingScreenO20showConversationListyA2CmF",
+            "mangledName": "$s10ZendeskSDK15MessagingScreenO20showConversationListyA2CmF",
+            "moduleName": "ZendeskSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "showMostRecentConversation",
+            "printedName": "showMostRecentConversation",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.MessagingScreen.Type) -> (ZendeskSDK.ExitAction) -> ZendeskSDK.MessagingScreen",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ZendeskSDK.ExitAction) -> ZendeskSDK.MessagingScreen",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MessagingScreen",
+                        "printedName": "ZendeskSDK.MessagingScreen",
+                        "usr": "s:10ZendeskSDK15MessagingScreenO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(exitAction: ZendeskSDK.ExitAction)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ExitAction",
+                            "printedName": "ZendeskSDK.ExitAction",
+                            "usr": "s:10ZendeskSDK10ExitActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.MessagingScreen.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MessagingScreen",
+                        "printedName": "ZendeskSDK.MessagingScreen",
+                        "usr": "s:10ZendeskSDK15MessagingScreenO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZendeskSDK15MessagingScreenO26showMostRecentConversationyAcA10ExitActionO_tcACmF",
+            "mangledName": "$s10ZendeskSDK15MessagingScreenO26showMostRecentConversationyAcA10ExitActionO_tcACmF",
+            "moduleName": "ZendeskSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "showNewConversation",
+            "printedName": "showNewConversation",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.MessagingScreen.Type) -> (ZendeskSDK.ExitAction) -> ZendeskSDK.MessagingScreen",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ZendeskSDK.ExitAction) -> ZendeskSDK.MessagingScreen",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MessagingScreen",
+                        "printedName": "ZendeskSDK.MessagingScreen",
+                        "usr": "s:10ZendeskSDK15MessagingScreenO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(exitAction: ZendeskSDK.ExitAction)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ExitAction",
+                            "printedName": "ZendeskSDK.ExitAction",
+                            "usr": "s:10ZendeskSDK10ExitActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.MessagingScreen.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MessagingScreen",
+                        "printedName": "ZendeskSDK.MessagingScreen",
+                        "usr": "s:10ZendeskSDK15MessagingScreenO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZendeskSDK15MessagingScreenO19showNewConversationyAcA10ExitActionO_tcACmF",
+            "mangledName": "$s10ZendeskSDK15MessagingScreenO19showNewConversationyAcA10ExitActionO_tcACmF",
+            "moduleName": "ZendeskSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "showConversation",
+            "printedName": "showConversation",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.MessagingScreen.Type) -> (Swift.String?, ZendeskSDK.ExitAction) -> ZendeskSDK.MessagingScreen",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?, ZendeskSDK.ExitAction) -> ZendeskSDK.MessagingScreen",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MessagingScreen",
+                        "printedName": "ZendeskSDK.MessagingScreen",
+                        "usr": "s:10ZendeskSDK15MessagingScreenO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(conversationId: Swift.String?, exitAction: ZendeskSDK.ExitAction)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ExitAction",
+                            "printedName": "ZendeskSDK.ExitAction",
+                            "usr": "s:10ZendeskSDK10ExitActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.MessagingScreen.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MessagingScreen",
+                        "printedName": "ZendeskSDK.MessagingScreen",
+                        "usr": "s:10ZendeskSDK15MessagingScreenO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZendeskSDK15MessagingScreenO16showConversationyACSSSg_AA10ExitActionOtcACmF",
+            "mangledName": "$s10ZendeskSDK15MessagingScreenO16showConversationyACSSSg_AA10ExitActionOtcACmF",
+            "moduleName": "ZendeskSDK"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10ZendeskSDK15MessagingScreenO",
+        "mangledName": "$s10ZendeskSDK15MessagingScreenO",
+        "moduleName": "ZendeskSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ExitAction",
+        "printedName": "ExitAction",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "close",
+            "printedName": "close",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ExitAction.Type) -> ZendeskSDK.ExitAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExitAction",
+                    "printedName": "ZendeskSDK.ExitAction",
+                    "usr": "s:10ZendeskSDK10ExitActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ExitAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExitAction",
+                        "printedName": "ZendeskSDK.ExitAction",
+                        "usr": "s:10ZendeskSDK10ExitActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZendeskSDK10ExitActionO5closeyA2CmF",
+            "mangledName": "$s10ZendeskSDK10ExitActionO5closeyA2CmF",
+            "moduleName": "ZendeskSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "returnToConversationList",
+            "printedName": "returnToConversationList",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ExitAction.Type) -> ZendeskSDK.ExitAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExitAction",
+                    "printedName": "ZendeskSDK.ExitAction",
+                    "usr": "s:10ZendeskSDK10ExitActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ExitAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExitAction",
+                        "printedName": "ZendeskSDK.ExitAction",
+                        "usr": "s:10ZendeskSDK10ExitActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZendeskSDK10ExitActionO24returnToConversationListyA2CmF",
+            "mangledName": "$s10ZendeskSDK10ExitActionO24returnToConversationListyA2CmF",
+            "moduleName": "ZendeskSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExitAction",
+                "printedName": "ZendeskSDK.ExitAction",
+                "usr": "s:10ZendeskSDK10ExitActionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExitAction",
+                "printedName": "ZendeskSDK.ExitAction",
+                "usr": "s:10ZendeskSDK10ExitActionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZendeskSDK10ExitActionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10ZendeskSDK10ExitActionO2eeoiySbAC_ACtFZ",
+            "moduleName": "ZendeskSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10ZendeskSDK10ExitActionO9hashValueSivp",
+            "mangledName": "$s10ZendeskSDK10ExitActionO9hashValueSivp",
+            "moduleName": "ZendeskSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10ZendeskSDK10ExitActionO9hashValueSivg",
+                "mangledName": "$s10ZendeskSDK10ExitActionO9hashValueSivg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10ZendeskSDK10ExitActionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10ZendeskSDK10ExitActionO4hash4intoys6HasherVz_tF",
+            "moduleName": "ZendeskSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10ZendeskSDK10ExitActionO",
+        "mangledName": "$s10ZendeskSDK10ExitActionO",
+        "moduleName": "ZendeskSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
