@@ -9802,36 +9802,6 @@
             ]
           },
           {
-            "kind": "Function",
-            "name": "enableInternalAnalytics",
-            "printedName": "enableInternalAnalytics(enabled:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessaging(im)enableInternalAnalyticsWithEnabled:",
-            "mangledName": "$s10ZendeskSDK9MessagingC23enableInternalAnalytics7enabledySb_tF",
-            "moduleName": "ZendeskSDK",
-            "isOpen": true,
-            "objc_name": "enableInternalAnalyticsWithEnabled:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -11539,13 +11509,6 @@
       "offset": 1121,
       "length": 1,
       "value": "3"
-    },
-    {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/API\/CapabilityInterfaces\/Messaging\/UIKit\/Messaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3842,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Environment\/Environment.swift",
