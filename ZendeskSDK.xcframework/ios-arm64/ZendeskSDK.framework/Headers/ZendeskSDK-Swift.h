@@ -371,6 +371,7 @@ SWIFT_CLASS_NAMED("Messaging")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, weak) id <ZDKMessagingDelegate> _Nullable delegate;)
 + (id <ZDKMessagingDelegate> _Nullable)delegate SWIFT_WARN_UNUSED_RESULT;
 + (void)setDelegate:(id <ZDKMessagingDelegate> _Nullable)value;
+- (void)enableInternalAnalyticsWithEnabled:(BOOL)enabled;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
