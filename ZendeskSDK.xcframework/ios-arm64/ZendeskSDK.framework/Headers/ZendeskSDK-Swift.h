@@ -315,6 +315,16 @@ SWIFT_CLASS_NAMED("ConversationUnreadCountChange")
 @end
 
 
+/// Details of a conversation where an agent was requested.
+SWIFT_CLASS("_TtC10ZendeskSDK37ConversationWithAgentRequestedDetails")
+@interface ConversationWithAgentRequestedDetails : NSObject
+/// The unique identifier of the conversation
+@property (nonatomic, readonly, copy) NSString * _Nonnull conversationId;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 
 /// A wrapper class for a block that takes <code>ZendeskEvent</code> type and returns <code>Void</code>.
 SWIFT_CLASS_NAMED("DispatchEvent")
@@ -428,6 +438,59 @@ SWIFT_CLASS_NAMED("MessagingSettings")
 @end
 
 
+@class NSUUID;
+@class NSDate;
+@class ZDKNewConversationButtonClickedDetails;
+
+SWIFT_CLASS("_TtC10ZendeskSDK28NewConversationButtonClicked")
+@interface NewConversationButtonClicked : NSObject
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+@property (nonatomic, readonly, strong) ZDKNewConversationButtonClickedDetails * _Nonnull data;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+enum NewConversationSource : NSInteger;
+
+/// Details related to the event when the new conversation button is clicked.
+SWIFT_CLASS_NAMED("NewConversationButtonClickedDetails")
+@interface ZDKNewConversationButtonClickedDetails : NSObject
+/// The source from which the new conversation button was clicked
+@property (nonatomic, readonly) enum NewConversationSource newConversationSource;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Enum representing sources or locations where the new conversation button can be clicked.
+typedef SWIFT_ENUM(NSInteger, NewConversationSource, open) {
+/// The new conversation button was clicked from the conversation list screen
+  NewConversationSourceConversationList = 0,
+};
+
+
+/// Details of a notification that was displayed.
+SWIFT_CLASS_NAMED("NotificationDisplayedDetails")
+@interface ZDKNotificationDisplayedDetails : NSObject
+/// The ID of the conversation associated with the notification
+@property (nonatomic, readonly, copy) NSString * _Nonnull conversationId;
+/// The timestamp when the message was received (Unix timestamp as Double)
+@property (nonatomic, readonly) double messageReceivedTimestamp;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Details of a notification that was opened by the end user.
+SWIFT_CLASS_NAMED("NotificationOpenedDetails")
+@interface ZDKNotificationOpenedDetails : NSObject
+/// The unique identifier of the conversation associated with the notification
+@property (nonatomic, readonly, copy) NSString * _Nonnull conversationId;
+- (nonnull instancetype)initWithConversationId:(NSString * _Nonnull)conversationId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 /// This object is used to provide session-based data to capture contextual information about an end user. This data is viewable inside
 /// Agent Workspace.
@@ -443,6 +506,32 @@ SWIFT_CLASS_NAMED("PageView")
 /// \param object the object to compare against.
 ///
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Details of a proactive message that was clicked.
+SWIFT_CLASS_NAMED("ProactiveMessageClickedDetails")
+@interface ZDKProactiveMessageClickedDetails : NSObject
+/// The ID of the proactive message that was clicked
+@property (nonatomic, readonly, copy) NSString * _Nonnull proactiveMessageId;
+/// The ID of the campaign for the proactive message
+@property (nonatomic, readonly, copy) NSString * _Nonnull campaignId;
+- (nonnull instancetype)initWithProactiveMessageId:(NSString * _Nonnull)proactiveMessageId campaignId:(NSString * _Nonnull)campaignId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Details of a proactive message that was displayed.
+SWIFT_CLASS_NAMED("ProactiveMessageDisplayedDetails")
+@interface ZDKProactiveMessageDisplayedDetails : NSObject
+/// The ID of the proactive message that was displayed
+@property (nonatomic, readonly, copy) NSString * _Nonnull proactiveMessageId;
+/// The ID of the campaign for the proactive message
+@property (nonatomic, readonly, copy) NSString * _Nonnull campaignId;
+- (nonnull instancetype)initWithProactiveMessageId:(NSString * _Nonnull)proactiveMessageId campaignId:(NSString * _Nonnull)campaignId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -463,8 +552,6 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
   ZDKURLSourceWebViewMessageAction = 5,
 };
 
-@class NSUUID;
-@class NSDate;
 
 SWIFT_CLASS("_TtC10ZendeskSDK21ZDKConversationOpened")
 @interface ZDKConversationOpened : NSObject
@@ -485,6 +572,16 @@ SWIFT_CLASS("_TtC10ZendeskSDK22ZDKConversationStarted")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC10ZendeskSDK33ZDKConversationWithAgentRequested")
+@interface ZDKConversationWithAgentRequested : NSObject
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+@property (nonatomic, readonly, strong) ConversationWithAgentRequestedDetails * _Nonnull data;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class ZDKZendeskMessage;
 
 SWIFT_CLASS("_TtC10ZendeskSDK16ZDKMessagesShown")
@@ -497,26 +594,78 @@ SWIFT_CLASS("_TtC10ZendeskSDK16ZDKMessagesShown")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC10ZendeskSDK24ZDKNotificationDisplayed")
+@interface ZDKNotificationDisplayed : NSObject
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+@property (nonatomic, readonly, strong) ZDKNotificationDisplayedDetails * _Nonnull data;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC10ZendeskSDK21ZDKNotificationOpened")
+@interface ZDKNotificationOpened : NSObject
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+@property (nonatomic, readonly, strong) ZDKNotificationOpenedDetails * _Nonnull data;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC10ZendeskSDK26ZDKProactiveMessageClicked")
+@interface ZDKProactiveMessageClicked : NSObject
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+@property (nonatomic, readonly, strong) ZDKProactiveMessageClickedDetails * _Nonnull data;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC10ZendeskSDK28ZDKProactiveMessageDisplayed")
+@interface ZDKProactiveMessageDisplayed : NSObject
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+@property (nonatomic, readonly, strong) ZDKProactiveMessageDisplayedDetails * _Nonnull data;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 /// The set of events that can be emitted from Zendesk SDK.
 typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
 /// Invoked when there is a change to the current total number of unread messages.
   ZDKZendeskEventUnreadMessageCountChanged = 0,
 /// Invoked when the number of unread messages has changed
   ZDKZendeskEventсonversationUnreadMessageCountChanged = 1,
+/// Invoked when a push notification has been opened by the end user.
+  ZDKZendeskEventNotificationOpened = 2,
 /// Invoked when a rest call fails for authentication reasons.
-  ZDKZendeskEventAuthenticationFailed = 2,
+  ZDKZendeskEventAuthenticationFailed = 3,
 /// Invoked when a conversation has been added.
-  ZDKZendeskEventConversationAdded = 3,
+  ZDKZendeskEventConversationAdded = 4,
 /// The SDK <code>ConnectionStatus</code> has changed due to an action or another event.
-  ZDKZendeskEventConnectionStatusChanged = 4,
+  ZDKZendeskEventConnectionStatusChanged = 5,
 /// Invoked when a message fails to be sent.
-  ZDKZendeskEventSendMessageFailed = 5,
+  ZDKZendeskEventSendMessageFailed = 6,
 /// Invoked when the conversation screen is opened.
-  ZDKZendeskEventConversationOpened = 6,
+  ZDKZendeskEventConversationOpened = 7,
 /// Invoked when the conversation is started on the device.
-  ZDKZendeskEventConversationStarted = 7,
+  ZDKZendeskEventConversationStarted = 8,
 /// Invoked when the messages shown to the user are updated.
-  ZDKZendeskEventMessagesShown = 8,
+  ZDKZendeskEventMessagesShown = 9,
+/// Invoked when an agente is requested
+  ZDKZendeskEventConversationWithAgentRequested = 10,
+/// Invoked when a proactive message has been displayed to the end-user.
+  ZDKZendeskEventProactiveMessageDisplayed = 11,
+/// Invoked when the new conversation button is clicked by the end-user.
+  ZDKZendeskEventNewConversationButtonClicked = 12,
+/// Invoked when a proactive message has been clicked by the end-user.
+  ZDKZendeskEventProactiveMessageClicked = 13,
+/// Invoked when a push notification has been displayed to the end-user.
+  ZDKZendeskEventNotificationDisplayed = 14,
 };
 
 
@@ -580,7 +729,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 - (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
 
-
 @class ZDKZendeskUser;
 
 @interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
@@ -596,6 +744,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 ///
 - (void)logoutUserWithCompletionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
+
 
 
 
