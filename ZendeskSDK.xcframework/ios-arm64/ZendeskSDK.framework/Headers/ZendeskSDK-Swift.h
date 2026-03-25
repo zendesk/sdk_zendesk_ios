@@ -305,27 +305,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 @class NSString;
 
-SWIFT_CLASS_NAMED("ConversationAgentAssignedDetails")
-@interface ZDKConversationAgentAssignedDetails : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull conversationId;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-/// Details of a conversation extension that was displayed to the end user.
-SWIFT_CLASS_NAMED("ConversationExtensionDisplayedDetails")
-@interface ZDKConversationExtensionDisplayedDetails : NSObject
-/// The unique identifier of the conversation
-@property (nonatomic, readonly, copy) NSString * _Nonnull conversationId;
-/// The URL of the conversation extension
-@property (nonatomic, readonly, copy) NSString * _Nonnull url;
-- (nonnull instancetype)initWithConversationId:(NSString * _Nonnull)conversationId url:(NSString * _Nonnull)url OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
 SWIFT_CLASS_NAMED("ConversationUnreadCountChange")
 @interface ZDKConversationUnreadCountChanged : NSObject
 @property (nonatomic, readonly) NSInteger totalUnreadMessagesCount;
@@ -532,19 +511,6 @@ SWIFT_CLASS_NAMED("PageView")
 @end
 
 
-/// Details of a postback button that was clicked by the end user.
-SWIFT_CLASS_NAMED("PostbackButtonClickedDetails")
-@interface ZDKPostbackButtonClickedDetails : NSObject
-/// The postback button action name
-@property (nonatomic, readonly, copy) NSString * _Nonnull actionName;
-/// The unique identifier of the conversation
-@property (nonatomic, readonly, copy) NSString * _Nonnull conversationId;
-- (nonnull instancetype)initWithActionName:(NSString * _Nonnull)actionName conversationId:(NSString * _Nonnull)conversationId OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
 /// Details of a proactive message that was clicked.
 SWIFT_CLASS_NAMED("ProactiveMessageClickedDetails")
 @interface ZDKProactiveMessageClickedDetails : NSObject
@@ -585,26 +551,6 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
 /// User selected <code>URL</code> from a <code>webView</code> message button from a message on the conversation screen.
   ZDKURLSourceWebViewMessageAction = 5,
 };
-
-
-SWIFT_CLASS("_TtC10ZendeskSDK28ZDKConversationAgentAssigned")
-@interface ZDKConversationAgentAssigned : NSObject
-@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
-@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
-@property (nonatomic, readonly, strong) ZDKConversationAgentAssignedDetails * _Nonnull data;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC10ZendeskSDK33ZDKConversationExtensionDisplayed")
-@interface ZDKConversationExtensionDisplayed : NSObject
-@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
-@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
-@property (nonatomic, readonly, strong) ZDKConversationExtensionDisplayedDetails * _Nonnull data;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 
 SWIFT_CLASS("_TtC10ZendeskSDK21ZDKConversationOpened")
@@ -649,15 +595,6 @@ SWIFT_CLASS("_TtC10ZendeskSDK16ZDKMessagesShown")
 @end
 
 
-SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMessagingClosed")
-@interface ZDKMessagingClosed : NSObject
-@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
-@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
 SWIFT_CLASS("_TtC10ZendeskSDK24ZDKNotificationDisplayed")
 @interface ZDKNotificationDisplayed : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
@@ -673,16 +610,6 @@ SWIFT_CLASS("_TtC10ZendeskSDK21ZDKNotificationOpened")
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
 @property (nonatomic, readonly, strong) ZDKNotificationOpenedDetails * _Nonnull data;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC10ZendeskSDK24ZDKPostbackButtonClicked")
-@interface ZDKPostbackButtonClicked : NSObject
-@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
-@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
-@property (nonatomic, readonly, strong) ZDKPostbackButtonClickedDetails * _Nonnull data;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -739,14 +666,6 @@ typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
   ZDKZendeskEventProactiveMessageClicked = 13,
 /// Invoked when a push notification has been displayed to the end-user.
   ZDKZendeskEventNotificationDisplayed = 14,
-/// Invoked when a postback button has been clicked by the end-user.
-  ZDKZendeskEventPostbackButtonClicked = 15,
-/// Invoked when an agent assigned to the conversation.
-  ZDKZendeskEventConversationAgentAssigned = 16,
-/// Invoked when the messaging screen is closed.
-  ZDKZendeskEventMessagingClosed = 17,
-/// Invoked when a conversation extension content has been displayed to the end-user.
-  ZDKZendeskEventConversationExtensionDisplayed = 18,
 };
 
 
@@ -810,7 +729,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 - (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
 
-
 @class ZDKZendeskUser;
 
 @interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
@@ -826,6 +744,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 ///
 - (void)logoutUserWithCompletionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
+
 
 
 
