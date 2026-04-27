@@ -303,7 +303,26 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+/// Enum defining sources or platforms where an agent’s message originates.
+typedef SWIFT_ENUM(NSInteger, AgentMessageSource, open) {
+/// The agent’s message was generated from the Agent Workspace
+  AgentMessageSourceAgentWorkspace = 0,
+/// The agent’s message was generated from the Agent Copilot tool
+  AgentMessageSourceAgentCopilot = 1,
+};
+
 @class NSString;
+
+SWIFT_CLASS_NAMED("ArticleClickedDetails")
+@interface ZDKArticleClickedDetails : NSObject
+/// The unique identifier of the article
+@property (nonatomic, readonly, copy) NSString * _Nonnull articleId;
+/// The article title (nullable)
+@property (nonatomic, readonly, copy) NSString * _Nullable articleTitle;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS_NAMED("ConversationAgentAssignedDetails")
 @interface ZDKConversationAgentAssignedDetails : NSObject
@@ -321,6 +340,30 @@ SWIFT_CLASS_NAMED("ConversationExtensionDisplayedDetails")
 /// The URL of the conversation extension
 @property (nonatomic, readonly, copy) NSString * _Nonnull url;
 - (nonnull instancetype)initWithConversationId:(NSString * _Nonnull)conversationId url:(NSString * _Nonnull)url OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC10ZendeskSDK34ConversationExtensionOpenedDetails")
+@interface ConversationExtensionOpenedDetails : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull conversationId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull url;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS_NAMED("ConversationServedByAgentDetails")
+@interface ZDKConversationServedByAgentDetails : NSObject
+/// The display name of the agent serving the conversation
+@property (nonatomic, readonly, copy) NSString * _Nonnull agentDisplayName;
+/// Unique identifier string for the agent
+@property (nonatomic, readonly, copy) NSString * _Nonnull agentId;
+/// Enum indicating the source or tool context of the agent’s message
+@property (nonatomic, readonly) enum AgentMessageSource agentMessageSource;
+/// Unique identifier for the conversation being served by the agent
+@property (nonatomic, readonly, copy) NSString * _Nonnull conversationId;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -587,6 +630,16 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
 };
 
 
+SWIFT_CLASS("_TtC10ZendeskSDK17ZDKArticleClicked")
+@interface ZDKArticleClicked : NSObject
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+@property (nonatomic, readonly, strong) ZDKArticleClickedDetails * _Nonnull data;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC10ZendeskSDK28ZDKConversationAgentAssigned")
 @interface ZDKConversationAgentAssigned : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
@@ -602,6 +655,16 @@ SWIFT_CLASS("_TtC10ZendeskSDK33ZDKConversationExtensionDisplayed")
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
 @property (nonatomic, readonly, strong) ZDKConversationExtensionDisplayedDetails * _Nonnull data;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC10ZendeskSDK30ZDKConversationExtensionOpened")
+@interface ZDKConversationExtensionOpened : NSObject
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+@property (nonatomic, readonly, strong) ConversationExtensionOpenedDetails * _Nonnull data;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -743,10 +806,16 @@ typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
   ZDKZendeskEventPostbackButtonClicked = 15,
 /// Invoked when an agent assigned to the conversation.
   ZDKZendeskEventConversationAgentAssigned = 16,
+/// Invoked when a conversation is served by an agent.
+  ZDKZendeskEventConversationServedByAgent = 17,
 /// Invoked when the messaging screen is closed.
-  ZDKZendeskEventMessagingClosed = 17,
+  ZDKZendeskEventMessagingClosed = 18,
 /// Invoked when a conversation extension content has been displayed to the end-user.
-  ZDKZendeskEventConversationExtensionDisplayed = 18,
+  ZDKZendeskEventConversationExtensionDisplayed = 19,
+/// Invoked when a conversation extension is opened by an end-user.
+  ZDKZendeskEventConversationExtensionOpened = 20,
+/// Invoked when an end-user clicks on an article.
+  ZDKZendeskEventArticleClicked = 21,
 };
 
 
@@ -810,7 +879,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 - (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
 
-
 @class ZDKZendeskUser;
 
 @interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
@@ -826,6 +894,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 ///
 - (void)logoutUserWithCompletionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
+
 
 
 
