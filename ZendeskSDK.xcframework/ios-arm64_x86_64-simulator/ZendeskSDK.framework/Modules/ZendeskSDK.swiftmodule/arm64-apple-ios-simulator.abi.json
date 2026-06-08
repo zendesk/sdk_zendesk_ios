@@ -1602,6 +1602,72 @@
           },
           {
             "kind": "Var",
+            "name": "messagingOpened",
+            "printedName": "messagingOpened",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZendeskEvent.Type) -> (Foundation.UUID, Foundation.Date) -> ZendeskSDK.ZendeskEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.UUID, Foundation.Date) -> ZendeskSDK.ZendeskEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskEvent",
+                        "printedName": "ZendeskSDK.ZendeskEvent",
+                        "usr": "s:10ZendeskSDK0A5EventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(id: Foundation.UUID, timestamp: Foundation.Date)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UUID",
+                            "printedName": "Foundation.UUID",
+                            "usr": "s:10Foundation4UUIDV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Date",
+                            "printedName": "Foundation.Date",
+                            "usr": "s:10Foundation4DateV"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZendeskEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskEvent",
+                        "printedName": "ZendeskSDK.ZendeskEvent",
+                        "usr": "s:10ZendeskSDK0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZendeskSDK0A5EventO15messagingOpenedyAC10Foundation4UUIDV_AE4DateVtcACmF",
+            "mangledName": "$s10ZendeskSDK0A5EventO15messagingOpenedyAC10Foundation4UUIDV_AE4DateVtcACmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "messagingClosed",
             "printedName": "messagingClosed",
             "children": [
@@ -1877,6 +1943,222 @@
             "declKind": "EnumElement",
             "usr": "s:10ZendeskSDK0A5EventO14articleClickedyAC10Foundation4UUIDV_AE4DateVAA07ArticleE7DetailsCtcACmF",
             "mangledName": "$s10ZendeskSDK0A5EventO14articleClickedyAC10Foundation4UUIDV_AE4DateVAA07ArticleE7DetailsCtcACmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "articleBrowserClicked",
+            "printedName": "articleBrowserClicked",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZendeskEvent.Type) -> (Foundation.UUID, Foundation.Date, ZendeskSDK.ArticleBrowserClickedDetails) -> ZendeskSDK.ZendeskEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.UUID, Foundation.Date, ZendeskSDK.ArticleBrowserClickedDetails) -> ZendeskSDK.ZendeskEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskEvent",
+                        "printedName": "ZendeskSDK.ZendeskEvent",
+                        "usr": "s:10ZendeskSDK0A5EventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(id: Foundation.UUID, timestamp: Foundation.Date, data: ZendeskSDK.ArticleBrowserClickedDetails)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UUID",
+                            "printedName": "Foundation.UUID",
+                            "usr": "s:10Foundation4UUIDV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Date",
+                            "printedName": "Foundation.Date",
+                            "usr": "s:10Foundation4DateV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ArticleBrowserClickedDetails",
+                            "printedName": "ZendeskSDK.ArticleBrowserClickedDetails",
+                            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClickedDetails"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZendeskEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskEvent",
+                        "printedName": "ZendeskSDK.ZendeskEvent",
+                        "usr": "s:10ZendeskSDK0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZendeskSDK0A5EventO21articleBrowserClickedyAC10Foundation4UUIDV_AE4DateVAA07ArticleeF7DetailsCtcACmF",
+            "mangledName": "$s10ZendeskSDK0A5EventO21articleBrowserClickedyAC10Foundation4UUIDV_AE4DateVAA07ArticleeF7DetailsCtcACmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "metadataSuccess",
+            "printedName": "metadataSuccess",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZendeskEvent.Type) -> (Foundation.UUID, Foundation.Date, ZendeskSDK.MetadataSuccessDetails) -> ZendeskSDK.ZendeskEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.UUID, Foundation.Date, ZendeskSDK.MetadataSuccessDetails) -> ZendeskSDK.ZendeskEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskEvent",
+                        "printedName": "ZendeskSDK.ZendeskEvent",
+                        "usr": "s:10ZendeskSDK0A5EventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(id: Foundation.UUID, timestamp: Foundation.Date, data: ZendeskSDK.MetadataSuccessDetails)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UUID",
+                            "printedName": "Foundation.UUID",
+                            "usr": "s:10Foundation4UUIDV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Date",
+                            "printedName": "Foundation.Date",
+                            "usr": "s:10Foundation4DateV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MetadataSuccessDetails",
+                            "printedName": "ZendeskSDK.MetadataSuccessDetails",
+                            "usr": "c:@M@ZendeskSDK@objc(cs)MetadataSuccessDetails"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZendeskEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskEvent",
+                        "printedName": "ZendeskSDK.ZendeskEvent",
+                        "usr": "s:10ZendeskSDK0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZendeskSDK0A5EventO15metadataSuccessyAC10Foundation4UUIDV_AE4DateVAA08MetadataE7DetailsCtcACmF",
+            "mangledName": "$s10ZendeskSDK0A5EventO15metadataSuccessyAC10Foundation4UUIDV_AE4DateVAA08MetadataE7DetailsCtcACmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "metadataFailure",
+            "printedName": "metadataFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZendeskEvent.Type) -> (Foundation.UUID, Foundation.Date, ZendeskSDK.MetadataFailureDetails) -> ZendeskSDK.ZendeskEvent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.UUID, Foundation.Date, ZendeskSDK.MetadataFailureDetails) -> ZendeskSDK.ZendeskEvent",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskEvent",
+                        "printedName": "ZendeskSDK.ZendeskEvent",
+                        "usr": "s:10ZendeskSDK0A5EventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(id: Foundation.UUID, timestamp: Foundation.Date, data: ZendeskSDK.MetadataFailureDetails)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UUID",
+                            "printedName": "Foundation.UUID",
+                            "usr": "s:10Foundation4UUIDV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Date",
+                            "printedName": "Foundation.Date",
+                            "usr": "s:10Foundation4DateV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MetadataFailureDetails",
+                            "printedName": "ZendeskSDK.MetadataFailureDetails",
+                            "usr": "c:@M@ZendeskSDK@objc(cs)MetadataFailureDetails"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZendeskEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZendeskEvent",
+                        "printedName": "ZendeskSDK.ZendeskEvent",
+                        "usr": "s:10ZendeskSDK0A5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10ZendeskSDK0A5EventO15metadataFailureyAC10Foundation4UUIDV_AE4DateVAA08MetadataE7DetailsCtcACmF",
+            "mangledName": "$s10ZendeskSDK0A5EventO15metadataFailureyAC10Foundation4UUIDV_AE4DateVAA08MetadataE7DetailsCtcACmF",
             "moduleName": "ZendeskSDK",
             "declAttributes": [
               "RawDocComment"
@@ -2716,6 +2998,48 @@
           },
           {
             "kind": "Var",
+            "name": "messagingOpened",
+            "printedName": "messagingOpened",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZDKZendeskEvent.Type) -> ZendeskSDK.ZDKZendeskEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZDKZendeskEvent",
+                    "printedName": "ZendeskSDK.ZDKZendeskEvent",
+                    "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZDKZendeskEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZDKZendeskEvent",
+                        "printedName": "ZendeskSDK.ZDKZendeskEvent",
+                        "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent@ZDKZendeskEventMessagingOpened",
+            "mangledName": "$s10ZendeskSDK15ZDKZendeskEventO15messagingOpenedyA2CmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 18
+          },
+          {
+            "kind": "Var",
             "name": "messagingClosed",
             "printedName": "messagingClosed",
             "children": [
@@ -2754,7 +3078,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 18
+            "fixedbinaryorder": 19
           },
           {
             "kind": "Var",
@@ -2796,7 +3120,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 19
+            "fixedbinaryorder": 20
           },
           {
             "kind": "Var",
@@ -2838,7 +3162,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 20
+            "fixedbinaryorder": 21
           },
           {
             "kind": "Var",
@@ -2880,7 +3204,133 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 21
+            "fixedbinaryorder": 22
+          },
+          {
+            "kind": "Var",
+            "name": "articleBrowserClicked",
+            "printedName": "articleBrowserClicked",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZDKZendeskEvent.Type) -> ZendeskSDK.ZDKZendeskEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZDKZendeskEvent",
+                    "printedName": "ZendeskSDK.ZDKZendeskEvent",
+                    "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZDKZendeskEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZDKZendeskEvent",
+                        "printedName": "ZendeskSDK.ZDKZendeskEvent",
+                        "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent@ZDKZendeskEventArticleBrowserClicked",
+            "mangledName": "$s10ZendeskSDK15ZDKZendeskEventO21articleBrowserClickedyA2CmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 23
+          },
+          {
+            "kind": "Var",
+            "name": "metadataSuccess",
+            "printedName": "metadataSuccess",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZDKZendeskEvent.Type) -> ZendeskSDK.ZDKZendeskEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZDKZendeskEvent",
+                    "printedName": "ZendeskSDK.ZDKZendeskEvent",
+                    "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZDKZendeskEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZDKZendeskEvent",
+                        "printedName": "ZendeskSDK.ZDKZendeskEvent",
+                        "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent@ZDKZendeskEventMetadataSuccess",
+            "mangledName": "$s10ZendeskSDK15ZDKZendeskEventO15metadataSuccessyA2CmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 24
+          },
+          {
+            "kind": "Var",
+            "name": "metadataFailure",
+            "printedName": "metadataFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZendeskSDK.ZDKZendeskEvent.Type) -> ZendeskSDK.ZDKZendeskEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZDKZendeskEvent",
+                    "printedName": "ZendeskSDK.ZDKZendeskEvent",
+                    "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ZendeskSDK.ZDKZendeskEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZDKZendeskEvent",
+                        "printedName": "ZendeskSDK.ZDKZendeskEvent",
+                        "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ZendeskSDK@E@ZDKZendeskEvent@ZDKZendeskEventMetadataFailure",
+            "mangledName": "$s10ZendeskSDK15ZDKZendeskEventO15metadataFailureyA2CmF",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 25
           },
           {
             "kind": "Constructor",
@@ -8927,6 +9377,218 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "ZDKMessagingOpened",
+        "printedName": "ZDKMessagingOpened",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessagingOpened(py)id",
+            "mangledName": "$s10ZendeskSDK18ZDKMessagingOpenedC2id10Foundation4UUIDVvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessagingOpened(im)id",
+                "mangledName": "$s10ZendeskSDK18ZDKMessagingOpenedC2id10Foundation4UUIDVvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessagingOpened(py)timestamp",
+            "mangledName": "$s10ZendeskSDK18ZDKMessagingOpenedC9timestamp10Foundation4DateVvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessagingOpened(im)timestamp",
+                "mangledName": "$s10ZendeskSDK18ZDKMessagingOpenedC9timestamp10Foundation4DateVvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ZDKMessagingOpened",
+                "printedName": "ZendeskSDK.ZDKMessagingOpened",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessagingOpened"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessagingOpened(im)init",
+            "mangledName": "$s10ZendeskSDK18ZDKMessagingOpenedCACycfc",
+            "moduleName": "ZendeskSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessagingOpened",
+        "mangledName": "$s10ZendeskSDK18ZDKMessagingOpenedC",
+        "moduleName": "ZendeskSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "ZDKMessagingClosed",
         "printedName": "ZDKMessagingClosed",
         "children": [
@@ -10613,6 +11275,1414 @@
         "mangledName": "$s10ZendeskSDK21ArticleClickedDetailsC",
         "moduleName": "ZendeskSDK",
         "objc_name": "ZDKArticleClickedDetails",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ZDKArticleBrowserClicked",
+        "printedName": "ZDKArticleBrowserClicked",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClicked(py)id",
+            "mangledName": "$s10ZendeskSDK24ZDKArticleBrowserClickedC2id10Foundation4UUIDVvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClicked(im)id",
+                "mangledName": "$s10ZendeskSDK24ZDKArticleBrowserClickedC2id10Foundation4UUIDVvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClicked(py)timestamp",
+            "mangledName": "$s10ZendeskSDK24ZDKArticleBrowserClickedC9timestamp10Foundation4DateVvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClicked(im)timestamp",
+                "mangledName": "$s10ZendeskSDK24ZDKArticleBrowserClickedC9timestamp10Foundation4DateVvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ArticleBrowserClickedDetails",
+                "printedName": "ZendeskSDK.ArticleBrowserClickedDetails",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClickedDetails"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClicked(py)data",
+            "mangledName": "$s10ZendeskSDK24ZDKArticleBrowserClickedC4dataAA07ArticledE7DetailsCvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArticleBrowserClickedDetails",
+                    "printedName": "ZendeskSDK.ArticleBrowserClickedDetails",
+                    "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClickedDetails"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClicked(im)data",
+                "mangledName": "$s10ZendeskSDK24ZDKArticleBrowserClickedC4dataAA07ArticledE7DetailsCvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ZDKArticleBrowserClicked",
+                "printedName": "ZendeskSDK.ZDKArticleBrowserClicked",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClicked"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClicked(im)init",
+            "mangledName": "$s10ZendeskSDK24ZDKArticleBrowserClickedCACycfc",
+            "moduleName": "ZendeskSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClicked",
+        "mangledName": "$s10ZendeskSDK24ZDKArticleBrowserClickedC",
+        "moduleName": "ZendeskSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ArticleBrowserClickedDetails",
+        "printedName": "ArticleBrowserClickedDetails",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClickedDetails(py)url",
+            "mangledName": "$s10ZendeskSDK28ArticleBrowserClickedDetailsC3urlSSvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClickedDetails(im)url",
+                "mangledName": "$s10ZendeskSDK28ArticleBrowserClickedDetailsC3urlSSvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ArticleBrowserClickedDetails",
+                "printedName": "ZendeskSDK.ArticleBrowserClickedDetails",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClickedDetails"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10ZendeskSDK28ArticleBrowserClickedDetailsC3urlACSS_tcfc",
+            "mangledName": "$s10ZendeskSDK28ArticleBrowserClickedDetailsC3urlACSS_tcfc",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ArticleBrowserClickedDetails",
+                "printedName": "ZendeskSDK.ArticleBrowserClickedDetails",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClickedDetails"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClickedDetails(im)init",
+            "mangledName": "$s10ZendeskSDK28ArticleBrowserClickedDetailsCACycfc",
+            "moduleName": "ZendeskSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClickedDetails",
+        "mangledName": "$s10ZendeskSDK28ArticleBrowserClickedDetailsC",
+        "moduleName": "ZendeskSDK",
+        "objc_name": "ZDKArticleBrowserClickedDetails",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ZDKMetadataSuccess",
+        "printedName": "ZDKMetadataSuccess",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataSuccess(py)id",
+            "mangledName": "$s10ZendeskSDK18ZDKMetadataSuccessC2id10Foundation4UUIDVvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataSuccess(im)id",
+                "mangledName": "$s10ZendeskSDK18ZDKMetadataSuccessC2id10Foundation4UUIDVvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataSuccess(py)timestamp",
+            "mangledName": "$s10ZendeskSDK18ZDKMetadataSuccessC9timestamp10Foundation4DateVvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataSuccess(im)timestamp",
+                "mangledName": "$s10ZendeskSDK18ZDKMetadataSuccessC9timestamp10Foundation4DateVvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MetadataSuccessDetails",
+                "printedName": "ZendeskSDK.MetadataSuccessDetails",
+                "usr": "c:@M@ZendeskSDK@objc(cs)MetadataSuccessDetails"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataSuccess(py)data",
+            "mangledName": "$s10ZendeskSDK18ZDKMetadataSuccessC4dataAA08MetadataD7DetailsCvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MetadataSuccessDetails",
+                    "printedName": "ZendeskSDK.MetadataSuccessDetails",
+                    "usr": "c:@M@ZendeskSDK@objc(cs)MetadataSuccessDetails"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataSuccess(im)data",
+                "mangledName": "$s10ZendeskSDK18ZDKMetadataSuccessC4dataAA08MetadataD7DetailsCvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ZDKMetadataSuccess",
+                "printedName": "ZendeskSDK.ZDKMetadataSuccess",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataSuccess"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataSuccess(im)init",
+            "mangledName": "$s10ZendeskSDK18ZDKMetadataSuccessCACycfc",
+            "moduleName": "ZendeskSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataSuccess",
+        "mangledName": "$s10ZendeskSDK18ZDKMetadataSuccessC",
+        "moduleName": "ZendeskSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MetadataSuccessDetails",
+        "printedName": "MetadataSuccessDetails",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "conversationId",
+            "printedName": "conversationId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZendeskSDK@objc(cs)MetadataSuccessDetails(py)conversationId",
+            "mangledName": "$s10ZendeskSDK22MetadataSuccessDetailsC14conversationIdSSvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZendeskSDK@objc(cs)MetadataSuccessDetails(im)conversationId",
+                "mangledName": "$s10ZendeskSDK22MetadataSuccessDetailsC14conversationIdSSvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(conversationId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MetadataSuccessDetails",
+                "printedName": "ZendeskSDK.MetadataSuccessDetails",
+                "usr": "c:@M@ZendeskSDK@objc(cs)MetadataSuccessDetails"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10ZendeskSDK22MetadataSuccessDetailsC14conversationIdACSS_tcfc",
+            "mangledName": "$s10ZendeskSDK22MetadataSuccessDetailsC14conversationIdACSS_tcfc",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MetadataSuccessDetails",
+                "printedName": "ZendeskSDK.MetadataSuccessDetails",
+                "usr": "c:@M@ZendeskSDK@objc(cs)MetadataSuccessDetails"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZendeskSDK@objc(cs)MetadataSuccessDetails(im)init",
+            "mangledName": "$s10ZendeskSDK22MetadataSuccessDetailsCACycfc",
+            "moduleName": "ZendeskSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ZendeskSDK@objc(cs)MetadataSuccessDetails",
+        "mangledName": "$s10ZendeskSDK22MetadataSuccessDetailsC",
+        "moduleName": "ZendeskSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ZDKMetadataFailure",
+        "printedName": "ZDKMetadataFailure",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataFailure(py)id",
+            "mangledName": "$s10ZendeskSDK18ZDKMetadataFailureC2id10Foundation4UUIDVvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataFailure(im)id",
+                "mangledName": "$s10ZendeskSDK18ZDKMetadataFailureC2id10Foundation4UUIDVvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataFailure(py)timestamp",
+            "mangledName": "$s10ZendeskSDK18ZDKMetadataFailureC9timestamp10Foundation4DateVvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataFailure(im)timestamp",
+                "mangledName": "$s10ZendeskSDK18ZDKMetadataFailureC9timestamp10Foundation4DateVvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MetadataFailureDetails",
+                "printedName": "ZendeskSDK.MetadataFailureDetails",
+                "usr": "c:@M@ZendeskSDK@objc(cs)MetadataFailureDetails"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataFailure(py)data",
+            "mangledName": "$s10ZendeskSDK18ZDKMetadataFailureC4dataAA08MetadataD7DetailsCvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MetadataFailureDetails",
+                    "printedName": "ZendeskSDK.MetadataFailureDetails",
+                    "usr": "c:@M@ZendeskSDK@objc(cs)MetadataFailureDetails"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataFailure(im)data",
+                "mangledName": "$s10ZendeskSDK18ZDKMetadataFailureC4dataAA08MetadataD7DetailsCvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ZDKMetadataFailure",
+                "printedName": "ZendeskSDK.ZDKMetadataFailure",
+                "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataFailure"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataFailure(im)init",
+            "mangledName": "$s10ZendeskSDK18ZDKMetadataFailureCACycfc",
+            "moduleName": "ZendeskSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataFailure",
+        "mangledName": "$s10ZendeskSDK18ZDKMetadataFailureC",
+        "moduleName": "ZendeskSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MetadataFailureDetails",
+        "printedName": "MetadataFailureDetails",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "conversationId",
+            "printedName": "conversationId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZendeskSDK@objc(cs)MetadataFailureDetails(py)conversationId",
+            "mangledName": "$s10ZendeskSDK22MetadataFailureDetailsC14conversationIdSSvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZendeskSDK@objc(cs)MetadataFailureDetails(im)conversationId",
+                "mangledName": "$s10ZendeskSDK22MetadataFailureDetailsC14conversationIdSSvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "reason",
+            "printedName": "reason",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZendeskSDK@objc(cs)MetadataFailureDetails(py)reason",
+            "mangledName": "$s10ZendeskSDK22MetadataFailureDetailsC6reasonSSvp",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZendeskSDK@objc(cs)MetadataFailureDetails(im)reason",
+                "mangledName": "$s10ZendeskSDK22MetadataFailureDetailsC6reasonSSvg",
+                "moduleName": "ZendeskSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(conversationId:reason:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MetadataFailureDetails",
+                "printedName": "ZendeskSDK.MetadataFailureDetails",
+                "usr": "c:@M@ZendeskSDK@objc(cs)MetadataFailureDetails"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10ZendeskSDK22MetadataFailureDetailsC14conversationId6reasonACSS_SStcfc",
+            "mangledName": "$s10ZendeskSDK22MetadataFailureDetailsC14conversationId6reasonACSS_SStcfc",
+            "moduleName": "ZendeskSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MetadataFailureDetails",
+                "printedName": "ZendeskSDK.MetadataFailureDetails",
+                "usr": "c:@M@ZendeskSDK@objc(cs)MetadataFailureDetails"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZendeskSDK@objc(cs)MetadataFailureDetails(im)init",
+            "mangledName": "$s10ZendeskSDK22MetadataFailureDetailsCACycfc",
+            "moduleName": "ZendeskSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ZendeskSDK@objc(cs)MetadataFailureDetails",
+        "mangledName": "$s10ZendeskSDK22MetadataFailureDetailsC",
+        "moduleName": "ZendeskSDK",
         "declAttributes": [
           "Final",
           "AccessControl",
@@ -18772,154 +20842,182 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 15768,
+      "offset": 18053,
       "length": 38,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 15890,
+      "offset": 18175,
       "length": 18,
       "value": "2"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 15985,
+      "offset": 18270,
       "length": 20,
       "value": "3"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 16067,
+      "offset": 18352,
       "length": 17,
       "value": "4"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 16176,
+      "offset": 18461,
       "length": 23,
       "value": "5"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 16258,
+      "offset": 18543,
       "length": 17,
       "value": "6"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 16341,
+      "offset": 18626,
       "length": 18,
       "value": "7"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 16433,
+      "offset": 18718,
       "length": 19,
       "value": "8"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 16527,
+      "offset": 18812,
       "length": 13,
       "value": "9"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 16594,
+      "offset": 18879,
       "length": 30,
       "value": "10"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 16711,
+      "offset": 18996,
       "length": 25,
       "value": "11"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 16823,
+      "offset": 19108,
       "length": 28,
       "value": "12"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 16936,
+      "offset": 19221,
       "length": 23,
       "value": "13"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 17046,
+      "offset": 19331,
       "length": 21,
       "value": "14"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 17150,
+      "offset": 19435,
       "length": 21,
       "value": "15"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 17241,
+      "offset": 19526,
       "length": 25,
       "value": "16"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 17335,
+      "offset": 19620,
       "length": 25,
       "value": "17"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 17423,
+      "offset": 19708,
       "length": 15,
       "value": "18"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 17538,
-      "length": 30,
+      "offset": 19786,
+      "length": 15,
       "value": "19"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 17650,
-      "length": 27,
+      "offset": 19901,
+      "length": 30,
       "value": "20"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 17742,
-      "length": 14,
+      "offset": 20013,
+      "length": 27,
       "value": "21"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 34443,
+      "offset": 20105,
+      "length": 14,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20219,
+      "length": 21,
+      "value": "23"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20318,
+      "length": 15,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20408,
+      "length": 15,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 38166,
       "length": 12,
       "value": "1"
     },
@@ -19219,15 +21317,22 @@
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3086,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "StringLiteral",
-      "offset": 4633,
+      "offset": 4752,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Helpers\/ModelMapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 10429,
+      "offset": 10548,
       "length": 2,
       "value": "60"
     },
@@ -19548,8 +21653,15 @@
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/IntegrationDTO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1438,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Internal\/Models\/IntegrationDTO.swift",
       "kind": "StringLiteral",
-      "offset": 1436,
+      "offset": 1511,
       "length": 5,
       "value": "\"_id\""
     },

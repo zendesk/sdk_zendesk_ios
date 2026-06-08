@@ -313,6 +313,15 @@ typedef SWIFT_ENUM(NSInteger, AgentMessageSource, open) {
 
 @class NSString;
 
+SWIFT_CLASS_NAMED("ArticleBrowserClickedDetails")
+@interface ZDKArticleBrowserClickedDetails : NSObject
+/// The URL of the article opened in the browser
+@property (nonatomic, readonly, copy) NSString * _Nonnull url;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS_NAMED("ArticleClickedDetails")
 @interface ZDKArticleClickedDetails : NSObject
 /// The unique identifier of the article
@@ -502,6 +511,23 @@ SWIFT_CLASS_NAMED("MessagingSettings")
 @end
 
 
+
+SWIFT_CLASS("_TtC10ZendeskSDK22MetadataFailureDetails")
+@interface MetadataFailureDetails : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull conversationId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull reason;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC10ZendeskSDK22MetadataSuccessDetails")
+@interface MetadataSuccessDetails : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull conversationId;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSUUID;
 @class NSDate;
 @class ZDKNewConversationButtonClickedDetails;
@@ -630,6 +656,16 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
 };
 
 
+SWIFT_CLASS("_TtC10ZendeskSDK24ZDKArticleBrowserClicked")
+@interface ZDKArticleBrowserClicked : NSObject
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+@property (nonatomic, readonly, strong) ZDKArticleBrowserClickedDetails * _Nonnull data;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC10ZendeskSDK17ZDKArticleClicked")
 @interface ZDKArticleClicked : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
@@ -716,6 +752,35 @@ SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMessagingClosed")
 @interface ZDKMessagingClosed : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMessagingOpened")
+@interface ZDKMessagingOpened : NSObject
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMetadataFailure")
+@interface ZDKMetadataFailure : NSObject
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+@property (nonatomic, readonly, strong) MetadataFailureDetails * _Nonnull data;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMetadataSuccess")
+@interface ZDKMetadataSuccess : NSObject
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
+@property (nonatomic, readonly, strong) MetadataSuccessDetails * _Nonnull data;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -808,14 +873,22 @@ typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
   ZDKZendeskEventConversationAgentAssigned = 16,
 /// Invoked when a conversation is served by an agent.
   ZDKZendeskEventConversationServedByAgent = 17,
+/// Invoked when the messaging screen is opened.
+  ZDKZendeskEventMessagingOpened = 18,
 /// Invoked when the messaging screen is closed.
-  ZDKZendeskEventMessagingClosed = 18,
+  ZDKZendeskEventMessagingClosed = 19,
 /// Invoked when a conversation extension content has been displayed to the end-user.
-  ZDKZendeskEventConversationExtensionDisplayed = 19,
+  ZDKZendeskEventConversationExtensionDisplayed = 20,
 /// Invoked when a conversation extension is opened by an end-user.
-  ZDKZendeskEventConversationExtensionOpened = 20,
+  ZDKZendeskEventConversationExtensionOpened = 21,
 /// Invoked when an end-user clicks on an article.
-  ZDKZendeskEventArticleClicked = 21,
+  ZDKZendeskEventArticleClicked = 22,
+/// Invoked when an end-user clicks on an article that opens in the external browser.
+  ZDKZendeskEventArticleBrowserClicked = 23,
+/// Invoked when metadata for conversation is successfuly sent.
+  ZDKZendeskEventMetadataSuccess = 24,
+/// Invoked when metadata for conversation fails to be sent.
+  ZDKZendeskEventMetadataFailure = 25,
 };
 
 
@@ -879,6 +952,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 - (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
 
+
 @class ZDKZendeskUser;
 
 @interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
@@ -894,7 +968,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 ///
 - (void)logoutUserWithCompletionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
 @end
-
 
 
 
