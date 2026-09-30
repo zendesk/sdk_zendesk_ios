@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ZendeskSDKHTTPClient
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ZendeskSDKHTTPClient
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import Foundation
 import Swift
 import UIKit
@@ -18,8 +18,8 @@ public enum HTTPHeader : Swift.Hashable {
   case acceptEncoding(Swift.String)
   case authorization(Swift.String)
   case other(field: Swift.String, value: Swift.String)
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: ZendeskSDKHTTPClient.HTTPHeader, b: ZendeskSDKHTTPClient.HTTPHeader) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -33,9 +33,11 @@ public enum HTTPError : Foundation.LocalizedError {
   case multiConvoNotEnabled
   case userCannotCreateMoreConversations
   case badRequest
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
 }
 extension ZendeskSDKHTTPClient.HTTPError : Swift.Equatable {
   public static func == (lhs: ZendeskSDKHTTPClient.HTTPError, rhs: ZendeskSDKHTTPClient.HTTPError) -> Swift.Bool
@@ -45,18 +47,30 @@ public protocol HTTPClient {
   var baseURL: Foundation.URL { get }
   var defaultHeaders: [ZendeskSDKHTTPClient.HTTPHeader] { get }
   var urlSession: Foundation.URLSession { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   func performRequest<D, E>(withBody body: E, method: ZendeskSDKHTTPClient.HTTPMethodWithBody, responseType: D.Type, path: Swift.String, query: [Swift.String : Swift.String]?, headers: [ZendeskSDKHTTPClient.HTTPHeader]?, completionHandler: @escaping (Swift.Result<ZendeskSDKHTTPClient.HTTPClientResponse<D>, ZendeskSDKHTTPClient.HTTPError>) -> Swift.Void) -> Foundation.URLSessionDataTask where D : Swift.Decodable, E : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   func performRequest<D, E>(withBody body: E, method: ZendeskSDKHTTPClient.HTTPMethodWithBody, responseType: D.Type, path: Swift.String, waitsForConnectivity: Swift.Bool, query: [Swift.String : Swift.String]?, headers: [ZendeskSDKHTTPClient.HTTPHeader]?, completionHandler: @escaping (Swift.Result<ZendeskSDKHTTPClient.HTTPClientResponse<D>, ZendeskSDKHTTPClient.HTTPError>) -> Swift.Void) -> Foundation.URLSessionDataTask where D : Swift.Decodable, E : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   func performRequest<D>(method: ZendeskSDKHTTPClient.HTTPMethodWithoutBody, responseType: D.Type, path: Swift.String, query: [Swift.String : Swift.String]?, headers: [ZendeskSDKHTTPClient.HTTPHeader]?, completionHandler: @escaping (Swift.Result<ZendeskSDKHTTPClient.HTTPClientResponse<D>, ZendeskSDKHTTPClient.HTTPError>) -> Swift.Void) -> Foundation.URLSessionDataTask where D : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   func performRequest<D>(withBodyData bodyData: Foundation.Data, method: ZendeskSDKHTTPClient.HTTPMethodWithBody, responseType: D.Type, path: Swift.String, query: [Swift.String : Swift.String]?, headers: [ZendeskSDKHTTPClient.HTTPHeader]?, completionHandler: @escaping (Swift.Result<ZendeskSDKHTTPClient.HTTPClientResponse<D>, ZendeskSDKHTTPClient.HTTPError>) -> Swift.Void) -> Foundation.URLSessionDataTask where D : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   func performRequest<E>(withBody body: E, method: ZendeskSDKHTTPClient.HTTPMethodWithBody, path: Swift.String, query: [Swift.String : Swift.String]?, headers: [ZendeskSDKHTTPClient.HTTPHeader]?, completionHandler: @escaping (Swift.Result<ZendeskSDKHTTPClient.HTTPClientResponse<ZendeskSDKHTTPClient.Empty>, ZendeskSDKHTTPClient.HTTPError>) -> Swift.Void) -> Foundation.URLSessionDataTask where E : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   func performUploadRequest<D>(withBodyData bodyData: Foundation.Data, method: ZendeskSDKHTTPClient.HTTPMethodWithBody, responseType: D.Type, path: Swift.String, query: [Swift.String : Swift.String]?, headers: [ZendeskSDKHTTPClient.HTTPHeader]?, completionHandler: @escaping (Swift.Result<ZendeskSDKHTTPClient.HTTPClientResponse<D>, ZendeskSDKHTTPClient.HTTPError>) -> Swift.Void) -> Foundation.URLSessionDataTask where D : Swift.Decodable
+  #endif
 }
 public struct HTTPClientBuilder {
   public init(urlSessionConfiguration: Foundation.URLSessionConfiguration = URLSessionConfiguration.default, defaultHeaders: [ZendeskSDKHTTPClient.HTTPHeader], baseURL: Swift.String)
@@ -74,7 +88,9 @@ public enum HTTPMethodWithBody : Swift.String {
   case POST
   case PUT
   case DELETE
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -84,7 +100,9 @@ public enum HTTPMethodWithoutBody : Swift.String {
   case GET
   case HEAD
   case OPTIONS
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
