@@ -4172,10 +4172,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKNotificationOpened",
         "mangledName": "$s10ZendeskSDK21ZDKNotificationOpenedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -4450,10 +4452,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKConversationOpened",
         "mangledName": "$s10ZendeskSDK21ZDKConversationOpenedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -4712,10 +4716,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKConversationStarted",
         "mangledName": "$s10ZendeskSDK22ZDKConversationStartedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -5040,10 +5046,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessagesShown",
         "mangledName": "$s10ZendeskSDK16ZDKMessagesShownC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -5302,10 +5310,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKConversationWithAgentRequested",
         "mangledName": "$s10ZendeskSDK33ZDKConversationWithAgentRequestedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -5564,10 +5574,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKProactiveMessageDisplayed",
         "mangledName": "$s10ZendeskSDK28ZDKProactiveMessageDisplayedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -6680,10 +6692,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)NewConversationButtonClicked",
         "mangledName": "$s10ZendeskSDK28NewConversationButtonClickedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -7690,10 +7704,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKProactiveMessageClicked",
         "mangledName": "$s10ZendeskSDK26ZDKProactiveMessageClickedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -7952,10 +7968,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKNotificationDisplayed",
         "mangledName": "$s10ZendeskSDK24ZDKNotificationDisplayedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -8214,10 +8232,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKPostbackButtonClicked",
         "mangledName": "$s10ZendeskSDK24ZDKPostbackButtonClickedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -8476,10 +8496,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKConversationAgentAssigned",
         "mangledName": "$s10ZendeskSDK28ZDKConversationAgentAssignedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -9511,10 +9533,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessagingOpened",
         "mangledName": "$s10ZendeskSDK18ZDKMessagingOpenedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -9723,10 +9747,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessagingClosed",
         "mangledName": "$s10ZendeskSDK18ZDKMessagingClosedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -10235,10 +10261,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKConversationExtensionDisplayed",
         "mangledName": "$s10ZendeskSDK33ZDKConversationExtensionDisplayedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -10497,10 +10525,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKConversationExtensionOpened",
         "mangledName": "$s10ZendeskSDK30ZDKConversationExtensionOpenedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -11003,10 +11033,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleClicked",
         "mangledName": "$s10ZendeskSDK17ZDKArticleClickedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -11536,10 +11568,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKArticleBrowserClicked",
         "mangledName": "$s10ZendeskSDK24ZDKArticleBrowserClickedC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -11988,10 +12022,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataSuccess",
         "mangledName": "$s10ZendeskSDK18ZDKMetadataSuccessC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -12438,10 +12474,12 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMetadataFailure",
         "mangledName": "$s10ZendeskSDK18ZDKMetadataFailureC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -14930,10 +14968,12 @@
             "usr": "c:@CM@ZendeskSDK@objc(cs)ZDKMessagingFactoryParameters(py)messagingSettings",
             "mangledName": "$s10ZendeskSDK26MessagingFactoryParametersC30messagingSettingsForObjectiveCAA012ZDKMessagingG0Cvp",
             "moduleName": "ZendeskSDK",
+            "deprecated": true,
             "objc_name": "messagingSettings",
             "declAttributes": [
               "Final",
               "ObjC",
+              "Available",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -16246,11 +16286,13 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKMessagingSettings",
         "mangledName": "$s10ZendeskSDK20ZDKMessagingSettingsC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "objc_name": "ZDKMessagingSettings",
         "declAttributes": [
           "Final",
           "AccessControl",
           "ObjC",
+          "Available",
           "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -16931,11 +16973,13 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKZendeskMessage",
         "mangledName": "$s10ZendeskSDK17ZDKZendeskMessageC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "objc_name": "ZDKZendeskMessage",
         "declAttributes": [
           "Final",
           "AccessControl",
           "ObjC",
+          "Available",
           "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -19448,11 +19492,13 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKZendeskUser",
         "mangledName": "$s10ZendeskSDK14ZDKZendeskUserC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "objc_name": "ZDKZendeskUser",
         "declAttributes": [
           "Final",
           "AccessControl",
           "ObjC",
+          "Available",
           "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -21983,11 +22029,13 @@
         "usr": "c:@M@ZendeskSDK@objc(cs)ZDKPageView",
         "mangledName": "$s10ZendeskSDK11ZDKPageViewC",
         "moduleName": "ZendeskSDK",
+        "deprecated": true,
         "objc_name": "ZDKPageView",
         "declAttributes": [
           "Final",
           "AccessControl",
           "ObjC",
+          "Available",
           "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -22217,182 +22265,182 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 18134,
+      "offset": 18375,
       "length": 38,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 18256,
+      "offset": 18497,
       "length": 18,
       "value": "2"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 18351,
+      "offset": 18592,
       "length": 20,
       "value": "3"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 18433,
+      "offset": 18674,
       "length": 17,
       "value": "4"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 18542,
+      "offset": 18783,
       "length": 23,
       "value": "5"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 18624,
+      "offset": 18865,
       "length": 17,
       "value": "6"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 18707,
+      "offset": 18948,
       "length": 18,
       "value": "7"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 18799,
+      "offset": 19040,
       "length": 19,
       "value": "8"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 18893,
+      "offset": 19134,
       "length": 13,
       "value": "9"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 18960,
+      "offset": 19201,
       "length": 30,
       "value": "10"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 19077,
+      "offset": 19318,
       "length": 25,
       "value": "11"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 19189,
+      "offset": 19430,
       "length": 28,
       "value": "12"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 19302,
+      "offset": 19543,
       "length": 23,
       "value": "13"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 19412,
+      "offset": 19653,
       "length": 21,
       "value": "14"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 19516,
+      "offset": 19757,
       "length": 21,
       "value": "15"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 19607,
+      "offset": 19848,
       "length": 25,
       "value": "16"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 19701,
+      "offset": 19942,
       "length": 25,
       "value": "17"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 19789,
+      "offset": 20030,
       "length": 15,
       "value": "18"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 19867,
+      "offset": 20108,
       "length": 15,
       "value": "19"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 19982,
+      "offset": 20223,
       "length": 30,
       "value": "20"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 20094,
+      "offset": 20335,
       "length": 27,
       "value": "21"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 20186,
+      "offset": 20427,
       "length": 14,
       "value": "22"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 20300,
+      "offset": 20541,
       "length": 21,
       "value": "23"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 20399,
+      "offset": 20640,
       "length": 15,
       "value": "24"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 20489,
+      "offset": 20730,
       "length": 15,
       "value": "25"
     },
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Observer\/ZendeskEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 38253,
+      "offset": 40881,
       "length": 12,
       "value": "1"
     },
@@ -22476,7 +22524,7 @@
     {
       "filePath": "\/Users\/admin\/actions-runner\/_work\/native_messaging_sdk_ios\/native_messaging_sdk_ios\/Zendesk\/Zendesk\/Source\/Public\/Zendesk.swift",
       "kind": "BooleanLiteral",
-      "offset": 19874,
+      "offset": 19961,
       "length": 5,
       "value": "false"
     },

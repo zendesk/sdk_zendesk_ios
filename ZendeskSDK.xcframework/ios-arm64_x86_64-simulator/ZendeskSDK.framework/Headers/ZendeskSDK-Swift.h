@@ -486,7 +486,7 @@ SWIFT_CLASS_NAMED("MessagingFactoryParameters")
 @class ZDKMessagingSettings;
 @interface ZDKMessagingFactoryParameters (SWIFT_EXTENSION(ZendeskSDK))
 /// Objective-C compatible copy of <code>messagingSettings</code>.
-@property (nonatomic, readonly, strong) ZDKMessagingSettings * _Nonnull messagingSettings;
+@property (nonatomic, readonly, strong) ZDKMessagingSettings * _Nonnull messagingSettings SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use `messagingSettings` instead.         This property will be removed in a future SDK version.\n        ");
 @end
 
 SWIFT_CLASS("_TtC10ZendeskSDK22MetadataFailureDetails")
@@ -507,7 +507,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK22MetadataSuccessDetails")
 @class NSUUID;
 @class NSDate;
 @class ZDKNewConversationButtonClickedDetails;
-SWIFT_CLASS("_TtC10ZendeskSDK28NewConversationButtonClicked")
+SWIFT_CLASS("_TtC10ZendeskSDK28NewConversationButtonClicked") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface NewConversationButtonClicked : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -605,7 +605,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
   ZDKURLSourceWebViewMessageAction = 5,
 };
 
-SWIFT_CLASS("_TtC10ZendeskSDK24ZDKArticleBrowserClicked")
+SWIFT_CLASS("_TtC10ZendeskSDK24ZDKArticleBrowserClicked") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKArticleBrowserClicked : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -614,7 +614,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK24ZDKArticleBrowserClicked")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK17ZDKArticleClicked")
+SWIFT_CLASS("_TtC10ZendeskSDK17ZDKArticleClicked") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKArticleClicked : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -623,7 +623,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK17ZDKArticleClicked")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK28ZDKConversationAgentAssigned")
+SWIFT_CLASS("_TtC10ZendeskSDK28ZDKConversationAgentAssigned") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKConversationAgentAssigned : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -632,7 +632,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK28ZDKConversationAgentAssigned")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK33ZDKConversationExtensionDisplayed")
+SWIFT_CLASS("_TtC10ZendeskSDK33ZDKConversationExtensionDisplayed") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKConversationExtensionDisplayed : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -641,7 +641,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK33ZDKConversationExtensionDisplayed")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK30ZDKConversationExtensionOpened")
+SWIFT_CLASS("_TtC10ZendeskSDK30ZDKConversationExtensionOpened") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKConversationExtensionOpened : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -650,7 +650,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK30ZDKConversationExtensionOpened")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK21ZDKConversationOpened")
+SWIFT_CLASS("_TtC10ZendeskSDK21ZDKConversationOpened") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKConversationOpened : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -659,7 +659,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK21ZDKConversationOpened")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK22ZDKConversationStarted")
+SWIFT_CLASS("_TtC10ZendeskSDK22ZDKConversationStarted") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKConversationStarted : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -668,7 +668,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK22ZDKConversationStarted")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK33ZDKConversationWithAgentRequested")
+SWIFT_CLASS("_TtC10ZendeskSDK33ZDKConversationWithAgentRequested") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKConversationWithAgentRequested : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -678,7 +678,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK33ZDKConversationWithAgentRequested")
 @end
 
 @class ZDKZendeskMessage;
-SWIFT_CLASS("_TtC10ZendeskSDK16ZDKMessagesShown")
+SWIFT_CLASS("_TtC10ZendeskSDK16ZDKMessagesShown") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKMessagesShown : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -688,7 +688,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK16ZDKMessagesShown")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMessagingClosed")
+SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMessagingClosed") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKMessagingClosed : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -696,7 +696,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMessagingClosed")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMessagingOpened")
+SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMessagingOpened") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKMessagingOpened : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -705,7 +705,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMessagingOpened")
 @end
 
 /// Objective-C compatible copy of <code>MessagingSettings</code>.
-SWIFT_CLASS_NAMED("ZDKMessagingSettings")
+SWIFT_CLASS_NAMED("ZDKMessagingSettings") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only API is deprecated. Swift callers should use `MessagingSettings` instead.     This type will be removed in a future SDK version.\n    ")
 @interface ZDKMessagingSettings : NSObject
 /// Returns a Boolean value that indicates whether the two values are equal.
 /// note:
@@ -716,7 +716,7 @@ SWIFT_CLASS_NAMED("ZDKMessagingSettings")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMetadataFailure")
+SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMetadataFailure") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKMetadataFailure : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -725,7 +725,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMetadataFailure")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMetadataSuccess")
+SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMetadataSuccess") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKMetadataSuccess : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -734,7 +734,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMetadataSuccess")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK24ZDKNotificationDisplayed")
+SWIFT_CLASS("_TtC10ZendeskSDK24ZDKNotificationDisplayed") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKNotificationDisplayed : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -743,7 +743,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK24ZDKNotificationDisplayed")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK21ZDKNotificationOpened")
+SWIFT_CLASS("_TtC10ZendeskSDK21ZDKNotificationOpened") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKNotificationOpened : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -753,7 +753,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK21ZDKNotificationOpened")
 @end
 
 /// Objective-C compatible copy of <code>PageView</code>.
-SWIFT_CLASS_NAMED("ZDKPageView")
+SWIFT_CLASS_NAMED("ZDKPageView") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only API is deprecated. Swift callers should use `PageView` instead.     This type will be removed in a future SDK version.\n    ")
 @interface ZDKPageView : NSObject
 /// <code>ZDKPageView</code> object that is used to provide session-based data associated to an end user.
 /// \param pageTitle The title of the page that was viewed.
@@ -767,7 +767,7 @@ SWIFT_CLASS_NAMED("ZDKPageView")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK24ZDKPostbackButtonClicked")
+SWIFT_CLASS("_TtC10ZendeskSDK24ZDKPostbackButtonClicked") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKPostbackButtonClicked : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -776,7 +776,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK24ZDKPostbackButtonClicked")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK26ZDKProactiveMessageClicked")
+SWIFT_CLASS("_TtC10ZendeskSDK26ZDKProactiveMessageClicked") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKProactiveMessageClicked : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -785,7 +785,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK26ZDKProactiveMessageClicked")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK28ZDKProactiveMessageDisplayed")
+SWIFT_CLASS("_TtC10ZendeskSDK28ZDKProactiveMessageDisplayed") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKProactiveMessageDisplayed : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -852,7 +852,7 @@ typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
 
 enum ZDKZendeskRole : NSInteger;
 /// Objective-C compatible copy of <code>ZendeskMessage</code>.
-SWIFT_CLASS_NAMED("ZDKZendeskMessage")
+SWIFT_CLASS_NAMED("ZDKZendeskMessage") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only API is deprecated. Swift callers should use `ZendeskMessage` instead.     This type will be removed in a future SDK version.\n    ")
 @interface ZDKZendeskMessage : NSObject
 /// The <code>id</code> of the message.
 @property (nonatomic, readonly, copy) NSString * _Nonnull id;
@@ -867,7 +867,7 @@ SWIFT_CLASS_NAMED("ZDKZendeskMessage")
 @end
 
 /// Objective-C compatible copy of <code>ZendeskUser</code>.
-SWIFT_CLASS_NAMED("ZDKZendeskUser")
+SWIFT_CLASS_NAMED("ZDKZendeskUser") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only API is deprecated. Swift callers should use `ZendeskUser` instead.     This type will be removed in a future SDK version.\n    ")
 @interface ZDKZendeskUser : NSObject
 /// The id of the <code>User</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull id;
@@ -895,12 +895,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 + (Zendesk * _Nullable)instance SWIFT_WARN_UNUSED_RESULT;
 /// Invalidates the current instance of <code>Zendesk</code>.
 /// After calling this method you will have to call <code>Zendesk.initialize()</code> again if you would like to use <code>Zendesk</code>.
-+ (void)invalidate SWIFT_DEPRECATED_MSG("Use invalidate(_ :) instead. This function will be removed in a future Zendesk version.");
++ (void)invalidate SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use invalidate(_:) instead.         This method will be removed in a future SDK version.\n        ");
 /// Invalidates the current instance of <code>Zendesk</code> and clears storage when <code>clearStorage</code> is true.
 /// After calling this method you will have to call <code>Zendesk.initialize()</code> again if you would like to use <code>Zendesk</code>.
 /// \param clearStorage Boolean to invalidate storage deleting all its content.
 ///
-+ (void)invalidateWithClearStorage:(BOOL)clearStorage;
++ (void)invalidateWithClearStorage:(BOOL)clearStorage SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use invalidate(_:) instead.         This method will be removed in a future SDK version.\n        ");
 /// Remove event observer to stop observing events emitted by from <code>Zendesk</code>.
 - (void)removeEventObserver:(id _Nonnull)observer;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -922,20 +922,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 /// \param completionHandler A block that takes  an optional <code>Zendesk</code>
 /// instance which will be non-nil in the case of a success and an optional <code>Error</code> which will be non-nil in the case of a failure.
 ///
-+ (void)initializeWithChannelKey:(NSString * _Nonnull)channelKey messagingFactory:(id <MessagingFactory> _Nullable)messagingFactory completionHandler:(void (^ _Nullable)(Zendesk * _Nullable, NSError * _Nullable))completionHandler;
++ (void)initializeWithChannelKey:(NSString * _Nonnull)channelKey messagingFactory:(id <MessagingFactory> _Nullable)messagingFactory completionHandler:(void (^ _Nullable)(Zendesk * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use         initialize(withChannelKey:messagingFactory:locale:completionHandler:) instead.         This method will be removed in a future SDK version.\n        ");
 /// Add an event observer to observe events emitted from <code>Zendesk</code>.
 /// \param observer The object in which events will be received.
 ///
 /// \param completionHandler A block that receives a <code>ZDKZendeskEvent</code>.
 ///
-- (void)addEventObserver:(id _Nonnull)observer :(void (^ _Nullable)(enum ZDKZendeskEvent, id _Nullable))completionHandler;
+- (void)addEventObserver:(id _Nonnull)observer :(void (^ _Nullable)(enum ZDKZendeskEvent, id _Nullable))completionHandler SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use addEventObserver(_:_:) instead.         This method will be removed in a future SDK version.\n        ");
 /// Send a page view event, that captures a specific user interaction, to the PageView endpoint.
 /// \param pageView The <code>ZDKPageView</code> object that contains information related to a user’s interactions
 /// e.g. the title of the page that was visited.
 ///
 /// \param completionHandler A block that takes an optional <code>Error</code> which will be non-nil in the case of a failure.
 ///
-- (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
+- (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use sendPageViewEvent(_:completionHandler:) instead.         This method will be removed in a future SDK version.\n        ");
 @end
 
 @interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
@@ -945,11 +945,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 /// \param completionHandler A block that takes an optional <code>ZDKZendeskUser</code> which will be non-nil in the case of a success,
 /// and an optional <code>Error</code> which will be non-nil in the case of a failure.
 ///
-- (void)loginUserWith:(NSString * _Nonnull)jwt completionHandler:(void (^ _Nullable)(ZDKZendeskUser * _Nullable, NSError * _Nullable))completionHandler;
+- (void)loginUserWith:(NSString * _Nonnull)jwt completionHandler:(void (^ _Nullable)(ZDKZendeskUser * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use loginUser(with:completionHandler:) instead.         This method will be removed in a future SDK version.\n        ");
 /// Unauthenticate a user.
 /// \param completionHandler A block that takes an optional <code>Error</code> which will be non-nil in the case of a failure.
 ///
-- (void)logoutUserWithCompletionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
+- (void)logoutUserWithCompletionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use logoutUser(completionHandler:) instead.         This method will be removed in a future SDK version.\n        ");
 @end
 
 /// A representation of the current connection status of the SDK.
@@ -1467,7 +1467,7 @@ SWIFT_CLASS_NAMED("MessagingFactoryParameters")
 @class ZDKMessagingSettings;
 @interface ZDKMessagingFactoryParameters (SWIFT_EXTENSION(ZendeskSDK))
 /// Objective-C compatible copy of <code>messagingSettings</code>.
-@property (nonatomic, readonly, strong) ZDKMessagingSettings * _Nonnull messagingSettings;
+@property (nonatomic, readonly, strong) ZDKMessagingSettings * _Nonnull messagingSettings SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use `messagingSettings` instead.         This property will be removed in a future SDK version.\n        ");
 @end
 
 SWIFT_CLASS("_TtC10ZendeskSDK22MetadataFailureDetails")
@@ -1488,7 +1488,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK22MetadataSuccessDetails")
 @class NSUUID;
 @class NSDate;
 @class ZDKNewConversationButtonClickedDetails;
-SWIFT_CLASS("_TtC10ZendeskSDK28NewConversationButtonClicked")
+SWIFT_CLASS("_TtC10ZendeskSDK28NewConversationButtonClicked") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface NewConversationButtonClicked : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1586,7 +1586,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ZDKURLSource, "URLSource", open) {
   ZDKURLSourceWebViewMessageAction = 5,
 };
 
-SWIFT_CLASS("_TtC10ZendeskSDK24ZDKArticleBrowserClicked")
+SWIFT_CLASS("_TtC10ZendeskSDK24ZDKArticleBrowserClicked") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKArticleBrowserClicked : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1595,7 +1595,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK24ZDKArticleBrowserClicked")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK17ZDKArticleClicked")
+SWIFT_CLASS("_TtC10ZendeskSDK17ZDKArticleClicked") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKArticleClicked : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1604,7 +1604,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK17ZDKArticleClicked")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK28ZDKConversationAgentAssigned")
+SWIFT_CLASS("_TtC10ZendeskSDK28ZDKConversationAgentAssigned") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKConversationAgentAssigned : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1613,7 +1613,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK28ZDKConversationAgentAssigned")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK33ZDKConversationExtensionDisplayed")
+SWIFT_CLASS("_TtC10ZendeskSDK33ZDKConversationExtensionDisplayed") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKConversationExtensionDisplayed : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1622,7 +1622,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK33ZDKConversationExtensionDisplayed")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK30ZDKConversationExtensionOpened")
+SWIFT_CLASS("_TtC10ZendeskSDK30ZDKConversationExtensionOpened") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKConversationExtensionOpened : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1631,7 +1631,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK30ZDKConversationExtensionOpened")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK21ZDKConversationOpened")
+SWIFT_CLASS("_TtC10ZendeskSDK21ZDKConversationOpened") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKConversationOpened : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1640,7 +1640,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK21ZDKConversationOpened")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK22ZDKConversationStarted")
+SWIFT_CLASS("_TtC10ZendeskSDK22ZDKConversationStarted") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKConversationStarted : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1649,7 +1649,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK22ZDKConversationStarted")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK33ZDKConversationWithAgentRequested")
+SWIFT_CLASS("_TtC10ZendeskSDK33ZDKConversationWithAgentRequested") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKConversationWithAgentRequested : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1659,7 +1659,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK33ZDKConversationWithAgentRequested")
 @end
 
 @class ZDKZendeskMessage;
-SWIFT_CLASS("_TtC10ZendeskSDK16ZDKMessagesShown")
+SWIFT_CLASS("_TtC10ZendeskSDK16ZDKMessagesShown") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKMessagesShown : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1669,7 +1669,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK16ZDKMessagesShown")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMessagingClosed")
+SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMessagingClosed") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKMessagingClosed : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1677,7 +1677,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMessagingClosed")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMessagingOpened")
+SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMessagingOpened") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKMessagingOpened : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1686,7 +1686,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMessagingOpened")
 @end
 
 /// Objective-C compatible copy of <code>MessagingSettings</code>.
-SWIFT_CLASS_NAMED("ZDKMessagingSettings")
+SWIFT_CLASS_NAMED("ZDKMessagingSettings") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only API is deprecated. Swift callers should use `MessagingSettings` instead.     This type will be removed in a future SDK version.\n    ")
 @interface ZDKMessagingSettings : NSObject
 /// Returns a Boolean value that indicates whether the two values are equal.
 /// note:
@@ -1697,7 +1697,7 @@ SWIFT_CLASS_NAMED("ZDKMessagingSettings")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMetadataFailure")
+SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMetadataFailure") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKMetadataFailure : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1706,7 +1706,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMetadataFailure")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMetadataSuccess")
+SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMetadataSuccess") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKMetadataSuccess : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1715,7 +1715,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK18ZDKMetadataSuccess")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK24ZDKNotificationDisplayed")
+SWIFT_CLASS("_TtC10ZendeskSDK24ZDKNotificationDisplayed") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKNotificationDisplayed : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1724,7 +1724,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK24ZDKNotificationDisplayed")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK21ZDKNotificationOpened")
+SWIFT_CLASS("_TtC10ZendeskSDK21ZDKNotificationOpened") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKNotificationOpened : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1734,7 +1734,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK21ZDKNotificationOpened")
 @end
 
 /// Objective-C compatible copy of <code>PageView</code>.
-SWIFT_CLASS_NAMED("ZDKPageView")
+SWIFT_CLASS_NAMED("ZDKPageView") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only API is deprecated. Swift callers should use `PageView` instead.     This type will be removed in a future SDK version.\n    ")
 @interface ZDKPageView : NSObject
 /// <code>ZDKPageView</code> object that is used to provide session-based data associated to an end user.
 /// \param pageTitle The title of the page that was viewed.
@@ -1748,7 +1748,7 @@ SWIFT_CLASS_NAMED("ZDKPageView")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK24ZDKPostbackButtonClicked")
+SWIFT_CLASS("_TtC10ZendeskSDK24ZDKPostbackButtonClicked") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKPostbackButtonClicked : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1757,7 +1757,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK24ZDKPostbackButtonClicked")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK26ZDKProactiveMessageClicked")
+SWIFT_CLASS("_TtC10ZendeskSDK26ZDKProactiveMessageClicked") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKProactiveMessageClicked : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1766,7 +1766,7 @@ SWIFT_CLASS("_TtC10ZendeskSDK26ZDKProactiveMessageClicked")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10ZendeskSDK28ZDKProactiveMessageDisplayed")
+SWIFT_CLASS("_TtC10ZendeskSDK28ZDKProactiveMessageDisplayed") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only bridging type is deprecated. Swift callers should use     addEventObserver(_:_:) instead. This type will be removed in a future SDK version.\n    ")
 @interface ZDKProactiveMessageDisplayed : NSObject
 @property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
 @property (nonatomic, readonly, copy) NSDate * _Nonnull timestamp;
@@ -1833,7 +1833,7 @@ typedef SWIFT_ENUM(NSInteger, ZDKZendeskEvent, open) {
 
 enum ZDKZendeskRole : NSInteger;
 /// Objective-C compatible copy of <code>ZendeskMessage</code>.
-SWIFT_CLASS_NAMED("ZDKZendeskMessage")
+SWIFT_CLASS_NAMED("ZDKZendeskMessage") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only API is deprecated. Swift callers should use `ZendeskMessage` instead.     This type will be removed in a future SDK version.\n    ")
 @interface ZDKZendeskMessage : NSObject
 /// The <code>id</code> of the message.
 @property (nonatomic, readonly, copy) NSString * _Nonnull id;
@@ -1848,7 +1848,7 @@ SWIFT_CLASS_NAMED("ZDKZendeskMessage")
 @end
 
 /// Objective-C compatible copy of <code>ZendeskUser</code>.
-SWIFT_CLASS_NAMED("ZDKZendeskUser")
+SWIFT_CLASS_NAMED("ZDKZendeskUser") SWIFT_DEPRECATED_MSG("\n    This Objective-C-only API is deprecated. Swift callers should use `ZendeskUser` instead.     This type will be removed in a future SDK version.\n    ")
 @interface ZDKZendeskUser : NSObject
 /// The id of the <code>User</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull id;
@@ -1876,12 +1876,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 + (Zendesk * _Nullable)instance SWIFT_WARN_UNUSED_RESULT;
 /// Invalidates the current instance of <code>Zendesk</code>.
 /// After calling this method you will have to call <code>Zendesk.initialize()</code> again if you would like to use <code>Zendesk</code>.
-+ (void)invalidate SWIFT_DEPRECATED_MSG("Use invalidate(_ :) instead. This function will be removed in a future Zendesk version.");
++ (void)invalidate SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use invalidate(_:) instead.         This method will be removed in a future SDK version.\n        ");
 /// Invalidates the current instance of <code>Zendesk</code> and clears storage when <code>clearStorage</code> is true.
 /// After calling this method you will have to call <code>Zendesk.initialize()</code> again if you would like to use <code>Zendesk</code>.
 /// \param clearStorage Boolean to invalidate storage deleting all its content.
 ///
-+ (void)invalidateWithClearStorage:(BOOL)clearStorage;
++ (void)invalidateWithClearStorage:(BOOL)clearStorage SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use invalidate(_:) instead.         This method will be removed in a future SDK version.\n        ");
 /// Remove event observer to stop observing events emitted by from <code>Zendesk</code>.
 - (void)removeEventObserver:(id _Nonnull)observer;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1903,20 +1903,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 /// \param completionHandler A block that takes  an optional <code>Zendesk</code>
 /// instance which will be non-nil in the case of a success and an optional <code>Error</code> which will be non-nil in the case of a failure.
 ///
-+ (void)initializeWithChannelKey:(NSString * _Nonnull)channelKey messagingFactory:(id <MessagingFactory> _Nullable)messagingFactory completionHandler:(void (^ _Nullable)(Zendesk * _Nullable, NSError * _Nullable))completionHandler;
++ (void)initializeWithChannelKey:(NSString * _Nonnull)channelKey messagingFactory:(id <MessagingFactory> _Nullable)messagingFactory completionHandler:(void (^ _Nullable)(Zendesk * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use         initialize(withChannelKey:messagingFactory:locale:completionHandler:) instead.         This method will be removed in a future SDK version.\n        ");
 /// Add an event observer to observe events emitted from <code>Zendesk</code>.
 /// \param observer The object in which events will be received.
 ///
 /// \param completionHandler A block that receives a <code>ZDKZendeskEvent</code>.
 ///
-- (void)addEventObserver:(id _Nonnull)observer :(void (^ _Nullable)(enum ZDKZendeskEvent, id _Nullable))completionHandler;
+- (void)addEventObserver:(id _Nonnull)observer :(void (^ _Nullable)(enum ZDKZendeskEvent, id _Nullable))completionHandler SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use addEventObserver(_:_:) instead.         This method will be removed in a future SDK version.\n        ");
 /// Send a page view event, that captures a specific user interaction, to the PageView endpoint.
 /// \param pageView The <code>ZDKPageView</code> object that contains information related to a user’s interactions
 /// e.g. the title of the page that was visited.
 ///
 /// \param completionHandler A block that takes an optional <code>Error</code> which will be non-nil in the case of a failure.
 ///
-- (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
+- (void)sendPageViewEvent:(ZDKPageView * _Nonnull)pageView completionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use sendPageViewEvent(_:completionHandler:) instead.         This method will be removed in a future SDK version.\n        ");
 @end
 
 @interface Zendesk (SWIFT_EXTENSION(ZendeskSDK))
@@ -1926,11 +1926,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Zendesk * _N
 /// \param completionHandler A block that takes an optional <code>ZDKZendeskUser</code> which will be non-nil in the case of a success,
 /// and an optional <code>Error</code> which will be non-nil in the case of a failure.
 ///
-- (void)loginUserWith:(NSString * _Nonnull)jwt completionHandler:(void (^ _Nullable)(ZDKZendeskUser * _Nullable, NSError * _Nullable))completionHandler;
+- (void)loginUserWith:(NSString * _Nonnull)jwt completionHandler:(void (^ _Nullable)(ZDKZendeskUser * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use loginUser(with:completionHandler:) instead.         This method will be removed in a future SDK version.\n        ");
 /// Unauthenticate a user.
 /// \param completionHandler A block that takes an optional <code>Error</code> which will be non-nil in the case of a failure.
 ///
-- (void)logoutUserWithCompletionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler;
+- (void)logoutUserWithCompletionHandler:(void (^ _Nullable)(NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("\n        This Objective-C-only API is deprecated. Swift callers should use logoutUser(completionHandler:) instead.         This method will be removed in a future SDK version.\n        ");
 @end
 
 /// A representation of the current connection status of the SDK.
